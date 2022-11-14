@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>strategy &#8211; API UX</title>
+	<atom:link href="/tag/strategy/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Sun, 31 Aug 2014 20:18:36 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Endpoint speaker highlight: Kamyar Mohager</title>
+		<link>/2014/09/01/endpoint-kamyar-mohager/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=endpoint-kamyar-mohager</link>
+					<comments>/2014/09/01/endpoint-kamyar-mohager/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 01 Sep 2014 16:00:29 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Interview]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authorization]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[endpoint]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[Kamyar]]></category>
+		<category><![CDATA[Linkedin]]></category>
+		<category><![CDATA[Mohager]]></category>
+		<category><![CDATA[monitoring]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[platform]]></category>
+		<category><![CDATA[strategy]]></category>
+		<guid isPermaLink="false">/?p=1092</guid>
+
+					<description><![CDATA[To give you a feeling of what to expect at the Endpoint conference we've talked with Kamyar Mohager, who will be in Amsterdam representing Linkedin.]]></description>
+		
+					<wfw:commentRss>/2014/09/01/endpoint-kamyar-mohager/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Who are the best API Product Managers?</title>
+		<link>/2014/02/13/api-product-manager/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-product-manager</link>
+					<comments>/2014/02/13/api-product-manager/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 13 Feb 2014 19:37:37 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[Product Manager]]></category>
+		<category><![CDATA[strategy]]></category>
+		<guid isPermaLink="false">/?p=773</guid>
+
+					<description><![CDATA[When I look around the little village of API specialists within the tech world, there are an increasing number, in the last year, with the title “API Product Manager&#8221;. Keep in mind that just a few years ago, this job title didn’t exist. There are so many other roles involved in what it takes to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/13/api-product-manager/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why no one wants to use your API</title>
+		<link>/2013/10/18/why-no-one-wants-to-use-your-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=why-no-one-wants-to-use-your-api</link>
+					<comments>/2013/10/18/why-no-one-wants-to-use-your-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 18 Oct 2013 13:00:27 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[feedback]]></category>
+		<category><![CDATA[outreach]]></category>
+		<category><![CDATA[strategy]]></category>
+		<category><![CDATA[support]]></category>
+		<guid isPermaLink="false">/?p=683</guid>
+
+					<description><![CDATA[A brilliant, undiscovered app developer just logged into the front page for your API program (please don&#8217;t tell me you just emailed a PDF), and made their first successful call. They&#8217;re frustrated, feeling like they don&#8217;t understand what just happened, and generally just exhausted. Hopes of impressing colleagues with a quick demo espousing the ease [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/10/18/why-no-one-wants-to-use-your-api/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>API Strategy &#038; Practice</title>
+		<link>/2013/06/05/api-strategy-practice/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-strategy-practice</link>
+					<comments>/2013/06/05/api-strategy-practice/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 05 Jun 2013 16:20:04 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[practice]]></category>
+		<category><![CDATA[SF]]></category>
+		<category><![CDATA[strategy]]></category>
+		<category><![CDATA[USA]]></category>
+		<guid isPermaLink="false">/?p=472</guid>
+
+					<description><![CDATA[API Strategy and Practice is a vendor neutral and community supported API industry conference to connect API Practitioners.]]></description>
+		
+					<wfw:commentRss>/2013/06/05/api-strategy-practice/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

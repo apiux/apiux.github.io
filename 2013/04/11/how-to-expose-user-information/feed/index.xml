@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to Expose User Information	</title>
+	<atom:link href="/2013/04/11/how-to-expose-user-information/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/04/11/how-to-expose-user-information/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-expose-user-information</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 19 Apr 2013 16:18:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: mahemoff		</title>
+		<link>/2013/04/11/how-to-expose-user-information/#comment-73</link>
+
+		<dc:creator><![CDATA[mahemoff]]></dc:creator>
+		<pubDate>Fri, 19 Apr 2013 16:18:42 +0000</pubDate>
+		<guid isPermaLink="false">/?p=275#comment-73</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/11/how-to-expose-user-information/#comment-62&quot;&gt;Bruno Pedro&lt;/a&gt;.
+
+Agree, it&#039;s a nice pattern and makes sense to use it most of the time. Not always though, e.g. you might have a client library that does something with $.get(&quot;#{user.name}&quot;).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/11/how-to-expose-user-information/#comment-62">Bruno Pedro</a>.</p>
+<p>Agree, it&#8217;s a nice pattern and makes sense to use it most of the time. Not always though, e.g. you might have a client library that does something with $.get(&#8220;#{user.name}&#8221;).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/04/11/how-to-expose-user-information/#comment-62</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2013 12:45:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=275#comment-62</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/11/how-to-expose-user-information/#comment-60&quot;&gt;Michael Mahemoff&lt;/a&gt;.
+
+I agree when you&#039;re reading/writing information about a specific user other than the one authorized. When you&#039;re trying to figure out the username of the authorized user I believe /users/me makes more sense.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/11/how-to-expose-user-information/#comment-60">Michael Mahemoff</a>.</p>
+<p>I agree when you&#8217;re reading/writing information about a specific user other than the one authorized. When you&#8217;re trying to figure out the username of the authorized user I believe /users/me makes more sense.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael Mahemoff		</title>
+		<link>/2013/04/11/how-to-expose-user-information/#comment-60</link>
+
+		<dc:creator><![CDATA[Michael Mahemoff]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2013 15:46:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=275#comment-60</guid>
+
+					<description><![CDATA[/usernameis a nice endpoint too for social apps, ie establishing a separate namespace for users. (/username/posts etc.)]]></description>
+			<content:encoded><![CDATA[<p>/usernameis a nice endpoint too for social apps, ie establishing a separate namespace for users. (/username/posts etc.)</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

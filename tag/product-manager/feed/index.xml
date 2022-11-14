@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Product Manager &#8211; API UX</title>
+	<atom:link href="/tag/product-manager/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 13 Feb 2014 20:57:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Who are the best API Product Managers?</title>
+		<link>/2014/02/13/api-product-manager/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-product-manager</link>
+					<comments>/2014/02/13/api-product-manager/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 13 Feb 2014 19:37:37 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[Product Manager]]></category>
+		<category><![CDATA[strategy]]></category>
+		<guid isPermaLink="false">/?p=773</guid>
+
+					<description><![CDATA[When I look around the little village of API specialists within the tech world, there are an increasing number, in the last year, with the title “API Product Manager&#8221;. Keep in mind that just a few years ago, this job title didn’t exist. There are so many other roles involved in what it takes to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/13/api-product-manager/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>webhook &#8211; API UX</title>
+	<atom:link href="/tag/webhook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 29 May 2014 15:16:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>APIdays speaker highlight: Leah Culver</title>
+		<link>/2014/05/29/apidays-leah-culver/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apidays-leah-culver</link>
+					<comments>/2014/05/29/apidays-leah-culver/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 29 May 2014 16:30:09 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Interview]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIdays]]></category>
+		<category><![CDATA[Barcelona]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[Convore]]></category>
+		<category><![CDATA[Culver]]></category>
+		<category><![CDATA[development]]></category>
+		<category><![CDATA[discount]]></category>
+		<category><![CDATA[Dropbox]]></category>
+		<category><![CDATA[Grove.io]]></category>
+		<category><![CDATA[interview]]></category>
+		<category><![CDATA[Leah]]></category>
+		<category><![CDATA[Mediterranea]]></category>
+		<category><![CDATA[Pownce]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=969</guid>
+
+					<description><![CDATA[To give you a feeling of what to expect at the APIdays Mediterranea conference we've talked with Leah Culver, who will be in Barcelona representing Dropbox. Leah will be speaking on May 30 at 12:00 so make sure you don't miss it.]]></description>
+		
+					<wfw:commentRss>/2014/05/29/apidays-leah-culver/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Webhooks, REST and the Open Web</title>
+		<link>/2013/09/12/webhooks/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=webhooks</link>
+					<comments>/2013/09/12/webhooks/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 16:08:19 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[Open]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[protocol]]></category>
+		<category><![CDATA[publish]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[specification]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[subscription]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=495</guid>
+
+					<description><![CDATA[Back in 2006, Jeff Lindsay proposed a different way of consuming Web resources that would eliminate the need for constantly polling APIs for changes. This new pattern was called webhooks and has since been adopted by companies such as GitHub and Google. The main advantage of the webhooks pattern is that your application doesn&#8217;t have to make [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/12/webhooks/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Pivotal Tracker launches new API in public beta</title>
+		<link>/2013/08/19/pivotal-tracker-new-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pivotal-tracker-new-api</link>
+					<comments>/2013/08/19/pivotal-tracker-new-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2013 16:00:57 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[pivotal]]></category>
+		<category><![CDATA[tracker]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=599</guid>
+
+					<description><![CDATA[Pivotal Tracker just announced the availability of their API V5 in public beta, starting August 16, 2013. The launch is justified because the application itself has run against the new API version for a long time now. The new API introduces several improvements, like the ability to get access to all project data, including epics. They [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/08/19/pivotal-tracker-new-api/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Evernote introduces API Rate Limits</title>
+		<link>/2013/08/14/evernote-api-rate-limits/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=evernote-api-rate-limits</link>
+					<comments>/2013/08/14/evernote-api-rate-limits/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 14 Aug 2013 14:15:17 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Evernote]]></category>
+		<category><![CDATA[limit]]></category>
+		<category><![CDATA[rate]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=589</guid>
+
+					<description><![CDATA[Evernote recently announced that they will enforce API rate limits starting today (August 14, 2013). They don&#8217;t specify what the limits are but they say that a &#8220;reasonable use of the API should not cause an integration to hit the limit&#8221;. Although this enforcement will only affect non-production applications for now, you should evaluate your code [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/08/14/evernote-api-rate-limits/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

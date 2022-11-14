@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>URL Design for RESTful Web Services | API UX</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/04/03/url-design-restful-web-services/">
+	<meta name="description" content="URL design discussions for RESTful web services often degrade into debates over pluralization and parameter names. There are a couple of principles I like to use to keep things simple.">
+	<meta name="keywords" content="API,design,endpoint,filesystem,HTTP,REST,URL,Web service,/users/charlie,return,apis,ux,apiux,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="URL Design for RESTful Web Services">
+	<meta property="og:description" content="URL design discussions for RESTful web services often degrade into debates over pluralization and parameter names. There are a couple of principles I like to use to keep things simple.">
+	<meta property="og:url" content="/2013/04/03/url-design-restful-web-services/">
+	<meta property="article:published_time" content="2013-04-03">
+	<meta property="article:modified_time" content="2013-07-31">
+	<meta property="article:author" content="/author/charliereverte/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="design">
+	<meta property="article:tag" content="endpoint">
+	<meta property="article:tag" content="filesystem">
+	<meta property="article:tag" content="HTTP">
+	<meta property="article:tag" content="REST">
+	<meta property="article:tag" content="URL">
+	<meta property="article:tag" content="Web service">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; URL Design for RESTful Web Services Comments Feed" href="/2013/04/03/url-design-restful-web-services/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=2521166e51","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/233">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=233">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F04%2F03%2Furl-design-restful-web-services%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F04%2F03%2Furl-design-restful-web-services%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '233';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'URL+Design+for+RESTful+Web+Services';
+	window._wp_rp_post_tags = ['rest', 'api', 'web+service', 'endpoint', 'http', 'url', 'design', 'filesystem', 'opinion', 'orang', 'intuit', 'a', 'api', 'model', 'alt', 'design', 'file', 'mock', 'code', 'appl', 'search', 'web', 'list', 'servic'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-233 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-233" class="post-233 post type-post status-publish format-standard hentry category-opinion tag-api tag-design tag-endpoint tag-filesystem tag-http tag-rest tag-url tag-web-service">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">URL Design for RESTful Web Services</h1>
+										<div class="comments-link">
+					<a href="/2013/04/03/url-design-restful-web-services/#comments">12 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>URL design discussions for RESTful web services often degrade into debates over pluralization and parameter names. There are a couple of principles I like to use to keep things simple.</p>
+<h2>1) Using your API should feel like using a filesystem</h2>
+<ul>
+<li>Endpoints used to create, list, and search for entities should look like directories, e.g. <code><strong>/users</strong></code>
+</li>
+<li>Use a plural noun so it feels like a directory of users, not a user controller</li>
+<li>Endpoints used to read, update, and delete individual entities should look like files, e.g. <code><strong>/users/charlie</strong></code>
+</li>
+</ul>
+<p><img loading="lazy" class="aligncenter" alt="" src="http://i.imgur.com/N24yRP1.png" width="426" height="113"></p>
+<h2><span id="more-233"></span></h2>
+<h2>2) All calls to a given endpoint should return the same type</h2>
+<ul>
+<li>Either apples, or oranges, or a list of oranges, don&#8217;t mix them up</li>
+<li>File-looking endpoints should return individual entities</li>
+<li>Directory-looking endpoints should return lists of entities</li>
+</ul>
+<p><img loading="lazy" class="aligncenter" alt="" src="http://cobornsdelivers.files.wordpress.com/2010/02/apples-and-oranges.jpg" width="281" height="188"><br>
+We may be bikeshedding here but I think your API will be more intuitive to newcomers if you model it this way.</p>
+<ul>
+<li>Consistent response type per endpoint simplifies deserialization for clients, no switching needed</li>
+<li>Once you agree on a contract it’s easy to mock up with static files on a server</li>
+<li>Clients can start working with your mockup before your code is finished</li>
+</ul>
+<h2>Example Operations on Endpoints that look like Files</h2>
+<h3>Read</h3>
+<p><code>GET /users/charlie<br>
+200 OK<br>
+{username: charlie, state: VA}</code></p>
+<h3>Update</h3>
+<p><code>PUT|PATCH /users/charlie<br>
+[password=1111]</code></p>
+<h3>Delete</h3>
+<p><code>DELETE /users/charlie</code></p>
+<h2>Example Operations on Endpoints that Look Like Directories</h2>
+<h3>List</h3>
+<p><code>GET /users?start=40&amp;count=20<br>
+200 OK<br>
+[{username: charlie, state: VA}, ...]</code></p>
+<h3>Search</h3>
+<p><code>GET /users?q=cha</code></p>
+<h3>Create</h3>
+<p><code>POST /users<br>
+{username=charlie&amp;password=1234}<br>
+201 CREATED<br>
+Location: /users/charlie</code><br>
+Directory endpoints are supposed to return lists (or nothing).  So send back a pointer to the new user record, rather than the user data itself.<br>
+<code><br>
+PUT /users/charlie</code><br>
+Also ok IFF you allow clients to generate entity ids</p>
+<h2>Serious Bikeshedding</h2>
+<p><img loading="lazy" class="aligncenter" id="irc_mi" alt="" src="http://upload.wikimedia.org/wikipedia/commons/c/cc/Bike_shed_15d06_cropped.jpg" width="428" height="170"><br>
+<span style="text-decoration: underline">Here&#8217;s other stuff I like</span>:</p>
+<p>Use a filename extension instead of the Accept header to express the response format:</p>
+<p><code>http://api.example.com/users/charlie.json</code></p>
+<ul>
+<li>Not pure REST but it makes your API easier for devs to poke with curl and the browser. Easier to use means better adoption!</li>
+<li>Friendlier on stupid caches that improperly handle headers since the endpoint always sends back the same bytes (within the ttl)</li>
+<li>You can use .html (or no extension) to request the web representation and serve your API and web views with the same controller logic (though this can turn into a rabbit hole)</li>
+</ul>
+<p>Another vote against the Accept header: version your endpoints in the URL, at web-application level:</p>
+<p><code>http://q.addthis.com/feeds/1.0/trending.json?pubid=atblog</code></p>
+<ul>
+<li>feeds.war is the webapp and 1.0 is the version of the released artifact (which is 1.0.3 internally)</li>
+<li>Version numbers should correspond to deployable artifacts so they’re easier to manage</li>
+<li>You&#8217;ll need to keep old versions online in real-world use cases</li>
+</ul>
+<p>Dropwizard has a nice model for <a href="http://dropwizard.codahale.com/manual/core/#organizing-your-project">organizing your projects</a>.</p>
+<p>Some javascript/flash API consumers will pressure you to add a suppress_response_codes parameter and always send them a 200. You&#8217;ll hate it but will end up giving in (just wait).</p>
+<ul>
+<li>You&#8217;ll need to define a standard error response envelope that they can switch on to check for errors and extract the reason. It will get messy for them and they will lose a lot of the benefits of this design.</li>
+<li>Anyone have better ideas here?</li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-495" data-post-type="none">
+<a href="/2013/09/12/webhooks/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/09/RESTHooks-150x150.png" alt="Webhooks, REST and the Open Web" width="150" height="150"></a><a href="/2013/09/12/webhooks/" class="wp_rp_title">Webhooks, REST and the Open Web</a>
+</li>
+<li data-position="1" data-poid="in-572" data-post-type="none">
+<a href="/2013/07/23/http2-0-initial-draft-released/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/07/5659840592_3085048dfb-150x150.jpg" alt="HTTP/2.0 Initial Draft Released" width="150" height="150"></a><a href="/2013/07/23/http2-0-initial-draft-released/" class="wp_rp_title">HTTP/2.0 Initial Draft Released</a>
+</li>
+<li data-position="2" data-poid="in-296" data-post-type="none">
+<a href="/2013/04/17/review-google-glass-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/04/7050489913_0e0a9687071-150x150.jpg" alt="Review: Google Glass API" width="150" height="150"></a><a href="/2013/04/17/review-google-glass-api/" class="wp_rp_title">Review: Google Glass API</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/04/03/url-design-restful-web-services/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/charliereverte/" class="authorsure-author-link">Charlie Reverte</a></span></span> at <time itemprop="dateModified" datetime="2013-07-31T21:57:22+02:00">July 31, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/design/" rel="tag">design</a>, <a href="/tag/endpoint/" rel="tag">endpoint</a>, <a href="/tag/filesystem/" rel="tag">filesystem</a>, <a href="/tag/http/" rel="tag">HTTP</a>, <a href="/tag/rest/" rel="tag">REST</a>, <a href="/tag/url/" rel="tag">URL</a>, <a href="/tag/web-service/" rel="tag">Web service</a> on <a href="/2013/04/03/url-design-restful-web-services/" title="6:00 pm" rel="bookmark"><time class="entry-date" datetime="2013-04-03T18:00:54+02:00">April 3, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/charliereverte/" title="View all posts by Charlie Reverte" rel="author">Charlie Reverte</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Charlie Reverte</h2>
+						<p>VP Engineering at @AddThis.  Lover of robots and car racing.  Want to work on this stuff all day? <a href="http://www.addthis.com/careers">AddThis is Hiring!</a>  Follow me at <a href="http://twitter.com/numbakrrunch">@numbakrrunch</a>.</p>
+						<div class="author-link">
+							<a href="/author/charliereverte/" rel="author">
+								View all posts by Charlie Reverte <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/04/02/how-safe-is-your-api-from-user/" rel="prev"><span class="meta-nav">&larr;</span> How safe is your API from its users?</a></span>
+					<span class="nav-next"><a href="/2013/04/09/rest-metadata-formats/" rel="next">An Overview of REST Metadata Formats <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			12 thoughts on &ldquo;<span>URL Design for RESTful Web Services</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-44">
+		<article id="comment-44" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/2001ceff7e9dc753cf96fcb2e6f41110?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/2001ceff7e9dc753cf96fcb2e6f41110?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">Pete Johanson</b> </cite><a href="/2013/04/03/url-design-restful-web-services/#comment-44"><time datetime="2013-04-03T18:52:44+02:00">April 3, 2013 at 6:52 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I don&#8217;t understand why &#8220;makes your API easier for devs to poke with &#8230; the browser&#8221; is so important at this point.</p>
+<p>With a plethora of useful ReST/HTTP plugins/tools (e.g. search &#8220;rest client&#8221; in the Chrome Web Store&#8221;), why should exploring using the lowest common denominator dictate your technical decisions?</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=44#respond" data-commentid="44" data-postid="233" data-belowelement="comment-44" data-respondelement="respond" data-replyto="Reply to Pete Johanson" aria-label="Reply to Pete Johanson">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment odd alt depth-2" id="li-comment-45">
+		<article id="comment-45" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/b3e2b94eb305bf95a1bee11bc7705fb7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/b3e2b94eb305bf95a1bee11bc7705fb7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://wpdc.wordpress.com/" rel="external nofollow ugc" class="url">Aaron Jorbin</a></b> </cite><a href="/2013/04/03/url-design-restful-web-services/#comment-45"><time datetime="2013-04-03T21:55:29+02:00">April 3, 2013 at 9:55 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>The browser is most likely the tool you used to discover the API and the tool you are using to read the docs for the API, thus it completely makes sense to make it the tool you use to quickly play with the API and decide if you&#8217;re going to use.  I completely agree with Charlie here.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=45#respond" data-commentid="45" data-postid="233" data-belowelement="comment-45" data-respondelement="respond" data-replyto="Reply to Aaron Jorbin" aria-label="Reply to Aaron Jorbin">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="comment byuser comment-author-charliereverte bypostauthor even depth-2" id="li-comment-46">
+		<article id="comment-46" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://outputtranslation.com/" rel="external nofollow ugc" class="url">Charlie Reverte</a></b> <span>Post author</span></cite><a href="/2013/04/03/url-design-restful-web-services/#comment-46"><time datetime="2013-04-03T23:00:19+02:00">April 3, 2013 at 11:00 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>In terms of the API user experience it&#8217;s pretty sweet to be able to link users to actual calls from within your online docs.  If you have good linking between your endpoints you can do a fair bit of navigation around the API in your browser before you need to reach for curl or fancier clients.  It makes for a better first impression which improves the likelihood that someone will implement.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=46#respond" data-commentid="46" data-postid="233" data-belowelement="comment-46" data-respondelement="respond" data-replyto="Reply to Charlie Reverte" aria-label="Reply to Charlie Reverte">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-47">
+		<article id="comment-47" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/3cc7d40de1df4e4912670585240712d3?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/3cc7d40de1df4e4912670585240712d3?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://gravatar.com/risseraka" rel="external nofollow ugc" class="url">Adrien Risser</a></b> </cite><a href="/2013/04/03/url-design-restful-web-services/#comment-47"><time datetime="2013-04-04T10:38:11+02:00">April 4, 2013 at 10:38 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>What about the best URL designed in REST as is &#8220;/&#8221;?<br>
+API URLs don&#8217;t matter when everything is hyperlinked.<br>
+(As in a Website, who likes to type every single page link in the browser?)</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=47#respond" data-commentid="47" data-postid="233" data-belowelement="comment-47" data-respondelement="respond" data-replyto="Reply to Adrien Risser" aria-label="Reply to Adrien Risser">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-even depth-1" id="comment-50">
+		<p>Pingback: <a href="http://outputtranslation.com/2013/04/url-design-for-restful-web-services/" rel="external nofollow ugc" class="url">URL Design for RESTful Web Services | Output Translation</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-51">
+		<article id="comment-51" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/cabf735ce7b8b4471ef46ea54f71832d?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/cabf735ce7b8b4471ef46ea54f71832d?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://mahemoff.wordpress.com/" rel="external nofollow ugc" class="url">mahemoff</a></b> </cite><a href="/2013/04/03/url-design-restful-web-services/#comment-51"><time datetime="2013-04-08T02:15:27+02:00">April 8, 2013 at 2:15 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I think POST /users/charlie should be a PUT (more bikeshedding).</p>
+<p>Creation can happen by either POSTING to the generic resource /users or PUTting to a specific instance (if it&#8217;s allowed for the client to name the resource, as you point out).</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=51#respond" data-commentid="51" data-postid="233" data-belowelement="comment-51" data-respondelement="respond" data-replyto="Reply to mahemoff" aria-label="Reply to mahemoff">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-charliereverte bypostauthor even depth-2" id="li-comment-63">
+		<article id="comment-63" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://outputtranslation.com/" rel="external nofollow ugc" class="url">Charlie Reverte</a></b> <span>Post author</span></cite><a href="/2013/04/03/url-design-restful-web-services/#comment-63"><time datetime="2013-04-16T05:28:23+02:00">April 16, 2013 at 5:28 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Ah, good catch.  PUT /users/charlie is what I meant to say, error on my part 🙂</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=63#respond" data-commentid="63" data-postid="233" data-belowelement="comment-63" data-respondelement="respond" data-replyto="Reply to Charlie Reverte" aria-label="Reply to Charlie Reverte">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment odd alt depth-3" id="li-comment-222">
+		<article id="comment-222" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/17f67e7afc1a4ac00ca132d6b67f34a3?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/17f67e7afc1a4ac00ca132d6b67f34a3?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="https://www.facebook.com/gerson.goulart" rel="external nofollow ugc" class="url">Gerson Goulart</a></b> </cite><a href="/2013/04/03/url-design-restful-web-services/#comment-222"><time datetime="2013-07-30T19:00:59+02:00">July 30, 2013 at 7:00 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Maybe it would be a good idea to fix the article than, not everyone will read every single comment&#8230; Other than that, thanks for the really good post.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=222#respond" data-commentid="222" data-postid="233" data-belowelement="comment-222" data-respondelement="respond" data-replyto="Reply to Gerson Goulart" aria-label="Reply to Gerson Goulart">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-charliereverte bypostauthor even depth-4" id="li-comment-229">
+		<article id="comment-229" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1cac9154cbf45b908b809ba9f4603cb4?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://outputtranslation.com/" rel="external nofollow ugc" class="url">Charlie Reverte</a></b> <span>Post author</span></cite><a href="/2013/04/03/url-design-restful-web-services/#comment-229"><time datetime="2013-08-01T02:29:56+02:00">August 1, 2013 at 2:29 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>done!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=229#respond" data-commentid="229" data-postid="233" data-belowelement="comment-229" data-respondelement="respond" data-replyto="Reply to Charlie Reverte" aria-label="Reply to Charlie Reverte">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-67">
+		<p>Pingback: <a href="/2013/04/17/review-google-glass-api/" rel="external nofollow ugc" class="url">Review: Google Glass API | API UX</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-313">
+		<article id="comment-313" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/e7b1a1032a7afc9ecc829e6b270bb5e4?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/e7b1a1032a7afc9ecc829e6b270bb5e4?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/mcintyre321" rel="external nofollow ugc" class="url">Harry McIntyre (@mcintyre321)</a></b> </cite><a href="/2013/04/03/url-design-restful-web-services/#comment-313"><time datetime="2013-12-16T23:39:01+01:00">December 16, 2013 at 11:39 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p><a href="http://hadihariri.com/2013/07/29/one-step-guide-on-designing-a-rest-api/" rel="nofollow ugc">http://hadihariri.com/2013/07/29/one-step-guide-on-designing-a-rest-api/</a></p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/03/url-design-restful-web-services/?replytocom=313#respond" data-commentid="313" data-postid="233" data-belowelement="comment-313" data-respondelement="respond" data-replyto="Reply to Harry McIntyre (@mcintyre321)" aria-label="Reply to Harry McIntyre (@mcintyre321)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-11735">
+		<p>Pingback: <a href="https://www.addthis.com/blog/2013/04/03/keeping-it-simple-with-url-design-for-restful-web-services/" rel="external nofollow ugc" class="url">URL Design for RESTful Web Services | AddThis Blog</a> </p>
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/04/03/url-design-restful-web-services/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="233" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e6bd8fba5d"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="218"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.676 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-23 21:54:19 -->
+
+<!-- Compression = gzip -->
+</html>

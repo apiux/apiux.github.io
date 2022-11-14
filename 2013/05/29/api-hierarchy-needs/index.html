@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>API Hierarchy of Needs | API UX</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/05/29/api-hierarchy-needs/">
+	<link rel="author" href="https://plus.google.com/101249307703031157715">
+	<meta name="description" content="The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.">
+	<meta name="keywords" content="API,creativity,developer,functionality,hierarchy,HTTP,Maslow,need,proficiency,pyramid,reliability,usability,tools,apis,ux,apiux,rest,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="API Hierarchy of Needs">
+	<meta property="og:description" content="The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.">
+	<meta property="og:url" content="/2013/05/29/api-hierarchy-needs/">
+	<meta property="article:published_time" content="2013-05-29">
+	<meta property="article:modified_time" content="2013-07-31">
+	<meta property="article:author" content="/author/bpedro/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="creativity">
+	<meta property="article:tag" content="developer">
+	<meta property="article:tag" content="functionality">
+	<meta property="article:tag" content="hierarchy">
+	<meta property="article:tag" content="HTTP">
+	<meta property="article:tag" content="Maslow">
+	<meta property="article:tag" content="need">
+	<meta property="article:tag" content="proficiency">
+	<meta property="article:tag" content="pyramid">
+	<meta property="article:tag" content="reliability">
+	<meta property="article:tag" content="usability">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; API Hierarchy of Needs Comments Feed" href="/2013/05/29/api-hierarchy-needs/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=3fbe86095b","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/454">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=454">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F05%2F29%2Fapi-hierarchy-needs%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F05%2F29%2Fapi-hierarchy-needs%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '454';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'API+Hierarchy+of+Needs';
+	window._wp_rp_post_tags = ['reliability', 'http', 'api', 'need', 'developer', 'pyramid', 'hierarchy', 'usability', 'maslow', 'creativity', 'proficiency', 'functionality', 'opinion', 'pyramid', 'goal', 'a', 'human', 'moral', 'set', 'api', 'psychologist', 'theori', 'inspir', 'develop', 'selfesteem', 'maslow', 'consum', 'hierarchi'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-454 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-454" class="post-454 post type-post status-publish format-standard hentry category-opinion tag-api tag-creativity tag-developer tag-functionality tag-hierarchy tag-http tag-maslow tag-need tag-proficiency tag-pyramid tag-reliability tag-usability">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">API Hierarchy of Needs</h1>
+										<div class="comments-link">
+					<a href="/2013/05/29/api-hierarchy-needs/#comments">14 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>The API hierarchy of needs is inspired by the work of <a title="Abraham Maslow" href="http://en.wikipedia.org/wiki/Abraham_Maslow" target="_blank">Abraham Maslow</a>, a psychologist who created a theory that explains how human needs are fulfilled &#8212; <a title="Maslow's hierarchy of needs" href="http://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs" target="_blank">the Maslow&#8217;s hierarchy of needs</a>.</p>
+<div id="attachment_459" style="width: 699px" class="wp-caption aligncenter">
+<img aria-describedby="caption-attachment-459" loading="lazy" class="size-full wp-image-459" alt="API Hierarchy of Needs" src="/wp-content/uploads/2013/05/APIMaslowPyramid.png" width="689" height="417" srcset="/wp-content/uploads/2013/05/APIMaslowPyramid.png 689w, /wp-content/uploads/2013/05/APIMaslowPyramid-300x181.png 300w, /wp-content/uploads/2013/05/APIMaslowPyramid-624x377.png 624w" sizes="(max-width: 689px) 100vw, 689px"><p id="caption-attachment-459" class="wp-caption-text">API Hierarchy of Needs</p>
+</div>
+<p>While Maslow&#8217;s goal was to understand and explain the priorities of human needs, from breathing and feeding to self-esteem and morality, the API hierarchy of needs explains different characteristics that make an API <em>usable</em>.</p>
+<p><span id="more-454"></span></p>
+<p>The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.</p>
+<h2>Usability</h2>
+<p>Usability is at the bottom of the pyramid because it&#8217;s the most important characteristic that will dictate the success of your API among developers.</p>
+<p><strong>Is your API easy to set up and use by developers?</strong> You should make sure that any developer doesn&#8217;t take more than <strong>3 seconds</strong> to understand what your API does, <strong>30 seconds</strong> to find the correct endpoint and <strong>3 minutes</strong> to start consuming it (the <em>3:30:3 Rule</em>, by <a title="Ori Pekelman" href="https://twitter.com/OriPekelman" target="_blank">Ori Pekelman</a>).</p>
+<p>Other usability aspects involve, among other things, using an appropriate <a title="Authentication: Don’t be Clever" href="/2013/03/21/authentication-dont-be-clever/" target="_blank">authentication scheme</a>, offering easy to use <a title="URL Design for RESTful Web Services" href="/2013/04/03/url-design-restful-web-services/" target="_blank">endpoint URLs</a>, and responding <a title="2 steps to better API Error Codes" href="/2013/03/28/2-steps-api-error-codes/" target="_blank">standard HTTP error codes</a>.</p>
+<h2>Functionality</h2>
+<p><strong>Does your API work as expected?</strong> Your API endpoints should behave exactly as announced on the documentation. In situations where unexpected things happen, you should offer easy to consume error codes.</p>
+<p>There are tools that help you test your API thoroughly, so you don&#8217;t have an excuse not to make sure what you ship really works. <a title="SmartBear" href="http://smartbear.com/" target="_blank">SmartBear</a> and <a title="Runscope" href="https://www.runscope.com/" target="_blank">Runscope</a> should be under your radar, if you really care about your API.</p>
+<h2>Reliability</h2>
+<p><strong>Does your API work flawlessly repeatedly?</strong> You should care about uptime, rate limiting and throttling, to make sure that every API call is handled properly according to your usage policies. If you have a business model around your API, then you should pay extra attention to this reliability.</p>
+<p>Again, you don&#8217;t have to reinvent the wheel. Products like <a title="3scale" href="http://www.3scale.net/" target="_blank">3scale</a> offer all these tools so you can sleep better without worrying if your API is down.</p>
+<h2>Proficiency</h2>
+<p><strong>Does your API increase developers skills?</strong> After fulfilling all the previous needs, you should provide ready to consume documentation and libraries that educate developers, amplifying their skills. If possible, offer tools that encourage discussion and participation.</p>
+<p>You should take a look at tools like <a title="apiary.io" href="http://apiary.io/" target="_blank">apiary.io</a> and <a title="Swagger" href="https://developers.helloreverb.com/swagger/" target="_blank">Swagger</a>, that let you describe and document your API programmatically.</p>
+<h2>Creativity</h2>
+<p>The last layer of the pyramid is related with all the new things developers can build with your API. <strong>Can your API be used in unexpected ways?</strong> You should foster innovation among your API developer community so new products can be built by mixing different APIs together. If you&#8217;re too rigid about what developers can or cannot do, your API popularity will certainly decrease.</p>
+<p>So, does your API offer all the characteristics from the hierarchy of needs?</p>
+<p><em>If you enjoy this article please upvote it on <a title="API Hierarchy of Needs" href="https://news.ycombinator.com/item?id=5789106" target="_blank">Hacker News</a> and <a title="API Hierarchy of Needs" href="http://www.reddit.com/r/webdev/comments/1jfe2i/api_hierarchy_of_needs/" target="_blank">reddit</a>.</em></p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="ex-in_171" data-post-type="own_sourcefeed">
+<a href="/2013/03/28/2-steps-api-error-codes/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/03/3356951969_df2c4186ac-150x150.jpg" alt="2 steps to better API Error Codes" width="150" height="150"></a><a href="/2013/03/28/2-steps-api-error-codes/" class="wp_rp_title">2 steps to better API Error Codes</a>
+</li>
+<li data-position="1" data-poid="ex-in_379" data-post-type="own_sourcefeed">
+<a href="/2013/05/14/api-versioning/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/05/5312353610_8fde2ab7182-150x150.jpg" alt="Do you really need API Versioning?" width="150" height="150"></a><a href="/2013/05/14/api-versioning/" class="wp_rp_title">Do you really need API Versioning?</a>
+</li>
+<li data-position="2" data-poid="ex-in_572" data-post-type="own_sourcefeed">
+<a href="/2013/07/23/http2-0-initial-draft-released/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/07/5659840592_3085048dfb-150x150.jpg" alt="HTTP/2.0 Initial Draft Released" width="150" height="150"></a><a href="/2013/07/23/http2-0-initial-draft-released/" class="wp_rp_title">HTTP/2.0 Initial Draft Released</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/05/29/api-hierarchy-needs/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/bpedro/" class="authorsure-author-link">Bruno Pedro</a></span></span> at <time itemprop="dateModified" datetime="2013-07-31T18:04:33+02:00">July 31, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/creativity/" rel="tag">creativity</a>, <a href="/tag/developer/" rel="tag">developer</a>, <a href="/tag/functionality/" rel="tag">functionality</a>, <a href="/tag/hierarchy/" rel="tag">hierarchy</a>, <a href="/tag/http/" rel="tag">HTTP</a>, <a href="/tag/maslow/" rel="tag">Maslow</a>, <a href="/tag/need/" rel="tag">need</a>, <a href="/tag/proficiency/" rel="tag">proficiency</a>, <a href="/tag/pyramid/" rel="tag">pyramid</a>, <a href="/tag/reliability/" rel="tag">reliability</a>, <a href="/tag/usability/" rel="tag">usability</a> on <a href="/2013/05/29/api-hierarchy-needs/" title="11:07 pm" rel="bookmark"><time class="entry-date" datetime="2013-05-29T23:07:30+02:00">May 29, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/bpedro/" title="View all posts by Bruno Pedro" rel="author">Bruno Pedro</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Bruno Pedro</h2>
+						<p>Bruno Pedro is a Web and Business developer with over fifteen years’ experience in both startups and large corporations.</p>
+						<div class="author-link">
+							<a href="/author/bpedro/" rel="author">
+								View all posts by Bruno Pedro <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/05/16/apidays-mediterranea/" rel="prev"><span class="meta-nav">&larr;</span> APIdays Mediterranea</a></span>
+					<span class="nav-next"><a href="/2013/06/05/api-strategy-practice/" rel="next">API Strategy &#038; Practice <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			14 thoughts on &ldquo;<span>API Hierarchy of Needs</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-142">
+		<article id="comment-142" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/ecf3b8c7d6826ab1bc5599a4fb721200?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ecf3b8c7d6826ab1bc5599a4fb721200?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">Weng Fu</b> </cite><a href="/2013/05/29/api-hierarchy-needs/#comment-142"><time datetime="2013-05-30T00:39:41+02:00">May 30, 2013 at 12:39 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>No API works flawlessly. I have never yet met an API that does that. If it were the case there would never be a need to improve, refactor or release subsequent versions of it.</p>
+<p>The 3 second rule is utter rubbish. There are many APIs that require an IQ higher than the typical IQ of a web developer. The typical web developer might take 10 minutes to understand it, whereas a proper software engineer might manage it in 3 seconds.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=142#respond" data-commentid="142" data-postid="454" data-belowelement="comment-142" data-respondelement="respond" data-replyto="Reply to Weng Fu" aria-label="Reply to Weng Fu">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-147">
+		<article id="comment-147" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/29/api-hierarchy-needs/#comment-147"><time datetime="2013-05-30T09:46:42+02:00">May 30, 2013 at 9:46 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I agree &#8212; it&#8217;s because most APIs don&#8217;t work flawlessly that we&#8217;re discussing these topics, and always trying to improve how APIs work.</p>
+<p>The 3 second rule is a utopian goal. If you work towards it, you&#8217;ll eventually reach to a point where it takes a reasonable amount of time to understand what your API does.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=147#respond" data-commentid="147" data-postid="454" data-belowelement="comment-147" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-153">
+		<article id="comment-153" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/1eda8e6ee78864a106212e6106775155?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1eda8e6ee78864a106212e6106775155?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/DavidLoureiroFr" rel="external nofollow ugc" class="url">David Loureiro (@DavidLoureiroFr)</a></b> </cite><a href="/2013/05/29/api-hierarchy-needs/#comment-153"><time datetime="2013-05-30T17:47:28+02:00">May 30, 2013 at 5:47 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Interesting article providing a sort of path to follow when building an API with the right step at the right time.<br>
+Thanks 🙂</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=153#respond" data-commentid="153" data-postid="454" data-belowelement="comment-153" data-respondelement="respond" data-replyto="Reply to David Loureiro (@DavidLoureiroFr)" aria-label="Reply to David Loureiro (@DavidLoureiroFr)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-159">
+		<article id="comment-159" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/884fd70f434d028da978a6eb3e1b3557?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/884fd70f434d028da978a6eb3e1b3557?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/API500" rel="external nofollow ugc" class="url">API Rating Agency (@API500)</a></b> </cite><a href="/2013/05/29/api-hierarchy-needs/#comment-159"><time datetime="2013-06-02T20:37:44+02:00">June 2, 2013 at 8:37 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Interessant to compare with other API pyramid of needs <a href="http://api500.com/post/27366085761/developers-api-pyramid-of-needs-what-do-we-expect" rel="nofollow ugc">http://api500.com/post/27366085761/developers-api-pyramid-of-needs-what-do-we-expect</a></p>
+<p>Great talk at APIdays Mediterranea by the way where you explained your vision about this pyramid.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=159#respond" data-commentid="159" data-postid="454" data-belowelement="comment-159" data-respondelement="respond" data-replyto="Reply to API Rating Agency (@API500)" aria-label="Reply to API Rating Agency (@API500)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor even depth-2" id="li-comment-162">
+		<article id="comment-162" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/29/api-hierarchy-needs/#comment-162"><time datetime="2013-06-03T11:21:45+02:00">June 3, 2013 at 11:21 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thanks for sharing the link, so we can all see different perspectives!</p>
+<p>The pyramid I presented at APIdays was not this one. It was an adaptation of this one but from a customer (not a developer) point of view.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=162#respond" data-commentid="162" data-postid="454" data-belowelement="comment-162" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-164">
+		<p>Pingback: <a href="http://brunopedro.com/2013/06/03/bridging-gap-api-customer/" rel="external nofollow ugc" class="url">Bridging the Gap Between APIs and Customers | Bruno Pedro</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-176">
+		<article id="comment-176" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/f764caa5c706b782d4e1116b7ac30ee7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f764caa5c706b782d4e1116b7ac30ee7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">Scott Reed</b> </cite><a href="/2013/05/29/api-hierarchy-needs/#comment-176"><time datetime="2013-06-05T19:28:30+02:00">June 5, 2013 at 7:28 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I disagree with placing usability above functionality and reliability in importance. An API actually working is much more important to me. For example, the Twilio API has great usability but the biggest frustration I&#8217;ve had with it is when features did not work. With the AWS API, the error codes it gives are pretty much useless.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=176#respond" data-commentid="176" data-postid="454" data-belowelement="comment-176" data-respondelement="respond" data-replyto="Reply to Scott Reed" aria-label="Reply to Scott Reed">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-177">
+		<article id="comment-177" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/29/api-hierarchy-needs/#comment-177"><time datetime="2013-06-06T10:12:28+02:00">June 6, 2013 at 10:12 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Placing Usability at the bottom of the pyramid is generating an interesting debate among several people.</p>
+<p>If your goal is to make your API successful, you need to be able to evangelize developers into using it. If developers cannot even use it, it really doesn&#8217;t matter if your API works at all, does it?</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=177#respond" data-commentid="177" data-postid="454" data-belowelement="comment-177" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment even depth-3" id="li-comment-178">
+		<article id="comment-178" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/f764caa5c706b782d4e1116b7ac30ee7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f764caa5c706b782d4e1116b7ac30ee7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">Scott Reed</b> </cite><a href="/2013/05/29/api-hierarchy-needs/#comment-178"><time datetime="2013-06-06T19:16:30+02:00">June 6, 2013 at 7:16 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>And conversely if your API has broken features or has bad uptime it doesn&#8217;t really matter how usable it is. A pyramid model which places one of several important needs over others might not be the best idea. A better model would be one which places equal importance on needs such as usability, functionality and reliability.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=178#respond" data-commentid="178" data-postid="454" data-belowelement="comment-178" data-respondelement="respond" data-replyto="Reply to Scott Reed" aria-label="Reply to Scott Reed">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-221">
+		<article id="comment-221" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/6bfa0b5c8d2dd60efeca7435bf62a995?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/6bfa0b5c8d2dd60efeca7435bf62a995?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://tifyty.wordpress.com/" rel="external nofollow ugc" class="url">Peter Verhas</a></b> </cite><a href="/2013/05/29/api-hierarchy-needs/#comment-221"><time datetime="2013-07-30T16:22:29+02:00">July 30, 2013 at 4:22 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>&#8220;Can it be used in unexpected ways?&#8221; That really would worry me. Your argument is absolutely valid on one hand. The more versatile, open and applicable the API is the more attractive it is for the developers/users. On the other hand if you open up your application giving access to all internal features you did not even have ideas how could be used, you may end up with an application that you can not develop without breaking backward compatibility.</p>
+<p>API should be designed with the open/close principle in mind. You model is static, looking at the values the API can deliver for a certain version. Looking at the API with a dynamic view is more important: what value can your API deliver during the life time of the domain and you application supporting that domain.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=221#respond" data-commentid="221" data-postid="454" data-belowelement="comment-221" data-respondelement="respond" data-replyto="Reply to Peter Verhas" aria-label="Reply to Peter Verhas">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor even depth-2" id="li-comment-228">
+		<article id="comment-228" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/29/api-hierarchy-needs/#comment-228"><time datetime="2013-07-31T18:01:52+02:00">July 31, 2013 at 6:01 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I wouldn&#8217;t worry so much about the possibility of breaking backward compatibility. If things are done the right way, you should offer API versioning (<a href="/2013/05/14/api-versioning/" rel="nofollow ugc">http://apiux.com/2013/05/14/api-versioning/</a>), meaning that there&#8217;s no way to break things.</p>
+<p>I agree with your way of looking at the API with a dynamic view &#8212; thanks for sharing it.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/29/api-hierarchy-needs/?replytocom=228#respond" data-commentid="228" data-postid="454" data-belowelement="comment-228" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-356">
+		<p>Pingback: <a href="http://www.scoop.it/t/api-mag/p/4018091952/2014/03/21/api-hierarchy-of-needs" rel="external nofollow ugc" class="url">API Hierarchy of Needs | API Magazine: About AP...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-odd thread-alt depth-1" id="comment-357">
+		<p>Pingback: <a href="http://www.scoop.it/t/software-development-by-k-r/p/4018119519/2014/03/22/api-hierarchy-of-needs" rel="external nofollow ugc" class="url">API Hierarchy of Needs | Software Development |...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-8981">
+		<p>Pingback: <a href="https://www.api2cart.com/blog/applying-psychology-apis-best-api-hierarchies-needs/" rel="external nofollow ugc" class="url">Applying Psychology to APIs: the Best of API Hierarchies of Needs</a> </p>
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/05/29/api-hierarchy-needs/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="454" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="2bdd50d179"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="245"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.720 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-22 15:06:56 -->
+
+<!-- Compression = gzip -->
+</html>

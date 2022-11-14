@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How safe is your API from its users?	</title>
+	<atom:link href="/2013/04/02/how-safe-is-your-api-from-user/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/04/02/how-safe-is-your-api-from-user/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-safe-is-your-api-from-user</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 08 Apr 2013 18:30:42 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Mark O'Neill (@TheMarkONeill)		</title>
+		<link>/2013/04/02/how-safe-is-your-api-from-user/#comment-52</link>
+
+		<dc:creator><![CDATA[Mark O'Neill (@TheMarkONeill)]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2013 18:30:42 +0000</pubDate>
+		<guid isPermaLink="false">/?p=194#comment-52</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/02/how-safe-is-your-api-from-user/#comment-43&quot;&gt;Jason Harmon&lt;/a&gt;.
+
+OData provides a whole new dimension to SQL Injection attacks. Although it&#039;s not SQL itself, the premise that OData is &quot;like ODBC for the Web&quot; sends a shiver down the spine of any security person. JavaScript injection also could be a fruitful attack method, given that many API clients simply run eval() on the JavaScript they receive, which again is shocking to security folks. I guess I&#039;m biased as a vendor here (Axway/Vordel) but there is a need for more awareness and shielding of these types of attacks. This article is great to throw some light on the problem. At the moment, the API is the &quot;soft underbelly&quot; for many organizations, in terms of security vulnerability.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/02/how-safe-is-your-api-from-user/#comment-43">Jason Harmon</a>.</p>
+<p>OData provides a whole new dimension to SQL Injection attacks. Although it&#8217;s not SQL itself, the premise that OData is &#8220;like ODBC for the Web&#8221; sends a shiver down the spine of any security person. JavaScript injection also could be a fruitful attack method, given that many API clients simply run eval() on the JavaScript they receive, which again is shocking to security folks. I guess I&#8217;m biased as a vendor here (Axway/Vordel) but there is a need for more awareness and shielding of these types of attacks. This article is great to throw some light on the problem. At the moment, the API is the &#8220;soft underbelly&#8221; for many organizations, in terms of security vulnerability.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Harmon		</title>
+		<link>/2013/04/02/how-safe-is-your-api-from-user/#comment-43</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 03 Apr 2013 00:05:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=194#comment-43</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/02/how-safe-is-your-api-from-user/#comment-42&quot;&gt;ollieollie82&lt;/a&gt;.
+
+Definitely a great point. I debated the inclusion of SQL attacks...it&#039;s trickier as lots of APIs are on non-SQL backends these days. However variations of XSS attacks are far more universal. That said SQL injections are still high on the OWASP list, and clearly a concern.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/02/how-safe-is-your-api-from-user/#comment-42">ollieollie82</a>.</p>
+<p>Definitely a great point. I debated the inclusion of SQL attacks&#8230;it&#8217;s trickier as lots of APIs are on non-SQL backends these days. However variations of XSS attacks are far more universal. That said SQL injections are still high on the OWASP list, and clearly a concern.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ollieollie82		</title>
+		<link>/2013/04/02/how-safe-is-your-api-from-user/#comment-42</link>
+
+		<dc:creator><![CDATA[ollieollie82]]></dc:creator>
+		<pubDate>Tue, 02 Apr 2013 23:10:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=194#comment-42</guid>
+
+					<description><![CDATA[Nice work. I&#039;d say that injection concerns are just as high on the priority list when it comes to external facing APIs. These APIs often to go databases which are data rich. Great prey for curious hackers or devs.]]></description>
+			<content:encoded><![CDATA[<p>Nice work. I&#8217;d say that injection concerns are just as high on the priority list when it comes to external facing APIs. These APIs often to go databases which are data rich. Great prey for curious hackers or devs.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

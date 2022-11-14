@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>How safe is your API from its users? | API UX</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/04/02/how-safe-is-your-api-from-user/">
+	<link rel="author" href="https://plus.google.com/111160376507741662259">
+	<meta name="description" content="Availability and safety are some of the most important implicit factors to the user experience of your platform&#039;s users. When we discuss web security to ensure these factors, images of criminal rings using sophisticated techniques come to mind.">
+	<meta name="keywords" content="Anonymous,API,API Gateway,Attack vectors,authentication,Cross-site scripting,Hackers,Metrics,Tokens,Web Security,XSS,users,security,apis,ux,apiux,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="How safe is your API from its users?">
+	<meta property="og:description" content="Availability and safety are some of the most important implicit factors to the user experience of your platform&#039;s users. When we discuss web security to ensure these factors, images of criminal rings using sophisticated techniques come to mind.">
+	<meta property="og:url" content="/2013/04/02/how-safe-is-your-api-from-user/">
+	<meta property="article:published_time" content="2013-04-02">
+	<meta property="article:modified_time" content="2013-04-02">
+	<meta property="article:author" content="/author/jasonharmon/">
+	<meta property="article:tag" content="Opinion">
+	<meta property="article:tag" content="Security">
+	<meta property="article:tag" content="Anonymous">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="API Gateway">
+	<meta property="article:tag" content="Attack vectors">
+	<meta property="article:tag" content="authentication">
+	<meta property="article:tag" content="Cross-site scripting">
+	<meta property="article:tag" content="Hackers">
+	<meta property="article:tag" content="Metrics">
+	<meta property="article:tag" content="Tokens">
+	<meta property="article:tag" content="Web Security">
+	<meta property="article:tag" content="XSS">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; How safe is your API from its users? Comments Feed" href="/2013/04/02/how-safe-is-your-api-from-user/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=9c98d71149","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/194">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=194">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F04%2F02%2Fhow-safe-is-your-api-from-user%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F04%2F02%2Fhow-safe-is-your-api-from-user%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '194';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'How+safe+is+your+API+from+its+users%3F';
+	window._wp_rp_post_tags = ['metrics', 'api+gateway', 'web+security', 'authentication', 'hackers', 'api', 'tokens', 'attack+vectors', 'xss', 'cross-site+scripting', 'anonymous', 'opinion', 'security', 'super', 'tool', 'web', 'api', 'world', 'safeti', 'secur', 'crimin', 'ring', 'app', 'data', 'traffic', 'counter', 'financi', 'write'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-194 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-194" class="post-194 post type-post status-publish format-standard hentry category-opinion category-security tag-anonymous tag-api tag-api-gateway tag-attack-vectors tag-authentication tag-cross-site-scripting tag-hackers tag-metrics tag-tokens tag-web-security tag-xss">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">How safe is your API from its users?</h1>
+										<div class="comments-link">
+					<a href="/2013/04/02/how-safe-is-your-api-from-user/#comments">3 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>Availability and safety are some of the most important implicit factors to the user experience of your platform&#8217;s users. When we discuss web security to ensure these factors, images of criminal rings using sophisticated techniques come to mind. Even if your data seems too low of worth for this scenario, perhaps the over-caffeinated, zit-faced script kiddie wreaking havoc on your operations is a fear.</p>
+<p>However, the all-too-common reality in the API world is that your worst enemies are often your worst customers. Irresponsible or unknowledgeable developers writing super chatty apps. Opportunistic partners who look to take advantage of data that gives them value, in the form of high volume traffic, and no value for you in return. Scarier yet are users whose security tokens are compromised, leaving everything from users&#8217; personal information to financial transactions at risk (now we might be talking about criminals again!).</p>
+<p><a href="/wp-content/uploads/2013/03/8233150_s.jpg"><img loading="lazy" class="alignnone size-full wp-image-195" alt="Criminals" src="/wp-content/uploads/2013/03/8233150_s.jpg" width="300" height="400" srcset="/wp-content/uploads/2013/03/8233150_s.jpg 300w, /wp-content/uploads/2013/03/8233150_s-225x300.jpg 225w" sizes="(max-width: 300px) 100vw, 300px"></a></p>
+<p><span id="more-194"></span></p>
+<p>Certainly, there are plenty of API gateway solutions that will provide tools to counter some of these issues. That said, knowing the risks and needs makes shopping for and/or building solutions a lot easier. Said more precisely, understanding the threat vectors that are awaiting your API, even if you aren&#8217;t dealing with sophisticated intruders, is critical to your operational success.</p>
+<h4>Anonymous users</h4>
+<p>If we learned anything from Web 1.0-2.0, it was that the business of handling anonymous users is inherently risky. Its safest to have the ability to identify traffic from specific users who are not providing security credentials, and throttle or disable them. Providing throttling or disabling tokens at this level can provide protection to your infrastructure in situations where excessive traffic is coming in from one user. Simply put, don&#8217;t allow unidentified API calls. Some sort of tokenization strategy which provides visibility to which application and which user/device are accessing your API is a big advantage when the situation gets critical.</p>
+<p>These same principles are true for authenticated users, but not as often overlooked.</p>
+<h4>Chatty developers</h4>
+<p>While we don&#8217;t think of coders as being particularly chatty people, quite often their application code can create spurious calls to our API platforms. While it can be inconvenient for users of your platform, disabling an entire application can often keep loads at safer levels for all of your other users. Be sure to have an app token that you can disable at the farthest point away from your infrastructure.</p>
+<p>Of course, if you&#8217;re forced to protect your infrastructure by invalidating tokens, be courteous and contact the chatterbox developer and ask them politely to turn down the noise in their code. Work together to come up with a schedule to re-enable their access.</p>
+<h4>Cross-site scripting/XSS</h4>
+<p>These are really scary sounding terms for many developers. One of the common misconceptions is that rigorous filtering of all of your users&#8217; input is a sound strategy. In light of today&#8217;s super integrated infrastructures, it&#8217;s likely other sources outside of your API are populating your system (if not today, then some day). As such, it&#8217;s always best to filter for scripting in the input and output of your API (as well as any other applications touching your data). Don&#8217;t re-invent the wheel; there are solid libraries and other solutions for high performance filtering in virtually all web-friendly languages.</p>
+<h4>Threat identification AKA metrics</h4>
+<p>While these situations and many others can threaten the security and stability of your systems, visibility is the front-line. &#8220;Measure what you treasure&#8221; holds true with all web infrastructure.<br>
+Specifically with APIs, the ability to see where noisy consumers are coming from is the only way that your tools for throttling/disabling/etc can ever be successful. Identifying the key metrics will be slightly different for many businesses, based on domain specifics. However, a few key metrics trends are fairly universal to API operations:</p>
+<ul>
+<li>Number of calls per resource/verb/application/user</li>
+<li>Average response time per resource/verb/application</li>
+</ul>
+<p>With these basic metrics, you should be able to at least identify spikes in utilization or response. This should be the minimum required to identify application or user tokens which need attention.</p>
+<p>In conjunction with a broader network and application security strategy, these tactics should help keep your API safe from the developers and users it serves, as well as the nefarious ninjas of the internet.</p>
+<p>Image credit: <a href="http://www.123rf.com/photo_8233150_portrait-of-a-male-hacker-stealing-information-from-laptop.html">logos / 123RF Stock Photo</a></p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-659" data-post-type="none">
+<a href="/2013/09/19/tictail-api-launch-focuses-ux/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/09/TictailDeveloperPortal-150x150.png" alt="Tictail API launch focuses on UX" width="150" height="150"></a><a href="/2013/09/19/tictail-api-launch-focuses-ux/" class="wp_rp_title">Tictail API launch focuses on UX</a>
+</li>
+<li data-position="1" data-poid="in-112" data-post-type="none">
+<a href="/2013/03/21/authentication-dont-be-clever/" class="wp_rp_thumbnail"><img src="/wp-content/plugins/related-posts/static/thumbs/0.jpg" alt="Authentication: Don&#8217;t be Clever" width="150" height="150"></a><a href="/2013/03/21/authentication-dont-be-clever/" class="wp_rp_title">Authentication: Don&#8217;t be Clever</a>
+</li>
+<li data-position="2" data-poid="in-1151" data-post-type="none">
+<a href="/2014/11/10/predictive-apis/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/11/Fish-BCN-1024x4401-150x150.jpg" alt="Predictive APIs: Bringing Machine Learning to the Masses" width="150" height="150"></a><a href="/2014/11/10/predictive-apis/" class="wp_rp_title">Predictive APIs: Bringing Machine Learning to the Masses</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/04/02/how-safe-is-your-api-from-user/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/jasonharmon/" class="authorsure-author-link">Jason Harmon</a></span></span> at <time itemprop="dateModified" datetime="2013-04-02T11:01:03+02:00">April 2, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a>, <a href="/security/" rel="category tag">Security</a> and tagged <a href="/tag/anonymous/" rel="tag">Anonymous</a>, <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/api-gateway/" rel="tag">API Gateway</a>, <a href="/tag/attack-vectors/" rel="tag">Attack vectors</a>, <a href="/tag/authentication/" rel="tag">authentication</a>, <a href="/tag/cross-site-scripting/" rel="tag">Cross-site scripting</a>, <a href="/tag/hackers/" rel="tag">Hackers</a>, <a href="/tag/metrics/" rel="tag">Metrics</a>, <a href="/tag/tokens/" rel="tag">Tokens</a>, <a href="/tag/web-security/" rel="tag">Web Security</a>, <a href="/tag/xss/" rel="tag">XSS</a> on <a href="/2013/04/02/how-safe-is-your-api-from-user/" title="6:00 pm" rel="bookmark"><time class="entry-date" datetime="2013-04-02T18:00:53+02:00">April 2, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/jasonharmon/" title="View all posts by Jason Harmon" rel="author">Jason Harmon</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Jason Harmon</h2>
+						<p>API Architect @Paypal. 
+Blogger/evangelist for #API. 
+Purveyor of #BDD process. 
+#Android tinkerer.
+#Quadcopter crasher.</p>
+						<div class="author-link">
+							<a href="/author/jasonharmon/" rel="author">
+								View all posts by Jason Harmon <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/03/28/2-steps-api-error-codes/" rel="prev"><span class="meta-nav">&larr;</span> 2 steps to better API Error Codes</a></span>
+					<span class="nav-next"><a href="/2013/04/03/url-design-restful-web-services/" rel="next">URL Design for RESTful Web Services <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			3 thoughts on &ldquo;<span>How safe is your API from its users?</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-42">
+		<article id="comment-42" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/69922816ae4707cbc04baed42f9bb97a?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/69922816ae4707cbc04baed42f9bb97a?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">ollieollie82</b> </cite><a href="/2013/04/02/how-safe-is-your-api-from-user/#comment-42"><time datetime="2013-04-03T01:10:53+02:00">April 3, 2013 at 1:10 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Nice work. I&#8217;d say that injection concerns are just as high on the priority list when it comes to external facing APIs. These APIs often to go databases which are data rich. Great prey for curious hackers or devs.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/02/how-safe-is-your-api-from-user/?replytocom=42#respond" data-commentid="42" data-postid="194" data-belowelement="comment-42" data-respondelement="respond" data-replyto="Reply to ollieollie82" aria-label="Reply to ollieollie82">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-jasonharmon bypostauthor odd alt depth-2" id="li-comment-43">
+		<article id="comment-43" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://jhr.mn/" rel="external nofollow ugc" class="url">Jason Harmon</a></b> <span>Post author</span></cite><a href="/2013/04/02/how-safe-is-your-api-from-user/#comment-43"><time datetime="2013-04-03T02:05:35+02:00">April 3, 2013 at 2:05 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Definitely a great point. I debated the inclusion of SQL attacks&#8230;it&#8217;s trickier as lots of APIs are on non-SQL backends these days. However variations of XSS attacks are far more universal. That said SQL injections are still high on the OWASP list, and clearly a concern.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/02/how-safe-is-your-api-from-user/?replytocom=43#respond" data-commentid="43" data-postid="194" data-belowelement="comment-43" data-respondelement="respond" data-replyto="Reply to Jason Harmon" aria-label="Reply to Jason Harmon">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment even depth-3" id="li-comment-52">
+		<article id="comment-52" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/565535d45de6ee01b40daf37f6b39ebf?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/565535d45de6ee01b40daf37f6b39ebf?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/TheMarkONeill" rel="external nofollow ugc" class="url">Mark O'Neill (@TheMarkONeill)</a></b> </cite><a href="/2013/04/02/how-safe-is-your-api-from-user/#comment-52"><time datetime="2013-04-08T20:30:42+02:00">April 8, 2013 at 8:30 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>OData provides a whole new dimension to SQL Injection attacks. Although it&#8217;s not SQL itself, the premise that OData is &#8220;like ODBC for the Web&#8221; sends a shiver down the spine of any security person. JavaScript injection also could be a fruitful attack method, given that many API clients simply run eval() on the JavaScript they receive, which again is shocking to security folks. I guess I&#8217;m biased as a vendor here (Axway/Vordel) but there is a need for more awareness and shielding of these types of attacks. This article is great to throw some light on the problem. At the moment, the API is the &#8220;soft underbelly&#8221; for many organizations, in terms of security vulnerability.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/02/how-safe-is-your-api-from-user/?replytocom=52#respond" data-commentid="52" data-postid="194" data-belowelement="comment-52" data-respondelement="respond" data-replyto="Reply to Mark O&#039;Neill (@TheMarkONeill)" aria-label="Reply to Mark O&#039;Neill (@TheMarkONeill)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/04/02/how-safe-is-your-api-from-user/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="194" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5a39943a03"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="208"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.462 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-24 01:54:27 -->
+
+<!-- Compression = gzip -->
+</html>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Do you really need API Versioning?	</title>
+	<atom:link href="/2013/05/14/api-versioning/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/05/14/api-versioning/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-versioning</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 05 Sep 2014 17:07:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>
+		By: How to design APIs that last &#124; API UX		</title>
+		<link>/2013/05/14/api-versioning/#comment-1928</link>
+
+		<dc:creator><![CDATA[How to design APIs that last &#124; API UX]]></dc:creator>
+		<pubDate>Fri, 05 Sep 2014 17:07:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-1928</guid>
+
+					<description><![CDATA[[&#8230;] details on versioning risks from [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] details on versioning risks from [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Weekly Web Roundup - June 14 2013 Don&#039;t Believe The Type		</title>
+		<link>/2013/05/14/api-versioning/#comment-196</link>
+
+		<dc:creator><![CDATA[Weekly Web Roundup - June 14 2013 Don&#039;t Believe The Type]]></dc:creator>
+		<pubDate>Fri, 14 Jun 2013 12:40:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-196</guid>
+
+					<description><![CDATA[[...] LINQ to Twitter v2.1.06 geekswithblogs.net    Do you really need API Versioning? API UX      Bookmark the permalink.     &#171; Using MVP with ASP.Net Web [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] LINQ to Twitter v2.1.06 geekswithblogs.net    Do you really need API Versioning? API UX      Bookmark the permalink.     &laquo; Using MVP with ASP.Net Web [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dew Drop &#8211; June 11, 2013 (#1,565) &#124; Alvin Ashcraft&#039;s Morning Dew		</title>
+		<link>/2013/05/14/api-versioning/#comment-188</link>
+
+		<dc:creator><![CDATA[Dew Drop &#8211; June 11, 2013 (#1,565) &#124; Alvin Ashcraft&#039;s Morning Dew]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 11:42:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-188</guid>
+
+					<description><![CDATA[[...] Do you really need API Versioning? (Andreas Krohn) [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Do you really need API Versioning? (Andreas Krohn) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: The Morning Brew - Chris Alcock &#187; The Morning Brew #1374		</title>
+		<link>/2013/05/14/api-versioning/#comment-186</link>
+
+		<dc:creator><![CDATA[The Morning Brew - Chris Alcock &#187; The Morning Brew #1374]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 09:27:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-186</guid>
+
+					<description><![CDATA[[...] Do you really need API Versioning? - Andreas Krohn reviews the arguments for and against API versioning strategies discussing the problems it tries to solve, as well as looking at how to go about it, and questions if you really need to do it. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Do you really need API Versioning? &#8211; Andreas Krohn reviews the arguments for and against API versioning strategies discussing the problems it tries to solve, as well as looking at how to go about it, and questions if you really need to do it. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dew Drop &#8211; June 10, 2013 (#1,564) &#124; Alvin Ashcraft&#039;s Morning Dew		</title>
+		<link>/2013/05/14/api-versioning/#comment-185</link>
+
+		<dc:creator><![CDATA[Dew Drop &#8211; June 10, 2013 (#1,564) &#124; Alvin Ashcraft&#039;s Morning Dew]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2013 12:03:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-185</guid>
+
+					<description><![CDATA[[...] Do you really need API Versioning? (Andreas Krohn) [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Do you really need API Versioning? (Andreas Krohn) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andreas Krohn		</title>
+		<link>/2013/05/14/api-versioning/#comment-184</link>
+
+		<dc:creator><![CDATA[Andreas Krohn]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2013 08:07:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-184</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/14/api-versioning/#comment-183&quot;&gt;Bruno Pedro&lt;/a&gt;.
+
+I will do some loobying on your behalf on this. I would love to see Andrei write more full blog posts instead of long comment rants. He is a really smart guy that knows what he is talking about.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/14/api-versioning/#comment-183">Bruno Pedro</a>.</p>
+<p>I will do some loobying on your behalf on this. I would love to see Andrei write more full blog posts instead of long comment rants. He is a really smart guy that knows what he is talking about.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/14/api-versioning/#comment-183</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2013 07:49:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-183</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/14/api-versioning/#comment-182&quot;&gt;johnsheehan&lt;/a&gt;.
+
+I already invited him but he says he doesn&#039;t have any free time. Go figure.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/14/api-versioning/#comment-182">johnsheehan</a>.</p>
+<p>I already invited him but he says he doesn&#8217;t have any free time. Go figure.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: johnsheehan		</title>
+		<link>/2013/05/14/api-versioning/#comment-182</link>
+
+		<dc:creator><![CDATA[johnsheehan]]></dc:creator>
+		<pubDate>Mon, 10 Jun 2013 05:10:24 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-182</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/14/api-versioning/#comment-109&quot;&gt;Andrei Neculau (@andreineculau)&lt;/a&gt;.
+
+Bruno, hook this guy up with an account so he can write some posts!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/14/api-versioning/#comment-109">Andrei Neculau (@andreineculau)</a>.</p>
+<p>Bruno, hook this guy up with an account so he can write some posts!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Reading List &#171; function(arg)		</title>
+		<link>/2013/05/14/api-versioning/#comment-180</link>
+
+		<dc:creator><![CDATA[Reading List &#171; function(arg)]]></dc:creator>
+		<pubDate>Sun, 09 Jun 2013 14:52:40 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-180</guid>
+
+					<description><![CDATA[[...] /2013/05/14/api-versioning/ [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="/2013/05/14/api-versioning/" rel="nofollow ugc">/2013/05/14/api-versioning/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/14/api-versioning/#comment-122</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 22 May 2013 10:30:50 +0000</pubDate>
+		<guid isPermaLink="false">/?p=379#comment-122</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/14/api-versioning/#comment-118&quot;&gt;Andrei Neculau (@andreineculau)&lt;/a&gt;.
+
+You should probably also want to read part one of that article (http://urthen.github.io/2013/05/09/ways-to-version-your-api/) which explains different ways to version an API.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/14/api-versioning/#comment-118">Andrei Neculau (@andreineculau)</a>.</p>
+<p>You should probably also want to read part one of that article (<a href="http://urthen.github.io/2013/05/09/ways-to-version-your-api/" rel="nofollow ugc">http://urthen.github.io/2013/05/09/ways-to-version-your-api/</a>) which explains different ways to version an API.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

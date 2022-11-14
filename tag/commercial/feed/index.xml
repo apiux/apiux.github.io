@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>commercial &#8211; API UX</title>
+	<atom:link href="/tag/commercial/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 17 Dec 2013 14:44:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>The Swedish API License</title>
+		<link>/2013/12/17/swedish-api-license/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=swedish-api-license</link>
+					<comments>/2013/12/17/swedish-api-license/#respond</comments>
+		
+		<dc:creator><![CDATA[Andreas Krohn]]></dc:creator>
+		<pubDate>Tue, 17 Dec 2013 17:00:06 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[commercial]]></category>
+		<category><![CDATA[consumer]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[lawyer]]></category>
+		<category><![CDATA[legal]]></category>
+		<category><![CDATA[license]]></category>
+		<category><![CDATA[Open Source]]></category>
+		<category><![CDATA[publisher]]></category>
+		<category><![CDATA[requirement]]></category>
+		<category><![CDATA[Swedish]]></category>
+		<guid isPermaLink="false">/?p=726</guid>
+
+					<description><![CDATA[Developer Experience is important, and that includes much more than the technical design of an API. It also includes the documentation and support as well as the pricing and the legal licensing terms. In almost every API project I have been involved in the legal details have been slapped on last-minute, usually by a lawyer [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/12/17/swedish-api-license/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

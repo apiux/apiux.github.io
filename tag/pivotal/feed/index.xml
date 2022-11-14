@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>pivotal &#8211; API UX</title>
+	<atom:link href="/tag/pivotal/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 09 Sep 2013 15:17:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Pivotal Tracker launches new API in public beta</title>
+		<link>/2013/08/19/pivotal-tracker-new-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pivotal-tracker-new-api</link>
+					<comments>/2013/08/19/pivotal-tracker-new-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2013 16:00:57 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[pivotal]]></category>
+		<category><![CDATA[tracker]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=599</guid>
+
+					<description><![CDATA[Pivotal Tracker just announced the availability of their API V5 in public beta, starting August 16, 2013. The launch is justified because the application itself has run against the new API version for a long time now. The new API introduces several improvements, like the ability to get access to all project data, including epics. They [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/08/19/pivotal-tracker-new-api/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Usability Review: Dropbox API</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2014/06/10/usability-dropbox-api/">
+	<link rel="author" href="https://plus.google.com/101249307703031157715">
+	<meta name="description" content="Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.">
+	<meta name="keywords" content="3rd,API,datastore,documentation,Dropbox,module,nodejs,official,party,review,test,usability,node.js,apis,ux,apiux,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Usability Review: Dropbox API">
+	<meta property="og:description" content="Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.">
+	<meta property="og:url" content="/2014/06/10/usability-dropbox-api/">
+	<meta property="article:published_time" content="2014-06-10">
+	<meta property="article:modified_time" content="2014-06-10">
+	<meta property="article:author" content="/author/bpedro/">
+	<meta property="article:section" content="Review">
+	<meta property="article:tag" content="3rd">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="datastore">
+	<meta property="article:tag" content="documentation">
+	<meta property="article:tag" content="Dropbox">
+	<meta property="article:tag" content="module">
+	<meta property="article:tag" content="nodejs">
+	<meta property="article:tag" content="official">
+	<meta property="article:tag" content="party">
+	<meta property="article:tag" content="review">
+	<meta property="article:tag" content="test">
+	<meta property="article:tag" content="usability">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Usability Review: Dropbox API Comments Feed" href="/2014/06/10/usability-dropbox-api/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=bc7389530a","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/1009">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=1009">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2014%2F06%2F10%2Fusability-dropbox-api%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2014%2F06%2F10%2Fusability-dropbox-api%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '1009';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Usability+Review%3A+Dropbox+API';
+	window._wp_rp_post_tags = ['3rd', 'module', 'test', 'documentation', 'party', 'api', 'nodejs', 'usability', 'dropbox', 'review', 'datastore', 'official', 'review', 'tutori', 'write', 'languag', 'api', 'sdk', 'test', 'dropbox', 'softwar', 'logo', 'nodej', 'ux', 'osx', 'review', 'window', 'tester'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	
+<!-- Start Of Script Generated by Author hReview Plugin 0.0.9.4 by authorhreview.com -->
+<meta itemprop="name" content="/2014/06/10/usability-dropbox-api/">
+<meta itemprop="description" content="Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.">
+<meta itemprop="summary" content="Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.">
+<meta itemprop="ratingValue" content="4">
+<meta itemprop="itemreviewed" content="Dropbox API">
+<!-- End Of Script Generated by Author hReview Plugin 0.0.9.4 by authorhreview.com -->
+	
+	</head>
+
+<body class="post-template-default single single-post postid-1009 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-1009" class="post-1009 post type-post status-publish format-standard hentry category-review tag-3rd tag-api tag-datastore tag-documentation tag-dropbox tag-module tag-nodejs tag-official tag-party tag-review-2 tag-test tag-usability">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Usability Review: Dropbox API</h1>
+										<div class="comments-link">
+					<a href="/2014/06/10/usability-dropbox-api/#comments">6 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<div itemscope itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<div class="review"><div itemtype="http://schema.org/Product" itemscope="">
+<meta content="Dropbox API" itemprop="name">
+<div itemtype="http://schema.org/Review" itemscope="">
+<div class="ta_rating_container ta_box_right" style="width:300px;"><div id="ta_rating">
+<div>
+<div>Review of: <span class="title item fn" itemprop="name"><a rel="nofollow" title="Dropbox API" target="_blank">Dropbox API</a></span>
+</div>
+<div class="clear"></div>
+<dl>
+<div class="clear_space"></div>
+<div class="hr"><hr></div>
+<div>Reviewed by: <span class="reviewer author byline vcard hcard"><span class="author me fn" itemprop="author"><span itemprop="author">Bruno Pedro</span></span></span>
+</div>
+<dl>
+<dt>Rating:</dt>
+<dd><div class="ta_rating result rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+<meta content="1" itemprop="worstRating">
+<meta content="4" itemprop="ratingValue">
+<meta content="5" itemprop="bestRating">
+<div class="result" style="width:80%;" title="4">4</div>
+</div></dd>
+</dl>
+<div class="clear"></div>
+<div class="ta_headline_meta">On <span class="dtreviewed rating_date"><span class="published" title="June 10, 2014">June 10, 2014</span></span>
+</div>
+<div class="ta_headline_meta">Last modified:<span class="dtmodified rating_date" itemprop="dateModified"><span class="updated" title="June 10, 2014">June 10, 2014</span></span>
+</div>
+<div class="clear_space"></div>
+<div class="hr"><hr></div>
+<h3>Summary:</h3>
+<div class="ta_description summary" itemprop="description"><p><span>Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.</span></p></div>
+</dl>
+</div>
+<div class="rating_btn"><a itemprop="url" class="ar_button ar_blue" title="Dropbox API" target="_blank" rel="nofollow">More Details</a></div>
+<div class="clear"></div>
+</div></div>
+<div itemprop="reviewBody">
+<div itemtype="http://schema.org/Thing" itemscope="" itemprop="itemReviewed"><meta content="Dropbox API" itemprop="name"></div>
+<p>We&#8217;ve teamed up with <a title="API Usability Testing" href="http://www.apiusabilitytesting.com/" target="_blank">API Usability Testing</a> to offer you usability reviews for different APIs. API Usability Testing offer remote API usability testing where tests are performed by a broad range of software developers who have different experience and qualifications.</p>
+<p>We&#8217;re starting with the <span itemprop="itemReviewed">Dropbox API</span> and we&#8217;ll be doing it for other providers on a regular basis. Please <a title="API UX Contact Form" href="/contact/" target="_blank">get in touch</a> If you&#8217;d like to see a review of a specific API.</p>
+<p><span id="more-1009"></span></p>
+<p>Dropbox API usability tests were performed by developers with a range of experience six to eight years working with all the major programming languages. All tests were done using <a title="Node.js" href="http://nodejs.org/" target="_blank">Node.js</a> on three different platforms:</p>
+<ul>
+<li>
+<a title="Apple OSX" href="https://www.apple.com/osx/" target="_blank">Apple OSX</a>;</li>
+<li>
+<a class="zem_slink" title="Windows 7" href="http://windows.microsoft.com/windows-7" target="_blank" rel="homepage">MS Windows 7</a>;</li>
+<li>
+<a class="zem_slink" title="Ubuntu (operating system)" href="http://www.ubuntu.com/" target="_blank" rel="homepage">Ubuntu</a> 14.04.</li>
+</ul>
+<p>The test is divided into five sections, starting with authorization and ending with writing a record into a Dropbox datastore.</p>
+<p style="text-align: center;"><img loading="lazy" class="logo aligncenter wp-image-1011 size-medium" src="/wp-content/uploads/2014/06/dropbox-logo1-300x300.png" alt="Dropbox logo" width="300" height="300" srcset="/wp-content/uploads/2014/06/dropbox-logo1-300x300.png 300w, /wp-content/uploads/2014/06/dropbox-logo1-150x150.png 150w, /wp-content/uploads/2014/06/dropbox-logo1-624x624.png 624w, /wp-content/uploads/2014/06/dropbox-logo1.png 960w" sizes="(max-width: 300px) 100vw, 300px"></p>
+<h3>Obtaining authorization credentials</h3>
+<p>All testers reported that they couldn&#8217;t find an official Node.js SDK or a tutorial on how to use this programming language to interact with the Dropbox API.</p>
+<p>On the positive side, being able to generate <a class="zem_slink" title="OAuth" href="http://oauth.net/" target="_blank" rel="homepage">OAuth</a> credentials without writing any code is much appreciated and really helps when you&#8217;re starting to write a client.</p>
+<h3>Obtaining information about the authorized user</h3>
+<p>This was a fairly simple task to test, as reported. All developers could easily access information about the authorized user by following the <a title="Dropbox API account info documentation" href="https://www.dropbox.com/developers/core/docs#account-info" target="_blank">appropriate documentation</a>.</p>
+<h3>Uploading a file</h3>
+<p>Although the task looks relatively simple, some of the testers had trouble using 3rd party modules. In one of the cases there was a problem with the file name itself and in another case, a specific object attribute that should be public was found to be private.</p>
+<p>Another note is related with the <a title="dropbox-js" href="https://github.com/dropbox/dropbox-js" target="_blank">dropbox-js</a> Node.js module: the source code is available under the official <a title="Dropbox GitHub account" href="https://github.com/dropbox" target="_blank">Dropbox GitHub account</a> but the module itself is considered unofficial.</p>
+<p>This might create a confusion among developers because it&#8217;s not clear why this particular module is under the official Dropbox GitHub account.</p>
+<h3>Creating a new datastore</h3>
+<p>Although the <a title="Dropbox API datastore documentation" href="https://www.dropbox.com/developers/datastore/docs/http#get_or_create_datastore" target="_blank">available documentation</a> was considered satisfactory, lack of availability of this feature on 3rd party modules made the task complex to handle.</p>
+<p>Some of the testers had to spend 1 hour trying to understand why the 3rd party module wasn&#8217;t behaving as expected and then implemented the feature from scratch.</p>
+<h3>Writing a record into the datastore</h3>
+<p>Some of the developers reported that they couldn&#8217;t really understand how to push information into the datastore because they couldn&#8217;t understand the correct syntax.</p>
+<p>The issue is with the <a title="Dropbox API put delta documentation" href="https://www.dropbox.com/developers/datastore/docs/http#put_delta" target="_blank">documentation</a> that might not be the best for an audience that doesn&#8217;t know what a <em>delta</em> is and is more used to deal with tables and records.</p>
+<p>Because there&#8217;s no specific reference about creating a record it might be hard to associate the <em>/datastores/put_delta</em> method with record creation.</p>
+<h3>Summary</h3>
+<p>The biggest issue developers found is related with the lack of an official Node.js module. Without an official SDK they had to put bits and pieces together from different Node.js modules to make things work.</p>
+<p>The official documentation didn&#8217;t add much value because it lacked a specific Node.js tutorial or, at least some examples using this programming language, testers reported.</p>
+<p>Another suggestion is related with 3rd party modules, where Dropbox should officially test and approve the SDKs that are linked from their documentation.</p>
+<p>All in all, Dropbox API is well designed and fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.</p>
+<h3>Original test results</h3>
+<p>The original detailed test results, as reported by API Usability Testing can be found at the following links:</p>
+<ul>
+<li>
+<a title="Test result #1" href="http://www.apiusabilitytesting.com/reports/eab0b333-4ba4-4eea-83d1-5808368a8672/Dropbox/NodeJs2/report.html" target="_blank">tester #1</a> (Apple OSX);</li>
+<li>
+<a title="Test result #2" href="http://www.apiusabilitytesting.com/reports/eab0b333-4ba4-4eea-83d1-5808368a8672/Dropbox/NodeJs3/report.html" target="_blank">tester #2</a> (MS Windows 7);</li>
+<li>
+<a title="Test #3 results" href="http://www.apiusabilitytesting.com/reports/eab0b333-4ba4-4eea-83d1-5808368a8672/Dropbox/NodeJs1/report.html" target="_blank">tester #3</a> (Ubuntu 14.04).</li>
+</ul>
+<p>Each report provides detailed information about the tasks performed and also the code used to perform different tests.</p>
+</div>
+</div>
+</div></div>
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-1070" data-post-type="none">
+<a href="/2014/07/10/usability-soundcloud-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/07/SoundCloud_logo-300x1711-150x150.png" alt="Usability Review: SoundCloud API" width="150" height="150"></a><a href="/2014/07/10/usability-soundcloud-api/" class="wp_rp_title">Usability Review: SoundCloud API</a>
+</li>
+<li data-position="1" data-poid="in-969" data-post-type="none">
+<a href="/2014/05/29/apidays-leah-culver/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/05/leah_post-150x150.jpg" alt="APIdays speaker highlight: Leah Culver" width="150" height="150"></a><a href="/2014/05/29/apidays-leah-culver/" class="wp_rp_title">APIdays speaker highlight: Leah Culver</a>
+</li>
+<li data-position="2" data-poid="in-683" data-post-type="none">
+<a href="/2013/10/18/why-no-one-wants-to-use-your-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/10/Shot-To-The-Head-Blam-Reaction-Gif-In-Scott-Pilgrim-Vs.-The-World-150x150.gif" alt="Why no one wants to use your API" width="150" height="150"></a><a href="/2013/10/18/why-no-one-wants-to-use-your-api/" class="wp_rp_title">Why no one wants to use your API</a>
+</li>
+</ul>
+</div></div>
+</div>
+<div>
+<span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating"><meta itemprop="worstRating">
+<meta itemprop="ratingValue" content="4">
+<meta itemprop="bestRating" content="5"></span><meta itemprop="datePublished" content="2014-06-10">
+</div>
+</div>
+
+<!-- Schema.org markup generated by SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2014/06/10/usability-dropbox-api/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/bpedro/" class="authorsure-author-link">Bruno Pedro</a></span></span> at <time itemprop="dateModified" datetime="2014-06-10T16:52:24+02:00">June 10, 2014</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/review/" rel="category tag">Review</a> and tagged <a href="/tag/3rd/" rel="tag">3rd</a>, <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/datastore/" rel="tag">datastore</a>, <a href="/tag/documentation/" rel="tag">documentation</a>, <a href="/tag/dropbox/" rel="tag">Dropbox</a>, <a href="/tag/module/" rel="tag">module</a>, <a href="/tag/nodejs/" rel="tag">nodejs</a>, <a href="/tag/official/" rel="tag">official</a>, <a href="/tag/party/" rel="tag">party</a>, <a href="/tag/review-2/" rel="tag">review</a>, <a href="/tag/test/" rel="tag">test</a>, <a href="/tag/usability/" rel="tag">usability</a> on <a href="/2014/06/10/usability-dropbox-api/" title="6:30 pm" rel="bookmark"><time class="entry-date" datetime="2014-06-10T18:30:31+02:00">June 10, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/bpedro/" title="View all posts by Bruno Pedro" rel="author">Bruno Pedro</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Bruno Pedro</h2>
+						<p>Bruno Pedro is a Web and Business developer with over fifteen years’ experience in both startups and large corporations.</p>
+						<div class="author-link">
+							<a href="/author/bpedro/" rel="author">
+								View all posts by Bruno Pedro <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2014/05/29/apidays-leah-culver/" rel="prev"><span class="meta-nav">&larr;</span> APIdays speaker highlight: Leah Culver</a></span>
+					<span class="nav-next"><a href="/2014/06/25/leave-keys-home/" rel="next">Time To Leave Your Keys At Home Or Better Yet Trash Them Forever <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			6 thoughts on &ldquo;<span>Usability Review: Dropbox API</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-699">
+		<article id="comment-699" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo avatar-default" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://smarx.com/" rel="external nofollow ugc" class="url">Steve Marx</a></b> </cite><a href="/2014/06/10/usability-dropbox-api/#comment-699"><time datetime="2014-06-10T20:03:13+02:00">June 10, 2014 at 8:03 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thanks for doing this! Clearly there&#8217;s a lot of work we could do to improve things for Node.js developers. Frankly, I&#8217;m impressed that all three developers managed to work with the Datastore API despite there being no library (from us or a third party) for using that API with Node.js.</p>
+<p>I&#8217;d be curious to see how a similar usability study would go if a supported language/library were used (e.g. Python or Objective-C).</p>
+<p>Feel free to reach out if you have any questions about the Dropbox platform: <a href="mailto:smarx@dropbox.com" rel="nofollow">smarx@dropbox.com</a>. I work on Dropbox&#8217;s developer relations team.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/06/10/usability-dropbox-api/?replytocom=699#respond" data-commentid="699" data-postid="1009" data-belowelement="comment-699" data-respondelement="respond" data-replyto="Reply to Steve Marx" aria-label="Reply to Steve Marx">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-700">
+		<article id="comment-700" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2014/06/10/usability-dropbox-api/#comment-700"><time datetime="2014-06-10T21:10:19+02:00">June 10, 2014 at 9:10 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thanks for the comment, Steve!</p>
+<p>I&#8217;m sure the results would be better it a supported language were used but Node.js is increasingly gaining popularity and it would be great if Dropbox started supporting it.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/06/10/usability-dropbox-api/?replytocom=700#respond" data-commentid="700" data-postid="1009" data-belowelement="comment-700" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-704">
+		<article id="comment-704" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/80c9848f1aca614f619a9d974b852dc0?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/80c9848f1aca614f619a9d974b852dc0?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="https://www.facebook.com/ucheng.wang" rel="external nofollow ugc" class="url">Yu-Cheng Wang</a></b> </cite><a href="/2014/06/10/usability-dropbox-api/#comment-704"><time datetime="2014-06-11T03:49:38+02:00">June 11, 2014 at 3:49 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>nice website and nice review!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/06/10/usability-dropbox-api/?replytocom=704#respond" data-commentid="704" data-postid="1009" data-belowelement="comment-704" data-respondelement="respond" data-replyto="Reply to Yu-Cheng Wang" aria-label="Reply to Yu-Cheng Wang">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-707">
+		<p>Pingback: <a href="http://www.apiusabilitytesting.com/usability-review-dropbox-api/" rel="external nofollow ugc" class="url">Usability Review: Dropbox API | API Usability Testing – The fastest way to get feedback on your API</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-713">
+		<article id="comment-713" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/0a54ba565e37a29862358ab75261ce36?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/0a54ba565e37a29862358ab75261ce36?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="https://bip.io/" rel="external nofollow ugc" class="url">michael pearson</a></b> </cite><a href="/2014/06/10/usability-dropbox-api/#comment-713"><time datetime="2014-06-12T18:21:08+02:00">June 12, 2014 at 6:21 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Nice writeup and tests! I&#8217;d love to see a more intuitive chunked upload interface in the node library (without micro-managing the chunk cursor) &#8211; a major gotcha in uploading large files with writeFile in node&#8217;s async environment is keeping these enormous buffers in memory, which doesn&#8217;t scale out too well.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/06/10/usability-dropbox-api/?replytocom=713#respond" data-commentid="713" data-postid="1009" data-belowelement="comment-713" data-respondelement="respond" data-replyto="Reply to michael pearson" aria-label="Reply to michael pearson">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-719">
+		<article id="comment-719" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2014/06/10/usability-dropbox-api/#comment-719"><time datetime="2014-06-13T12:51:23+02:00">June 13, 2014 at 12:51 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thanks Michael!</p>
+<p>Are there any other APIs that you&#8217;d like to see tested?</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/06/10/usability-dropbox-api/?replytocom=719#respond" data-commentid="719" data-postid="1009" data-belowelement="comment-719" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/06/10/usability-dropbox-api/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1009" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c20b04eb7d"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="186"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.421 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-22 11:33:20 -->
+
+<!-- Compression = gzip -->
+</html>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: 2 steps to better API Error Codes	</title>
+	<atom:link href="/2013/03/28/2-steps-api-error-codes/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/03/28/2-steps-api-error-codes/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=2-steps-api-error-codes</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 14 May 2014 16:29:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Resources on how to design error handling in a REST API &#124; Codingpedia.org		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-495</link>
+
+		<dc:creator><![CDATA[Resources on how to design error handling in a REST API &#124; Codingpedia.org]]></dc:creator>
+		<pubDate>Wed, 14 May 2014 16:29:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-495</guid>
+
+					<description><![CDATA[[&#8230;]  2 steps to better API Error Codes [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;]  2 steps to better API Error Codes [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Pivotal Tracker launches new API in public beta		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-231</link>
+
+		<dc:creator><![CDATA[Pivotal Tracker launches new API in public beta]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2013 16:02:52 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-231</guid>
+
+					<description><![CDATA[[&#8230;] improvement is that now errors are more consistent and informative. They don&#8217;t exactly explain how but I did a few tests and verified that, in addition to [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] improvement is that now errors are more consistent and informative. They don&#8217;t exactly explain how but I did a few tests and verified that, in addition to [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: 2 steps to better API Error Codes &#124; Atopicabout...		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-53</link>
+
+		<dc:creator><![CDATA[2 steps to better API Error Codes &#124; Atopicabout...]]></dc:creator>
+		<pubDate>Wed, 10 Apr 2013 01:02:09 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-53</guid>
+
+					<description><![CDATA[[...] One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their ...&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their &#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-49</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Sat, 06 Apr 2013 11:49:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-49</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/03/28/2-steps-api-error-codes/#comment-48&quot;&gt;JK&lt;/a&gt;.
+
+Very interesting. Are you the author?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/03/28/2-steps-api-error-codes/#comment-48">JK</a>.</p>
+<p>Very interesting. Are you the author?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: JK		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-48</link>
+
+		<dc:creator><![CDATA[JK]]></dc:creator>
+		<pubDate>Sat, 06 Apr 2013 11:47:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-48</guid>
+
+					<description><![CDATA[I usually find this graph handy when it comes to decide upon the appropriate response code
+http://viswaug.files.wordpress.com/2008/11/http-headers-status1.png]]></description>
+			<content:encoded><![CDATA[<p>I usually find this graph handy when it comes to decide upon the appropriate response code<br />
+<a href="http://viswaug.files.wordpress.com/2008/11/http-headers-status1.png" rel="nofollow ugc">http://viswaug.files.wordpress.com/2008/11/http-headers-status1.png</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-41</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2013 16:24:34 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-41</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/03/28/2-steps-api-error-codes/#comment-38&quot;&gt;Jonathan Rochkind&lt;/a&gt;.
+
+I agree and I updated the post with information about using a 405 (Method Not Allowed) for situations where the method is available but not for the resource being requested.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/03/28/2-steps-api-error-codes/#comment-38">Jonathan Rochkind</a>.</p>
+<p>I agree and I updated the post with information about using a 405 (Method Not Allowed) for situations where the method is available but not for the resource being requested.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-40</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2013 16:23:17 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-40</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/03/28/2-steps-api-error-codes/#comment-35&quot;&gt;Derrick&lt;/a&gt;.
+
+I updated the post with your suggestion. Thanks!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/03/28/2-steps-api-error-codes/#comment-35">Derrick</a>.</p>
+<p>I updated the post with your suggestion. Thanks!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Paddy Foran		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-39</link>
+
+		<dc:creator><![CDATA[Paddy Foran]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2013 12:10:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-39</guid>
+
+					<description><![CDATA[Maybe it&#039;s just a crazy personal preference, but I&#039;ve found that whenever my error codes do not point to a single, machine-discernable resolution, I&#039;m signing up for a world of hurt in writing a user-friendly client.
+
+My approach has been to combine semantic HTTP status codes with fine-grained, specific application error codes. The status codes give a general idea as to what went wrong, while the application error codes (represented as a code/field pair) point to what went wrong and the specific JSON field that needs to be corrected. This has made it really easy to write clients that tell the user a lot more than &quot;your request is bad and you should feel bad.&quot;]]></description>
+			<content:encoded><![CDATA[<p>Maybe it&#8217;s just a crazy personal preference, but I&#8217;ve found that whenever my error codes do not point to a single, machine-discernable resolution, I&#8217;m signing up for a world of hurt in writing a user-friendly client.</p>
+<p>My approach has been to combine semantic HTTP status codes with fine-grained, specific application error codes. The status codes give a general idea as to what went wrong, while the application error codes (represented as a code/field pair) point to what went wrong and the specific JSON field that needs to be corrected. This has made it really easy to write clients that tell the user a lot more than &#8220;your request is bad and you should feel bad.&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jonathan Rochkind		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-38</link>
+
+		<dc:creator><![CDATA[Jonathan Rochkind]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2013 02:35:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-38</guid>
+
+					<description><![CDATA[I _do_ agree with the general thrust of the article. I write lots of client code for lots of different HTTP apis (written by various vendors and other organizations which are not mine), and proper use of standard HTTP response codes is _super super helpful_ to me as a client writer. I agree wholeheartedly. 
+
+But I think you possibly make or promulgate a misunderstanding of 501 here. 
+
+&#062; Instead, either reply with a 404 but using a body that your caller can understand (JSON or whatever MIME type you’re accepting) or, even better, reply with a 501 (Not Implemented). According to the HTTP definition this “the appropriate response when the server does not recognize the request method and is not capable of supporting it for any resource”.
+
+In the HTTP spec, &quot;method&quot;, means an _http method_, like GET, POST, (the new proposed) PATCH, etc.  And even the quote says &quot;not capable of supporting it for _any resource_&quot;. 
+
+Ie, if your app does not support PATCH _at all_, then, sure, returning 501 is the right thing to do. 
+
+If your server doesn&#039;t support POST to this specific URL? Nope, not 501. Let alone if your not-entirely-REST API supports /api?command=send but not /api?command=selfdestruct -- definitely not 501. 
+
+I am not sure if you intended it this way, but a casual reading of this post could give you the wrong idea about 501, it is suitable for use only in very specific circumstances, most &#039;the api call you made is not understood&#039; errors really are going to be 404s (but, sure, with an appropriate json/xml/whatever with machine readable details, that&#039;s be great).]]></description>
+			<content:encoded><![CDATA[<p>I _do_ agree with the general thrust of the article. I write lots of client code for lots of different HTTP apis (written by various vendors and other organizations which are not mine), and proper use of standard HTTP response codes is _super super helpful_ to me as a client writer. I agree wholeheartedly. </p>
+<p>But I think you possibly make or promulgate a misunderstanding of 501 here. </p>
+<p>&gt; Instead, either reply with a 404 but using a body that your caller can understand (JSON or whatever MIME type you’re accepting) or, even better, reply with a 501 (Not Implemented). According to the HTTP definition this “the appropriate response when the server does not recognize the request method and is not capable of supporting it for any resource”.</p>
+<p>In the HTTP spec, &#8220;method&#8221;, means an _http method_, like GET, POST, (the new proposed) PATCH, etc.  And even the quote says &#8220;not capable of supporting it for _any resource_&#8221;. </p>
+<p>Ie, if your app does not support PATCH _at all_, then, sure, returning 501 is the right thing to do. </p>
+<p>If your server doesn&#8217;t support POST to this specific URL? Nope, not 501. Let alone if your not-entirely-REST API supports /api?command=send but not /api?command=selfdestruct &#8212; definitely not 501. </p>
+<p>I am not sure if you intended it this way, but a casual reading of this post could give you the wrong idea about 501, it is suitable for use only in very specific circumstances, most &#8216;the api call you made is not understood&#8217; errors really are going to be 404s (but, sure, with an appropriate json/xml/whatever with machine readable details, that&#8217;s be great).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: 2 steps to better API Error Codes &#124; Bazaar &#124; Scoop.it		</title>
+		<link>/2013/03/28/2-steps-api-error-codes/#comment-37</link>
+
+		<dc:creator><![CDATA[2 steps to better API Error Codes &#124; Bazaar &#124; Scoop.it]]></dc:creator>
+		<pubDate>Sun, 31 Mar 2013 20:38:43 +0000</pubDate>
+		<guid isPermaLink="false">/?p=171#comment-37</guid>
+
+					<description><![CDATA[[...] One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their ...&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their &#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>iesg &#8211; API UX</title>
+	<atom:link href="/tag/iesg/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 30 Jul 2013 16:10:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>HTTP/2.0 Initial Draft Released</title>
+		<link>/2013/07/23/http2-0-initial-draft-released/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=http2-0-initial-draft-released</link>
+					<comments>/2013/07/23/http2-0-initial-draft-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Tue, 23 Jul 2013 16:00:50 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Review]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[draft]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[httpbis]]></category>
+		<category><![CDATA[iesg]]></category>
+		<category><![CDATA[ietf]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[Standards]]></category>
+		<guid isPermaLink="false">/?p=572</guid>
+
+					<description><![CDATA[The first implementable draft of HTTP/2.0 was released on July 8th by the HTTPbis working group of the IETF. The new version feels similar to the old, but there are important differences designed to enable more efficient network communication.]]></description>
+		
+					<wfw:commentRss>/2013/07/23/http2-0-initial-draft-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

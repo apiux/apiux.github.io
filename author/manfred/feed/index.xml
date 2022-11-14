@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Manfred Bortenschlager &#8211; API UX</title>
+	<atom:link href="/author/manfred/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 10 Nov 2014 10:08:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Predictive APIs: Bringing Machine Learning to the Masses</title>
+		<link>/2014/11/10/predictive-apis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=predictive-apis</link>
+					<comments>/2014/11/10/predictive-apis/#comments</comments>
+		
+		<dc:creator><![CDATA[Manfred Bortenschlager]]></dc:creator>
+		<pubDate>Mon, 10 Nov 2014 10:08:37 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[3scale]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APItools]]></category>
+		<category><![CDATA[Barcelona]]></category>
+		<category><![CDATA[Bicing]]></category>
+		<category><![CDATA[BigML]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[PAPIs]]></category>
+		<category><![CDATA[predictive]]></category>
+		<category><![CDATA[tools]]></category>
+		<guid isPermaLink="false">/?p=1151</guid>
+
+					<description><![CDATA[To help make Predictive APIs more mainstream and accessible, Louis Dorard is organizing the 1st International Conference on Predictive APIs and Apps (PAPIs) as general chair.]]></description>
+		
+					<wfw:commentRss>/2014/11/10/predictive-apis/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

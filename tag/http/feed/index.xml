@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>HTTP &#8211; API UX</title>
+	<atom:link href="/tag/http/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 12 Sep 2013 16:12:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Webhooks, REST and the Open Web</title>
+		<link>/2013/09/12/webhooks/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=webhooks</link>
+					<comments>/2013/09/12/webhooks/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 16:08:19 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[Open]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[protocol]]></category>
+		<category><![CDATA[publish]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[specification]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[subscription]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=495</guid>
+
+					<description><![CDATA[Back in 2006, Jeff Lindsay proposed a different way of consuming Web resources that would eliminate the need for constantly polling APIs for changes. This new pattern was called webhooks and has since been adopted by companies such as GitHub and Google. The main advantage of the webhooks pattern is that your application doesn&#8217;t have to make [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/12/webhooks/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>HTTP/2.0 Initial Draft Released</title>
+		<link>/2013/07/23/http2-0-initial-draft-released/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=http2-0-initial-draft-released</link>
+					<comments>/2013/07/23/http2-0-initial-draft-released/#respond</comments>
+		
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Tue, 23 Jul 2013 16:00:50 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Review]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[draft]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[httpbis]]></category>
+		<category><![CDATA[iesg]]></category>
+		<category><![CDATA[ietf]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[Standards]]></category>
+		<guid isPermaLink="false">/?p=572</guid>
+
+					<description><![CDATA[The first implementable draft of HTTP/2.0 was released on July 8th by the HTTPbis working group of the IETF. The new version feels similar to the old, but there are important differences designed to enable more efficient network communication.]]></description>
+		
+					<wfw:commentRss>/2013/07/23/http2-0-initial-draft-released/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How OAuth 2 trumps Basic authentication</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=oauth-2-trumps-basic-authentication</link>
+					<comments>/2013/07/10/oauth-2-trumps-basic-authentication/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 10 Jul 2013 16:00:23 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[access]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authorization]]></category>
+		<category><![CDATA[flow]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[OAuth2]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[scope]]></category>
+		<category><![CDATA[secret]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SSL]]></category>
+		<guid isPermaLink="false">/?p=390</guid>
+
+					<description><![CDATA[So many negatives have been brought forth in the past on OAuth 2. Where there might be continuing points of contention, there is one area which seems to be clear: the &#8220;Resource Owner Password Credentials Grant&#8221; (OAuth 2 Spec, section 4.3) pattern as defined in the OAuth 2 spec is fundamentally superior to HTTP Basic [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/07/10/oauth-2-trumps-basic-authentication/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Accept Header: A Quick Primer</title>
+		<link>/2013/06/11/accept-header-quick-primer/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=accept-header-quick-primer</link>
+					<comments>/2013/06/11/accept-header-quick-primer/#comments</comments>
+		
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 16:00:44 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=480</guid>
+
+					<description><![CDATA[Why should you use the Accept header? So many APIs can simply get by with a string comparison against "application/json" or "application/xml", why is it important?]]></description>
+		
+					<wfw:commentRss>/2013/06/11/accept-header-quick-primer/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>API Hierarchy of Needs</title>
+		<link>/2013/05/29/api-hierarchy-needs/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-hierarchy-needs</link>
+					<comments>/2013/05/29/api-hierarchy-needs/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 29 May 2013 21:07:30 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[creativity]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[functionality]]></category>
+		<category><![CDATA[hierarchy]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[Maslow]]></category>
+		<category><![CDATA[need]]></category>
+		<category><![CDATA[proficiency]]></category>
+		<category><![CDATA[pyramid]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[usability]]></category>
+		<guid isPermaLink="false">/?p=454</guid>
+
+					<description><![CDATA[The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.]]></description>
+		
+					<wfw:commentRss>/2013/05/29/api-hierarchy-needs/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>URL Design for RESTful Web Services</title>
+		<link>/2013/04/03/url-design-restful-web-services/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=url-design-restful-web-services</link>
+					<comments>/2013/04/03/url-design-restful-web-services/#comments</comments>
+		
+		<dc:creator><![CDATA[Charlie Reverte]]></dc:creator>
+		<pubDate>Wed, 03 Apr 2013 16:00:54 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[endpoint]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[URL]]></category>
+		<category><![CDATA[Web service]]></category>
+		<guid isPermaLink="false">/?p=233</guid>
+
+					<description><![CDATA[URL design discussions for RESTful web services often degrade into debates over pluralization and parameter names. There are a couple of principles I like to use to keep things simple.]]></description>
+		
+					<wfw:commentRss>/2013/04/03/url-design-restful-web-services/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2 steps to better API Error Codes</title>
+		<link>/2013/03/28/2-steps-api-error-codes/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=2-steps-api-error-codes</link>
+					<comments>/2013/03/28/2-steps-api-error-codes/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 28 Mar 2013 17:00:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[integration]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[steps]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML.protocol]]></category>
+		<guid isPermaLink="false">/?p=171</guid>
+
+					<description><![CDATA[One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their applications.]]></description>
+		
+					<wfw:commentRss>/2013/03/28/2-steps-api-error-codes/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Authentication: Don&#8217;t be Clever</title>
+		<link>/2013/03/21/authentication-dont-be-clever/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=authentication-dont-be-clever</link>
+					<comments>/2013/03/21/authentication-dont-be-clever/#comments</comments>
+		
+		<dc:creator><![CDATA[John Sheehan]]></dc:creator>
+		<pubDate>Thu, 21 Mar 2013 17:00:00 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[credential]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[error message]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[REST]]></category>
+		<guid isPermaLink="false">/?p=112</guid>
+
+					<description><![CDATA[HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0, OAuth 1.0a, OAuth 2.0 (and it&#8217;s 40 revision) and some less-common custom schemes. With the OAuth 2.0 specification finalized, things are finally starting to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/03/21/authentication-dont-be-clever/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

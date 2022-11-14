@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: URL Design for RESTful Web Services	</title>
+	<atom:link href="/2013/04/03/url-design-restful-web-services/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/04/03/url-design-restful-web-services/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=url-design-restful-web-services</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 24 May 2016 12:38:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: URL Design for RESTful Web Services &#124; AddThis Blog		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-11735</link>
+
+		<dc:creator><![CDATA[URL Design for RESTful Web Services &#124; AddThis Blog]]></dc:creator>
+		<pubDate>Tue, 24 May 2016 12:38:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-11735</guid>
+
+					<description><![CDATA[[&#8230;] Engineering, Charlie Reverte, posted today at APIUX.com. To read the rest of the blog post, click here to go over to their [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Engineering, Charlie Reverte, posted today at APIUX.com. To read the rest of the blog post, click here to go over to their [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Harry McIntyre (@mcintyre321)		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-313</link>
+
+		<dc:creator><![CDATA[Harry McIntyre (@mcintyre321)]]></dc:creator>
+		<pubDate>Mon, 16 Dec 2013 21:39:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-313</guid>
+
+					<description><![CDATA[http://hadihariri.com/2013/07/29/one-step-guide-on-designing-a-rest-api/]]></description>
+			<content:encoded><![CDATA[<p><a href="http://hadihariri.com/2013/07/29/one-step-guide-on-designing-a-rest-api/" rel="nofollow ugc">http://hadihariri.com/2013/07/29/one-step-guide-on-designing-a-rest-api/</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Charlie Reverte		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-229</link>
+
+		<dc:creator><![CDATA[Charlie Reverte]]></dc:creator>
+		<pubDate>Thu, 01 Aug 2013 00:29:56 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-229</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/03/url-design-restful-web-services/#comment-222&quot;&gt;Gerson Goulart&lt;/a&gt;.
+
+done!]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/03/url-design-restful-web-services/#comment-222">Gerson Goulart</a>.</p>
+<p>done!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gerson Goulart		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-222</link>
+
+		<dc:creator><![CDATA[Gerson Goulart]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2013 17:00:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-222</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/03/url-design-restful-web-services/#comment-63&quot;&gt;Charlie Reverte&lt;/a&gt;.
+
+Maybe it would be a good idea to fix the article than, not everyone will read every single comment... Other than that, thanks for the really good post.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/03/url-design-restful-web-services/#comment-63">Charlie Reverte</a>.</p>
+<p>Maybe it would be a good idea to fix the article than, not everyone will read every single comment&#8230; Other than that, thanks for the really good post.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Review: Google Glass API &#124; API UX		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-67</link>
+
+		<dc:creator><![CDATA[Review: Google Glass API &#124; API UX]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 16:01:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-67</guid>
+
+					<description><![CDATA[[...] doesn&#8217;t need that you run any code on Glass itself, since all interactions are done via RESTful [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] doesn&#8217;t need that you run any code on Glass itself, since all interactions are done via RESTful [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Charlie Reverte		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-63</link>
+
+		<dc:creator><![CDATA[Charlie Reverte]]></dc:creator>
+		<pubDate>Tue, 16 Apr 2013 03:28:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-63</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/03/url-design-restful-web-services/#comment-51&quot;&gt;mahemoff&lt;/a&gt;.
+
+Ah, good catch.  PUT /users/charlie is what I meant to say, error on my part :)]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/03/url-design-restful-web-services/#comment-51">mahemoff</a>.</p>
+<p>Ah, good catch.  PUT /users/charlie is what I meant to say, error on my part 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mahemoff		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-51</link>
+
+		<dc:creator><![CDATA[mahemoff]]></dc:creator>
+		<pubDate>Mon, 08 Apr 2013 00:15:27 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-51</guid>
+
+					<description><![CDATA[I think POST /users/charlie should be a PUT (more bikeshedding).
+
+Creation can happen by either POSTING to the generic resource /users or PUTting to a specific instance (if it&#039;s allowed for the client to name the resource, as you point out).]]></description>
+			<content:encoded><![CDATA[<p>I think POST /users/charlie should be a PUT (more bikeshedding).</p>
+<p>Creation can happen by either POSTING to the generic resource /users or PUTting to a specific instance (if it&#8217;s allowed for the client to name the resource, as you point out).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: URL Design for RESTful Web Services &#124; Output Translation		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-50</link>
+
+		<dc:creator><![CDATA[URL Design for RESTful Web Services &#124; Output Translation]]></dc:creator>
+		<pubDate>Sun, 07 Apr 2013 12:43:31 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-50</guid>
+
+					<description><![CDATA[[...] is a cross-post of a guest post I did for APIUX.  Click here for the [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] is a cross-post of a guest post I did for APIUX.  Click here for the [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Adrien Risser		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-47</link>
+
+		<dc:creator><![CDATA[Adrien Risser]]></dc:creator>
+		<pubDate>Thu, 04 Apr 2013 08:38:11 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-47</guid>
+
+					<description><![CDATA[What about the best URL designed in REST as is &quot;/&quot;?
+API URLs don&#039;t matter when everything is hyperlinked.
+(As in a Website, who likes to type every single page link in the browser?)]]></description>
+			<content:encoded><![CDATA[<p>What about the best URL designed in REST as is &#8220;/&#8221;?<br />
+API URLs don&#8217;t matter when everything is hyperlinked.<br />
+(As in a Website, who likes to type every single page link in the browser?)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Charlie Reverte		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-46</link>
+
+		<dc:creator><![CDATA[Charlie Reverte]]></dc:creator>
+		<pubDate>Wed, 03 Apr 2013 21:00:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-46</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/03/url-design-restful-web-services/#comment-44&quot;&gt;Pete Johanson&lt;/a&gt;.
+
+In terms of the API user experience it&#039;s pretty sweet to be able to link users to actual calls from within your online docs.  If you have good linking between your endpoints you can do a fair bit of navigation around the API in your browser before you need to reach for curl or fancier clients.  It makes for a better first impression which improves the likelihood that someone will implement.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/03/url-design-restful-web-services/#comment-44">Pete Johanson</a>.</p>
+<p>In terms of the API user experience it&#8217;s pretty sweet to be able to link users to actual calls from within your online docs.  If you have good linking between your endpoints you can do a fair bit of navigation around the API in your browser before you need to reach for curl or fancier clients.  It makes for a better first impression which improves the likelihood that someone will implement.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Pivotal Tracker launches new API in public beta	</title>
+	<atom:link href="/2013/08/19/pivotal-tracker-new-api/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/08/19/pivotal-tracker-new-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pivotal-tracker-new-api</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 09 Sep 2013 15:17:09 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/08/19/pivotal-tracker-new-api/#comment-233</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2013 16:21:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=599#comment-233</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/08/19/pivotal-tracker-new-api/#comment-232&quot;&gt;Dan P&lt;/a&gt;.
+
+Thanks for the clarification, Dan. Let me know when you update the activity web hook documentation and I&#039;ll update the article.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/08/19/pivotal-tracker-new-api/#comment-232">Dan P</a>.</p>
+<p>Thanks for the clarification, Dan. Let me know when you update the activity web hook documentation and I&#8217;ll update the article.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dan P		</title>
+		<link>/2013/08/19/pivotal-tracker-new-api/#comment-232</link>
+
+		<dc:creator><![CDATA[Dan P]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2013 16:08:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=599#comment-232</guid>
+
+					<description><![CDATA[Thanks for the write up, Bruno. One clarification - the activity web hook (in V5 format) does in fact post in JSON, we just haven&#039;t yet updated the activity web hook help page. When setting up the webhook for a project, you can specify the old V3 XML format, or the new V5 JSON format.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for the write up, Bruno. One clarification &#8211; the activity web hook (in V5 format) does in fact post in JSON, we just haven&#8217;t yet updated the activity web hook help page. When setting up the webhook for a project, you can specify the old V3 XML format, or the new V5 JSON format.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

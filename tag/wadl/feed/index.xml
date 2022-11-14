@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>WADL &#8211; API UX</title>
+	<atom:link href="/tag/wadl/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 09 Apr 2013 10:44:49 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>An Overview of REST Metadata Formats</title>
+		<link>/2013/04/09/rest-metadata-formats/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rest-metadata-formats</link>
+					<comments>/2013/04/09/rest-metadata-formats/#comments</comments>
+		
+		<dc:creator><![CDATA[Ole Lensmar]]></dc:creator>
+		<pubDate>Tue, 09 Apr 2013 16:00:55 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[HAL]]></category>
+		<category><![CDATA[hypermedia]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[metadata]]></category>
+		<category><![CDATA[QoS]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[schema]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[WADL]]></category>
+		<category><![CDATA[WSDL]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=264</guid>
+
+					<description><![CDATA[Although the REST community initially took a stance against metadata for REST APIs, a number of metadata standards have none-the-less emerged over the last couple of years, mainly fueled by the need to document APIs for their consumers.]]></description>
+		
+					<wfw:commentRss>/2013/04/09/rest-metadata-formats/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

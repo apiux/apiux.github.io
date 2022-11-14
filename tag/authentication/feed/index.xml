@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>authentication &#8211; API UX</title>
+	<atom:link href="/tag/authentication/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 19 Sep 2013 18:55:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Tictail API launch focuses on UX</title>
+		<link>/2013/09/19/tictail-api-launch-focuses-ux/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tictail-api-launch-focuses-ux</link>
+					<comments>/2013/09/19/tictail-api-launch-focuses-ux/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 19 Sep 2013 18:34:42 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[best practice]]></category>
+		<category><![CDATA[community]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[launch]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[portal]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[Tictail]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=659</guid>
+
+					<description><![CDATA[Tictail, a Swedish e-commerce platform that manages over 24,000 stores spread across 110 different countries, launched their API on September 16, 2013. Because Tictail&#8217;s main focus is simplicity of use, they decided to offer developers the same tools they use internally to build this new platform. According to Carl Waldekranz, Tictail CEO, they &#8220;want developers to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/19/tictail-api-launch-focuses-ux/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How safe is your API from its users?</title>
+		<link>/2013/04/02/how-safe-is-your-api-from-user/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-safe-is-your-api-from-user</link>
+					<comments>/2013/04/02/how-safe-is-your-api-from-user/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Tue, 02 Apr 2013 16:00:53 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Anonymous]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[API Gateway]]></category>
+		<category><![CDATA[Attack vectors]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[Cross-site scripting]]></category>
+		<category><![CDATA[Hackers]]></category>
+		<category><![CDATA[Metrics]]></category>
+		<category><![CDATA[Tokens]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<category><![CDATA[XSS]]></category>
+		<guid isPermaLink="false">/?p=194</guid>
+
+					<description><![CDATA[Availability and safety are some of the most important implicit factors to the user experience of your platform's users. When we discuss web security to ensure these factors, images of criminal rings using sophisticated techniques come to mind.]]></description>
+		
+					<wfw:commentRss>/2013/04/02/how-safe-is-your-api-from-user/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Authentication: Don&#8217;t be Clever</title>
+		<link>/2013/03/21/authentication-dont-be-clever/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=authentication-dont-be-clever</link>
+					<comments>/2013/03/21/authentication-dont-be-clever/#comments</comments>
+		
+		<dc:creator><![CDATA[John Sheehan]]></dc:creator>
+		<pubDate>Thu, 21 Mar 2013 17:00:00 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[credential]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[error message]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[REST]]></category>
+		<guid isPermaLink="false">/?p=112</guid>
+
+					<description><![CDATA[HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0, OAuth 1.0a, OAuth 2.0 (and it&#8217;s 40 revision) and some less-common custom schemes. With the OAuth 2.0 specification finalized, things are finally starting to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/03/21/authentication-dont-be-clever/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

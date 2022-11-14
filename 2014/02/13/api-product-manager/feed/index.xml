@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Who are the best API Product Managers?	</title>
+	<atom:link href="/2014/02/13/api-product-manager/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/02/13/api-product-manager/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-product-manager</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 18 Feb 2014 21:26:24 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>
+		By: Who are the best API Product Managers? &#124; API Ma...		</title>
+		<link>/2014/02/13/api-product-manager/#comment-351</link>
+
+		<dc:creator><![CDATA[Who are the best API Product Managers? &#124; API Ma...]]></dc:creator>
+		<pubDate>Tue, 18 Feb 2014 21:26:24 +0000</pubDate>
+		<guid isPermaLink="false">/?p=773#comment-351</guid>
+
+					<description><![CDATA[[&#8230;] When I look around the little village of API specialists within the tech world, there are an increasing number, in the last year, with the title &#8220;API Product Manager&#8221;. Keep in mind that just a few years ago, this job title didn&#8217;t exist...&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] When I look around the little village of API specialists within the tech world, there are an increasing number, in the last year, with the title &ldquo;API Product Manager&rdquo;. Keep in mind that just a few years ago, this job title didn&rsquo;t exist&#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Harmon		</title>
+		<link>/2014/02/13/api-product-manager/#comment-347</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Mon, 17 Feb 2014 02:26:34 +0000</pubDate>
+		<guid isPermaLink="false">/?p=773#comment-347</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/02/13/api-product-manager/#comment-346&quot;&gt;keyCutter&lt;/a&gt;.
+
+To your point, I think that it&#039;s unfortunately all too common to find that product managers are not wise in the ways of API. To some extent, this post is about imagining what we all want PMs for API development to look like. I agree that it is an important role for developers to have requirements translated into buildable terms...when PMs are merely echoing business wish lists to developers, and then asking how to do it, nobody wins.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/02/13/api-product-manager/#comment-346">keyCutter</a>.</p>
+<p>To your point, I think that it&#8217;s unfortunately all too common to find that product managers are not wise in the ways of API. To some extent, this post is about imagining what we all want PMs for API development to look like. I agree that it is an important role for developers to have requirements translated into buildable terms&#8230;when PMs are merely echoing business wish lists to developers, and then asking how to do it, nobody wins.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: keyCutter		</title>
+		<link>/2014/02/13/api-product-manager/#comment-346</link>
+
+		<dc:creator><![CDATA[keyCutter]]></dc:creator>
+		<pubDate>Sun, 16 Feb 2014 22:38:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=773#comment-346</guid>
+
+					<description><![CDATA[In my experience the Strategist was the person who went to the big tech shows and became &#039;evangelised&#039;.  They didn&#039;t especially know what they wanted, but they believed it would be good mostly based on trends.
+
+The architect chose the platform and was responsible for ensuring we didn&#039;t get painted into the corner and that we could support the API forever-ish.
+
+The dev lead was responsible for delivering the software on time.  However at our company it was such a new technology that the whole project was really an investigation and therefore the project was time boxed which meant, deliver as much as you can by this date ( rather than asking when can you deliver this by? )
+
+The product manager OR product owner was responsible for finding the business value and making decisions which drove the outcome in the most profitable way and to decide on the trade-offs between short term gains versus long-term gains.  Actually they struggled because it was too new for them and they didn&#039;t understand how to sell it or many of the intricacies of the technology and market.  
+
+It was fair enough that our product managers struggled because our target customers were the developers at other companies.  Our end customers were two hops further down the track.  There is a saying about eating your own dog food (dogfooding).  Perhaps this is a scenario where the dogs are making the dog food!  I call it &quot;empathising developer&quot; (copyright 2013 hehe).  
+
+The problem is you get into a chicken and egg scenario where the product manager has to go to the developer and ask, what is it that you want me to get you to develop?  
+
+You might think that the product manager is an inefficient middleman, however its preferable not to burden the developers with the responsibility of developing something that wins.  Its good to pass the risk onto some poor soul with a lot of fortitude, who has the stressful situation of managing a team from a mentoring point of view.
+
+Anyway if you have a bunch of wise, proactive, effective communicators, everything works out fine.]]></description>
+			<content:encoded><![CDATA[<p>In my experience the Strategist was the person who went to the big tech shows and became &#8216;evangelised&#8217;.  They didn&#8217;t especially know what they wanted, but they believed it would be good mostly based on trends.</p>
+<p>The architect chose the platform and was responsible for ensuring we didn&#8217;t get painted into the corner and that we could support the API forever-ish.</p>
+<p>The dev lead was responsible for delivering the software on time.  However at our company it was such a new technology that the whole project was really an investigation and therefore the project was time boxed which meant, deliver as much as you can by this date ( rather than asking when can you deliver this by? )</p>
+<p>The product manager OR product owner was responsible for finding the business value and making decisions which drove the outcome in the most profitable way and to decide on the trade-offs between short term gains versus long-term gains.  Actually they struggled because it was too new for them and they didn&#8217;t understand how to sell it or many of the intricacies of the technology and market.  </p>
+<p>It was fair enough that our product managers struggled because our target customers were the developers at other companies.  Our end customers were two hops further down the track.  There is a saying about eating your own dog food (dogfooding).  Perhaps this is a scenario where the dogs are making the dog food!  I call it &#8220;empathising developer&#8221; (copyright 2013 hehe).  </p>
+<p>The problem is you get into a chicken and egg scenario where the product manager has to go to the developer and ask, what is it that you want me to get you to develop?  </p>
+<p>You might think that the product manager is an inefficient middleman, however its preferable not to burden the developers with the responsibility of developing something that wins.  Its good to pass the risk onto some poor soul with a lot of fortitude, who has the stressful situation of managing a team from a mentoring point of view.</p>
+<p>Anyway if you have a bunch of wise, proactive, effective communicators, everything works out fine.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: HACKERNYTT.se - dagliga nyheter för dig som bygger framtiden		</title>
+		<link>/2014/02/13/api-product-manager/#comment-345</link>
+
+		<dc:creator><![CDATA[HACKERNYTT.se - dagliga nyheter för dig som bygger framtiden]]></dc:creator>
+		<pubDate>Thu, 13 Feb 2014 20:24:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=773#comment-345</guid>
+
+					<description><![CDATA[&lt;strong&gt;Vem är bäst lämpad som API Product Manager?&lt;/strong&gt;
+
+- användaren erikstarck postade en länk hit från Hackernytt.se.]]></description>
+			<content:encoded><![CDATA[<p><strong>Vem är bäst lämpad som API Product Manager?</strong></p>
+<p>&#8211; användaren erikstarck postade en länk hit från Hackernytt.se.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

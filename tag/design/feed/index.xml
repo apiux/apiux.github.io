@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>design &#8211; API UX</title>
+	<atom:link href="/tag/design/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 31 Jul 2013 19:57:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>URL Design for RESTful Web Services</title>
+		<link>/2013/04/03/url-design-restful-web-services/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=url-design-restful-web-services</link>
+					<comments>/2013/04/03/url-design-restful-web-services/#comments</comments>
+		
+		<dc:creator><![CDATA[Charlie Reverte]]></dc:creator>
+		<pubDate>Wed, 03 Apr 2013 16:00:54 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[endpoint]]></category>
+		<category><![CDATA[filesystem]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[URL]]></category>
+		<category><![CDATA[Web service]]></category>
+		<guid isPermaLink="false">/?p=233</guid>
+
+					<description><![CDATA[URL design discussions for RESTful web services often degrade into debates over pluralization and parameter names. There are a couple of principles I like to use to keep things simple.]]></description>
+		
+					<wfw:commentRss>/2013/04/03/url-design-restful-web-services/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

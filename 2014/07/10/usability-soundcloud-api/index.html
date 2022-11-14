@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Usability Review: SoundCloud API</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2014/07/10/usability-soundcloud-api/">
+	<link rel="author" href="https://plus.google.com/101249307703031157715">
+	<meta name="description" content="API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.">
+	<meta name="keywords" content="API,documentation,Ruby,SDK,SoundCloud,test,usability,performed,tester,apis,ux,apiux,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Usability Review: SoundCloud API">
+	<meta property="og:description" content="API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.">
+	<meta property="og:url" content="/2014/07/10/usability-soundcloud-api/">
+	<meta property="article:published_time" content="2014-07-10">
+	<meta property="article:modified_time" content="2014-07-10">
+	<meta property="article:author" content="/author/bpedro/">
+	<meta property="article:section" content="Review">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="documentation">
+	<meta property="article:tag" content="Ruby">
+	<meta property="article:tag" content="SDK">
+	<meta property="article:tag" content="SoundCloud">
+	<meta property="article:tag" content="test">
+	<meta property="article:tag" content="usability">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Usability Review: SoundCloud API Comments Feed" href="/2014/07/10/usability-soundcloud-api/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=bc7389530a","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/1070">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=1070">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2014%2F07%2F10%2Fusability-soundcloud-api%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2014%2F07%2F10%2Fusability-soundcloud-api%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '1070';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Usability+Review%3A+SoundCloud+API';
+	window._wp_rp_post_tags = ['api', 'test', 'sdk', 'documentation', 'usability', 'soundcloud', 'ruby', 'review', 'window', '2', 'report', 'rubi', 'soundcloud', 'a', 'review', 'test', 'languag', 'softwar', 'develop', 'program', 'api', 'sdk', 'singl'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	
+<!-- Start Of Script Generated by Author hReview Plugin 0.0.9.4 by authorhreview.com -->
+<meta itemprop="name" content="/2014/07/10/usability-soundcloud-api/">
+<meta itemprop="description" content="API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.">
+<meta itemprop="summary" content="API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.">
+<meta itemprop="ratingValue" content="4">
+<meta itemprop="itemreviewed" content="SoundCloud API">
+<!-- End Of Script Generated by Author hReview Plugin 0.0.9.4 by authorhreview.com -->
+	
+	</head>
+
+<body class="post-template-default single single-post postid-1070 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-1070" class="post-1070 post type-post status-publish format-standard hentry category-review tag-api tag-documentation tag-ruby tag-sdk tag-soundcloud tag-test tag-usability">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Usability Review: SoundCloud API</h1>
+										<div class="comments-link">
+					<a href="/2014/07/10/usability-soundcloud-api/#comments">1 Reply</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<div itemscope itemtype="http://schema.org/Review">
+<div itemprop="reviewBody">
+<div class="review"><div itemtype="http://schema.org/Product" itemscope="">
+<meta content="SoundCloud API" itemprop="name">
+<div itemtype="http://schema.org/Review" itemscope="">
+<div class="ta_rating_container ta_box_right" style="width:300px;"><div id="ta_rating">
+<div>
+<div>Review of: <span class="title item fn" itemprop="name"><a rel="nofollow" href="http://www.apiusabilitytesting.com/reports/03065f94-7156-48c8-b39e-ac44ca2f7fd1/Soundcloud/result.html" title="SoundCloud API" target="_blank">SoundCloud API</a></span>
+</div>
+<div class="clear"></div>
+<dl>
+<div class="clear_space"></div>
+<div class="hr"><hr></div>
+<div>Reviewed by: <span class="reviewer author byline vcard hcard"><span class="author me fn" itemprop="author"><span itemprop="author">Bruno Pedro</span></span></span>
+</div>
+<dl>
+<dt>Rating:</dt>
+<dd><div class="ta_rating result rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+<meta content="1" itemprop="worstRating">
+<meta content="4" itemprop="ratingValue">
+<meta content="5" itemprop="bestRating">
+<div class="result" style="width:80%;" title="4">4</div>
+</div></dd>
+</dl>
+<div class="clear"></div>
+<div class="ta_headline_meta">On <span class="dtreviewed rating_date"><span class="published" title="July 10, 2014">July 10, 2014</span></span>
+</div>
+<div class="ta_headline_meta">Last modified:<span class="dtmodified rating_date" itemprop="dateModified"><span class="updated" title="July 10, 2014">July 10, 2014</span></span>
+</div>
+<div class="clear_space"></div>
+<div class="hr"><hr></div>
+<h3>Summary:</h3>
+<div class="ta_description summary" itemprop="description"><p><span>API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.</span></p></div>
+</dl>
+</div>
+<div class="rating_btn"><a itemprop="url" class="ar_button ar_blue" href="http://www.apiusabilitytesting.com/reports/03065f94-7156-48c8-b39e-ac44ca2f7fd1/Soundcloud/result.html" title="SoundCloud API" target="_blank" rel="nofollow">More Details</a></div>
+<div class="clear"></div>
+</div></div>
+<div itemprop="reviewBody">
+<div itemtype="http://schema.org/Thing" itemscope="" itemprop="itemReviewed"><meta content="SoundCloud API" itemprop="name"></div>
+<p>After last month&#8217;s Dropbox API review, we&#8217;re now publishing the conclusions of usability testing <a class="zem_slink" title="SoundCloud" href="http://soundcloud.com/" target="_blank" rel="homepage">SoundCloud</a> API. Tests have again been conducted by <a title="API Usability Testing" href="http://www.apiusabilitytesting.com/" target="_blank">API Usability Testing</a>, which offer remote API usability testing performed by a broad range of software developers with different experience and qualifications.</p>
+<p><span itemprop="itemReviewed">SoundCloud API</span> usability tests were performed by developers with a range of experience of five to twelve years working with all the major programming languages. All tests were performed using <a title="Ruby" href="https://www.ruby-lang.org/" target="_blank">Ruby</a> on different platforms.</p>
+<p><span id="more-1070"></span></p>
+<p>Participants were given five tasks and reported on time spent and difficulties found while implementing the API client. The most reported problems were related with the lack of specific Ruby documentation the implementation of the SDK not being fully object-oriented.</p>
+<p style="text-align: center;"><img loading="lazy" class="logo aligncenter wp-image-1072 size-medium" src="/wp-content/uploads/2014/07/SoundCloud_logo-300x171.png" alt="SoundCloud_logo" width="300" height="171" srcset="/wp-content/uploads/2014/07/SoundCloud_logo-300x171.png 300w, /wp-content/uploads/2014/07/SoundCloud_logo-1024x583.png 1024w, /wp-content/uploads/2014/07/SoundCloud_logo-624x355.png 624w, /wp-content/uploads/2014/07/SoundCloud_logo.png 2000w" sizes="(max-width: 300px) 100vw, 300px"></p>
+<p>Another point raised was the fact that the API documentation doesn&#8217;t have specific pages for each one of the methods. Instead, the documentation is a single page containing all the information.</p>
+<h3>Original test results</h3>
+<p>The original detailed test results, as reported by API Usability Testing can be found at the following links:</p>
+<ul>
+<li>
+<a title="Tester #1" href="http://www.apiusabilitytesting.com/reports/03065f94-7156-48c8-b39e-ac44ca2f7fd1/Soundcloud/reports/Ruby1/report.html" target="_blank">tester #1</a> (MS Windows 7);</li>
+<li>
+<a title="Tester #2" href="http://www.apiusabilitytesting.com/reports/03065f94-7156-48c8-b39e-ac44ca2f7fd1/Soundcloud/reports/Ruby2/report.html" target="_blank">tester #2</a> (MS Windows 7);</li>
+<li>
+<a title="Tester #3" href="http://www.apiusabilitytesting.com/reports/03065f94-7156-48c8-b39e-ac44ca2f7fd1/Soundcloud/reports/Ruby3/report.html" target="_blank">tester #3</a> (Apple OSX).</li>
+</ul>
+<p>Each report provides detailed information about the tasks performed and also the code used to perform different tests.</p>
+</div>
+</div>
+</div></div>
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-1009" data-post-type="none">
+<a href="/2014/06/10/usability-dropbox-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/06/dropbox-logo1-300x3001-150x150.png" alt="Usability Review: Dropbox API" width="150" height="150"></a><a href="/2014/06/10/usability-dropbox-api/" class="wp_rp_title">Usability Review: Dropbox API</a>
+</li>
+<li data-position="1" data-poid="in-683" data-post-type="none">
+<a href="/2013/10/18/why-no-one-wants-to-use-your-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/10/Shot-To-The-Head-Blam-Reaction-Gif-In-Scott-Pilgrim-Vs.-The-World-150x150.gif" alt="Why no one wants to use your API" width="150" height="150"></a><a href="/2013/10/18/why-no-one-wants-to-use-your-api/" class="wp_rp_title">Why no one wants to use your API</a>
+</li>
+<li data-position="2" data-poid="in-454" data-post-type="none">
+<a href="/2013/05/29/api-hierarchy-needs/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/05/APIMaslowPyramid-150x150.png" alt="API Hierarchy of Needs" width="150" height="150"></a><a href="/2013/05/29/api-hierarchy-needs/" class="wp_rp_title">API Hierarchy of Needs</a>
+</li>
+</ul>
+</div></div>
+</div>
+<div>
+<span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating"><meta itemprop="worstRating">
+<meta itemprop="ratingValue" content="4">
+<meta itemprop="bestRating" content="5"></span><meta itemprop="datePublished" content="2014-07-10">
+</div>
+</div>
+
+<!-- Schema.org markup generated by SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2014/07/10/usability-soundcloud-api/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/bpedro/" class="authorsure-author-link">Bruno Pedro</a></span></span> at <time itemprop="dateModified" datetime="2014-07-10T18:22:26+02:00">July 10, 2014</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/review/" rel="category tag">Review</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/documentation/" rel="tag">documentation</a>, <a href="/tag/ruby/" rel="tag">Ruby</a>, <a href="/tag/sdk/" rel="tag">SDK</a>, <a href="/tag/soundcloud/" rel="tag">SoundCloud</a>, <a href="/tag/test/" rel="tag">test</a>, <a href="/tag/usability/" rel="tag">usability</a> on <a href="/2014/07/10/usability-soundcloud-api/" title="6:30 pm" rel="bookmark"><time class="entry-date" datetime="2014-07-10T18:30:14+02:00">July 10, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/bpedro/" title="View all posts by Bruno Pedro" rel="author">Bruno Pedro</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Bruno Pedro</h2>
+						<p>Bruno Pedro is a Web and Business developer with over fifteen years’ experience in both startups and large corporations.</p>
+						<div class="author-link">
+							<a href="/author/bpedro/" rel="author">
+								View all posts by Bruno Pedro <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2014/06/25/leave-keys-home/" rel="prev"><span class="meta-nav">&larr;</span> Time To Leave Your Keys At Home Or Better Yet Trash Them Forever</a></span>
+					<span class="nav-next"><a href="/2014/09/01/endpoint-kamyar-mohager/" rel="next">Endpoint speaker highlight: Kamyar Mohager <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			One thought on &ldquo;<span>Usability Review: SoundCloud API</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="pingback even thread-even depth-1" id="comment-1144">
+		<p>Pingback: <a href="http://nordicapis.com/2-changes-that-will-transform-your-business-into-an-api-platform-for-growth/" rel="external nofollow ugc" class="url">2 Changes to Transform your Business into an API Platform</a> </p>
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/07/10/usability-soundcloud-api/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1070" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="985a30975d"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="36"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.427 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-22 11:33:14 -->
+
+<!-- Compression = gzip -->
+</html>

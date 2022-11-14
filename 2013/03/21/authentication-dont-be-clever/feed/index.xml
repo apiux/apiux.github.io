@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Authentication: Don&#8217;t be Clever	</title>
+	<atom:link href="/2013/03/21/authentication-dont-be-clever/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/03/21/authentication-dont-be-clever/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=authentication-dont-be-clever</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 21 Dec 2015 03:55:47 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Dave		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-10417</link>
+
+		<dc:creator><![CDATA[Dave]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2015 03:55:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-10417</guid>
+
+					<description><![CDATA[Not sure where things with OAuth 2 stand today, but I do know that the lead author resigned while writing the spec because he thought the whole thing was a big failure.
+
+http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell
+
+Something to think about.]]></description>
+			<content:encoded><![CDATA[<p>Not sure where things with OAuth 2 stand today, but I do know that the lead author resigned while writing the spec because he thought the whole thing was a big failure.</p>
+<p><a href="http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell" rel="nofollow ugc">http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell</a></p>
+<p>Something to think about.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Tictail API launch focuses on UX		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-257</link>
+
+		<dc:creator><![CDATA[Tictail API launch focuses on UX]]></dc:creator>
+		<pubDate>Thu, 19 Sep 2013 18:34:54 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-257</guid>
+
+					<description><![CDATA[[&#8230;] was fundamental to launch the right API. They&#8217;ve chosen proven standards starting with the authentication protocol which is OAuth 2.0. One of the features that made them choose it was the implicit grant [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] was fundamental to launch the right API. They&#8217;ve chosen proven standards starting with the authentication protocol which is OAuth 2.0. One of the features that made them choose it was the implicit grant [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Authentication: Don't be Clever &#124; kernicPanel &#124; Scoop.it		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-29</link>
+
+		<dc:creator><![CDATA[Authentication: Don't be Clever &#124; kernicPanel &#124; Scoop.it]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2013 21:02:40 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-29</guid>
+
+					<description><![CDATA[[...] HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0...&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0&#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Authentication: Don't be Clever &#124; nodeJS and REST APIs &#124; Scoop.it		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-24</link>
+
+		<dc:creator><![CDATA[Authentication: Don't be Clever &#124; nodeJS and REST APIs &#124; Scoop.it]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2013 00:14:37 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-24</guid>
+
+					<description><![CDATA[[...] HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0...&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0&#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Barnabas		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-22</link>
+
+		<dc:creator><![CDATA[Barnabas]]></dc:creator>
+		<pubDate>Mon, 25 Mar 2013 20:32:06 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-22</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/03/21/authentication-dont-be-clever/#comment-12&quot;&gt;Weng Fu&lt;/a&gt;.
+
+I can&#039;t imagine ROT13 being a barrier to anyone but a 7-year old.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/03/21/authentication-dont-be-clever/#comment-12">Weng Fu</a>.</p>
+<p>I can&#8217;t imagine ROT13 being a barrier to anyone but a 7-year old.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Fadi E. (itoctopus)		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-15</link>
+
+		<dc:creator><![CDATA[Fadi E. (itoctopus)]]></dc:creator>
+		<pubDate>Mon, 25 Mar 2013 14:18:44 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-15</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/03/21/authentication-dont-be-clever/#comment-12&quot;&gt;Weng Fu&lt;/a&gt;.
+
+@Weng,
+
+SQL injection affects the whole database - and not just a table with your uid/pwds. SQL injection is the outcome of some seriously badly written code somewhere in your application - so you need to make sure that your code is secure and resilient to any SQL injection attacks.
+
+Using files to store passwords has the exact same problem (your application might have some issues with filesystem security) and can lead to performance issues especially if you have a long list of logins. Additionally, when migrating a website from one place to another, you will need to remember to copy that file or else the website won&#039;t work.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/03/21/authentication-dont-be-clever/#comment-12">Weng Fu</a>.</p>
+<p>@Weng,</p>
+<p>SQL injection affects the whole database &#8211; and not just a table with your uid/pwds. SQL injection is the outcome of some seriously badly written code somewhere in your application &#8211; so you need to make sure that your code is secure and resilient to any SQL injection attacks.</p>
+<p>Using files to store passwords has the exact same problem (your application might have some issues with filesystem security) and can lead to performance issues especially if you have a long list of logins. Additionally, when migrating a website from one place to another, you will need to remember to copy that file or else the website won&#8217;t work.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Weng Fu		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-12</link>
+
+		<dc:creator><![CDATA[Weng Fu]]></dc:creator>
+		<pubDate>Sun, 24 Mar 2013 09:05:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-12</guid>
+
+					<description><![CDATA[I think  password is sufficient for most web sites.  The password should not be save in database because of SQL injector.  It is better to save password in hided password file separate from database. Password file should be encrypted by ROT13 to prevent hacker access to the file.]]></description>
+			<content:encoded><![CDATA[<p>I think  password is sufficient for most web sites.  The password should not be save in database because of SQL injector.  It is better to save password in hided password file separate from database. Password file should be encrypted by ROT13 to prevent hacker access to the file.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Authentication: Don’t be Clever &#124; CodingScoop &#124; Scoop.it		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-11</link>
+
+		<dc:creator><![CDATA[Authentication: Don’t be Clever &#124; CodingScoop &#124; Scoop.it]]></dc:creator>
+		<pubDate>Sun, 24 Mar 2013 09:01:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-11</guid>
+
+					<description><![CDATA[[...] HTTP API authentication has evolved through many forms over the years.&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] HTTP API authentication has evolved through many forms over the years.&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Javin		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-10</link>
+
+		<dc:creator><![CDATA[Javin]]></dc:creator>
+		<pubDate>Sun, 24 Mar 2013 03:15:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-10</guid>
+
+					<description><![CDATA[Simple and easy, Use OAuth 2.0 , but worth reading that StackOverFlow.]]></description>
+			<content:encoded><![CDATA[<p>Simple and easy, Use OAuth 2.0 , but worth reading that StackOverFlow.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Craig Francis		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-9</link>
+
+		<dc:creator><![CDATA[Craig Francis]]></dc:creator>
+		<pubDate>Sat, 23 Mar 2013 20:27:26 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-9</guid>
+
+					<description><![CDATA[I&#039;m still not sure oAuth2 is the answer though, and I&#039;m still trying to find answers to simple things like 2 legged-auth: http://stackoverflow.com/q/14402938]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m still not sure oAuth2 is the answer though, and I&#8217;m still trying to find answers to simple things like 2 legged-auth: <a href="http://stackoverflow.com/q/14402938" rel="nofollow ugc">http://stackoverflow.com/q/14402938</a></p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

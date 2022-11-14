@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sweden &#8211; API UX</title>
+	<atom:link href="/tag/sweden/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 24 Sep 2013 09:28:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Nordic APIs conference wrap-up</title>
+		<link>/2013/09/24/nordic-apis-wrap-up/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nordic-apis-wrap-up</link>
+					<comments>/2013/09/24/nordic-apis-wrap-up/#comments</comments>
+		
+		<dc:creator><![CDATA[Andreas Krohn]]></dc:creator>
+		<pubDate>Tue, 24 Sep 2013 16:00:23 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[nordic]]></category>
+		<category><![CDATA[presentation]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[speakers]]></category>
+		<category><![CDATA[Stockholm]]></category>
+		<category><![CDATA[Sweden]]></category>
+		<category><![CDATA[wrap-up]]></category>
+		<guid isPermaLink="false">/?p=669</guid>
+
+					<description><![CDATA[The biggest Nordic APIs conference to date was held in Stockholm, Sweden 18-19 September, 2013. As one of the organizers I am proud to say everything went very well and that we did what we set out to do &#8211; which was to create a place for the API community in the Nordics to meet in person. [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/24/nordic-apis-wrap-up/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

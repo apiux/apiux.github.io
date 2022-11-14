@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>party &#8211; API UX</title>
+	<atom:link href="/tag/party/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 10 Jun 2014 14:52:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Usability Review: Dropbox API</title>
+		<link>/2014/06/10/usability-dropbox-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=usability-dropbox-api</link>
+					<comments>/2014/06/10/usability-dropbox-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 10 Jun 2014 16:30:31 +0000</pubDate>
+				<category><![CDATA[Review]]></category>
+		<category><![CDATA[3rd]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[datastore]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[Dropbox]]></category>
+		<category><![CDATA[module]]></category>
+		<category><![CDATA[nodejs]]></category>
+		<category><![CDATA[official]]></category>
+		<category><![CDATA[party]]></category>
+		<category><![CDATA[review]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[usability]]></category>
+		<guid isPermaLink="false">/?p=1009</guid>
+
+					<description><![CDATA[Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.]]></description>
+		
+					<wfw:commentRss>/2014/06/10/usability-dropbox-api/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>UX &#8211; API UX</title>
+	<atom:link href="/tag/ux/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 19 Sep 2013 18:55:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Tictail API launch focuses on UX</title>
+		<link>/2013/09/19/tictail-api-launch-focuses-ux/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tictail-api-launch-focuses-ux</link>
+					<comments>/2013/09/19/tictail-api-launch-focuses-ux/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 19 Sep 2013 18:34:42 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[best practice]]></category>
+		<category><![CDATA[community]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[launch]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[portal]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[Tictail]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=659</guid>
+
+					<description><![CDATA[Tictail, a Swedish e-commerce platform that manages over 24,000 stores spread across 110 different countries, launched their API on September 16, 2013. Because Tictail&#8217;s main focus is simplicity of use, they decided to offer developers the same tools they use internally to build this new platform. According to Carl Waldekranz, Tictail CEO, they &#8220;want developers to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/19/tictail-api-launch-focuses-ux/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Pivotal Tracker launches new API in public beta</title>
+		<link>/2013/08/19/pivotal-tracker-new-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pivotal-tracker-new-api</link>
+					<comments>/2013/08/19/pivotal-tracker-new-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 19 Aug 2013 16:00:57 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[beta]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[pivotal]]></category>
+		<category><![CDATA[tracker]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=599</guid>
+
+					<description><![CDATA[Pivotal Tracker just announced the availability of their API V5 in public beta, starting August 16, 2013. The launch is justified because the application itself has run against the new API version for a long time now. The new API introduces several improvements, like the ability to get access to all project data, including epics. They [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/08/19/pivotal-tracker-new-api/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Implementing API Content Negotiation</title>
+		<link>/2013/05/07/api-content-negotiation/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-content-negotiation</link>
+					<comments>/2013/05/07/api-content-negotiation/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 13:00:01 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[Accept-encoding]]></category>
+		<category><![CDATA[Accept-language]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[Content]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[Negotiation]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=348</guid>
+
+					<description><![CDATA[Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.]]></description>
+		
+					<wfw:commentRss>/2013/05/07/api-content-negotiation/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to Expose User Information</title>
+		<link>/2013/04/11/how-to-expose-user-information/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-expose-user-information</link>
+					<comments>/2013/04/11/how-to-expose-user-information/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2013 16:00:16 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[expose]]></category>
+		<category><![CDATA[information]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[sensitive]]></category>
+		<category><![CDATA[user]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=275</guid>
+
+					<description><![CDATA[If you provide the right amount of information, applications built on top of your API will be able to offer a better service to your users. Your final user will have a better experience and that might turn out to generate more business for you.]]></description>
+		
+					<wfw:commentRss>/2013/04/11/how-to-expose-user-information/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2 steps to better API Error Codes</title>
+		<link>/2013/03/28/2-steps-api-error-codes/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=2-steps-api-error-codes</link>
+					<comments>/2013/03/28/2-steps-api-error-codes/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 28 Mar 2013 17:00:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[integration]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[steps]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML.protocol]]></category>
+		<guid isPermaLink="false">/?p=171</guid>
+
+					<description><![CDATA[One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their applications.]]></description>
+		
+					<wfw:commentRss>/2013/03/28/2-steps-api-error-codes/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Is end-user API UX a Utopia?</title>
+		<link>/2013/03/26/end-user-api-ux-utopia/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=end-user-api-ux-utopia</link>
+					<comments>/2013/03/26/end-user-api-ux-utopia/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Rados]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2013 17:00:58 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[cloud]]></category>
+		<category><![CDATA[end-user]]></category>
+		<category><![CDATA[integration]]></category>
+		<category><![CDATA[monitoring]]></category>
+		<category><![CDATA[tool]]></category>
+		<category><![CDATA[troubleshoot]]></category>
+		<category><![CDATA[UI]]></category>
+		<category><![CDATA[utopia]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=155</guid>
+
+					<description><![CDATA[I have been working as a User Experience designer at CloudWork for the past 6 months and I&#8217;ve faced many challenges and opportunities while building an easy to use product that automates business processes and synchronizes cloud-based applications. The UI and UX of the application was very easy to create compared to the actual UX of [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/03/26/end-user-api-ux-utopia/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is API User Experience?</title>
+		<link>/2013/03/19/what-is-api-user-experience/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=what-is-api-user-experience</link>
+					<comments>/2013/03/19/what-is-api-user-experience/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 19 Mar 2013 17:00:51 +0000</pubDate>
+				<category><![CDATA[Announcement]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[definition]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[ease of use]]></category>
+		<category><![CDATA[efficiency]]></category>
+		<category><![CDATA[emotion]]></category>
+		<category><![CDATA[ISO 9241-210]]></category>
+		<category><![CDATA[perception]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[system]]></category>
+		<category><![CDATA[user]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=24</guid>
+
+					<description><![CDATA[API User Experience, or API UX, is a person's perceptions of the utility, ease of use and efficiency of an application API that result from its direct or indirect use. API UX covers two major types of users: developers, who benefit from direct use of APIs and end-users, who use APIs indirectly through consumer applications.]]></description>
+		
+					<wfw:commentRss>/2013/03/19/what-is-api-user-experience/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

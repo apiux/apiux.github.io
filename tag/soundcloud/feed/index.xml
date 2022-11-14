@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SoundCloud &#8211; API UX</title>
+	<atom:link href="/tag/soundcloud/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 10 Jul 2014 16:22:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Usability Review: SoundCloud API</title>
+		<link>/2014/07/10/usability-soundcloud-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=usability-soundcloud-api</link>
+					<comments>/2014/07/10/usability-soundcloud-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 10 Jul 2014 16:30:14 +0000</pubDate>
+				<category><![CDATA[Review]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[Ruby]]></category>
+		<category><![CDATA[SDK]]></category>
+		<category><![CDATA[SoundCloud]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[usability]]></category>
+		<guid isPermaLink="false">/?p=1070</guid>
+
+					<description><![CDATA[API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.]]></description>
+		
+					<wfw:commentRss>/2014/07/10/usability-soundcloud-api/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

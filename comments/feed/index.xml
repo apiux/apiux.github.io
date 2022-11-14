@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments for API UX	</title>
+	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 13 Jun 2016 09:00:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>
+		Comment on The 5 laws of API dates and times by The 5 laws of API dates and times &#124; Topic &#124; Sc...		</title>
+		<link>/2013/03/20/5-laws-api-dates-and-times/#comment-11851</link>
+
+		<dc:creator><![CDATA[The 5 laws of API dates and times &#124; Topic &#124; Sc...]]></dc:creator>
+		<pubDate>Mon, 13 Jun 2016 09:00:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=73#comment-11851</guid>
+
+					<description><![CDATA[[&#8230;] Let&#039;s say you&#039;re building your first API. Be it public, private, or some hybrid thereof, don&#039;t be surprised if your first defect is date/time-related. Do not underestimate how much trouble you can ...&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Let&#039;s say you&#039;re building your first API. Be it public, private, or some hybrid thereof, don&#039;t be surprised if your first defect is date/time-related. Do not underestimate how much trouble you can &#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on URL Design for RESTful Web Services by URL Design for RESTful Web Services &#124; AddThis Blog		</title>
+		<link>/2013/04/03/url-design-restful-web-services/#comment-11735</link>
+
+		<dc:creator><![CDATA[URL Design for RESTful Web Services &#124; AddThis Blog]]></dc:creator>
+		<pubDate>Tue, 24 May 2016 12:38:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=233#comment-11735</guid>
+
+					<description><![CDATA[[&#8230;] Engineering, Charlie Reverte, posted today at APIUX.com. To read the rest of the blog post, click here to go over to their [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Engineering, Charlie Reverte, posted today at APIUX.com. To read the rest of the blog post, click here to go over to their [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on The 5 laws of API dates and times by Writing OpenAPI (Swagger) Specification Tutorial &#8211; Part 4 &#8211; Advanced Data Modeling &#124; API Handyman		</title>
+		<link>/2013/03/20/5-laws-api-dates-and-times/#comment-11346</link>
+
+		<dc:creator><![CDATA[Writing OpenAPI (Swagger) Specification Tutorial &#8211; Part 4 &#8211; Advanced Data Modeling &#124; API Handyman]]></dc:creator>
+		<pubDate>Sun, 17 Apr 2016 15:52:44 +0000</pubDate>
+		<guid isPermaLink="false">/?p=73#comment-11346</guid>
+
+					<description><![CDATA[[&#8230;] should read the 5 laws of API dates and times by Jason Harmon to learn how to handle date and time with an [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] should read the 5 laws of API dates and times by Jason Harmon to learn how to handle date and time with an [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on Authentication: Don&#8217;t be Clever by Dave		</title>
+		<link>/2013/03/21/authentication-dont-be-clever/#comment-10417</link>
+
+		<dc:creator><![CDATA[Dave]]></dc:creator>
+		<pubDate>Mon, 21 Dec 2015 03:55:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=112#comment-10417</guid>
+
+					<description><![CDATA[Not sure where things with OAuth 2 stand today, but I do know that the lead author resigned while writing the spec because he thought the whole thing was a big failure.
+
+http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell
+
+Something to think about.]]></description>
+			<content:encoded><![CDATA[<p>Not sure where things with OAuth 2 stand today, but I do know that the lead author resigned while writing the spec because he thought the whole thing was a big failure.</p>
+<p><a href="http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell" rel="nofollow ugc">http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell</a></p>
+<p>Something to think about.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on The 5 laws of API dates and times by Stephan Smith		</title>
+		<link>/2013/03/20/5-laws-api-dates-and-times/#comment-10416</link>
+
+		<dc:creator><![CDATA[Stephan Smith]]></dc:creator>
+		<pubDate>Sat, 12 Dec 2015 00:04:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=73#comment-10416</guid>
+
+					<description><![CDATA[Great article. I am using moment.js and found the following helped solidify how to accept any TZ, store in UTC and return UTC.
+
+/* 1. Gets the local date time in ISO-8601 format. ex: &quot;2015-12-11T18:52:59-05:00&quot; */
+var localDateTime = moment().format();
+
+/* 2. POST to the API Body: { date: &quot;2015-12-11T18:52:59-05:00&quot; } */
+ 
+/* 3. On Server convert the localtime to UTC: &quot;2015-12-11T23:52:59+00:00&quot; */
+var UTCTime = moment.utc(req.body.date).format();
+
+/* 4. Store the UTCTime in the DB. */
+
+/* 5. Returned to the user in an JSON */
+/* res.json( { date: &quot;2015-12-11T23:52:59+00:00&quot; } ); */
+
+/* 6. Testing in the Browser: */
+var localDateTime2 = moment(&quot;2015-12-11T23:52:59+00:00&quot;).format();
+
+/* Assert we got a UTC that converts back into a local time we originally sent. */
+localTime == localTime2
+
+This should be to specific moment commands for local and server side dates.
+
+Anyone?]]></description>
+			<content:encoded><![CDATA[<p>Great article. I am using moment.js and found the following helped solidify how to accept any TZ, store in UTC and return UTC.</p>
+<p>/* 1. Gets the local date time in ISO-8601 format. ex: &#8220;2015-12-11T18:52:59-05:00&#8221; */<br />
+var localDateTime = moment().format();</p>
+<p>/* 2. POST to the API Body: { date: &#8220;2015-12-11T18:52:59-05:00&#8221; } */</p>
+<p>/* 3. On Server convert the localtime to UTC: &#8220;2015-12-11T23:52:59+00:00&#8221; */<br />
+var UTCTime = moment.utc(req.body.date).format();</p>
+<p>/* 4. Store the UTCTime in the DB. */</p>
+<p>/* 5. Returned to the user in an JSON */<br />
+/* res.json( { date: &#8220;2015-12-11T23:52:59+00:00&#8221; } ); */</p>
+<p>/* 6. Testing in the Browser: */<br />
+var localDateTime2 = moment(&#8220;2015-12-11T23:52:59+00:00&#8221;).format();</p>
+<p>/* Assert we got a UTC that converts back into a local time we originally sent. */<br />
+localTime == localTime2</p>
+<p>This should be to specific moment commands for local and server side dates.</p>
+<p>Anyone?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on How OAuth 2 trumps Basic authentication by zonbii		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-9889</link>
+
+		<dc:creator><![CDATA[zonbii]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 17:48:50 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-9889</guid>
+
+					<description><![CDATA[SSL + Basic Auth if using server cert pinning or a 3rd party signed cert shouldn&#039;t be an issue.  Is only when you pass the exchange self signed public key in the open that contain the risk.]]></description>
+			<content:encoded><![CDATA[<p>SSL + Basic Auth if using server cert pinning or a 3rd party signed cert shouldn&#8217;t be an issue.  Is only when you pass the exchange self signed public key in the open that contain the risk.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on The 5 laws of API dates and times by Build a Better API &#124; Mahmoud Zalt (BLOG)		</title>
+		<link>/2013/03/20/5-laws-api-dates-and-times/#comment-9064</link>
+
+		<dc:creator><![CDATA[Build a Better API &#124; Mahmoud Zalt (BLOG)]]></dc:creator>
+		<pubDate>Tue, 11 Aug 2015 16:43:24 +0000</pubDate>
+		<guid isPermaLink="false">/?p=73#comment-9064</guid>
+
+					<description><![CDATA[[&#8230;]  http://restcookbook.com/Basics/caching/ /2013/03/20/5-laws-api-dates-and-times/  Don&#039;t forget to share it.   Posted in API, [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;]  <a href="http://restcookbook.com/Basics/caching/" rel="nofollow ugc">http://restcookbook.com/Basics/caching/</a> <a href="/2013/03/20/5-laws-api-dates-and-times/" rel="nofollow ugc">/2013/03/20/5-laws-api-dates-and-times/</a>  Don&#039;t forget to share it.   Posted in API, [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on API Hierarchy of Needs by Applying Psychology to APIs: the Best of API Hierarchies of Needs		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-8981</link>
+
+		<dc:creator><![CDATA[Applying Psychology to APIs: the Best of API Hierarchies of Needs]]></dc:creator>
+		<pubDate>Fri, 31 Jul 2015 13:52:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-8981</guid>
+
+					<description><![CDATA[[&#8230;] Read the article here. [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Read the article here. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on An Overview of REST Metadata Formats by Gavin Engel		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-7930</link>
+
+		<dc:creator><![CDATA[Gavin Engel]]></dc:creator>
+		<pubDate>Thu, 23 Apr 2015 22:18:06 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-7930</guid>
+
+					<description><![CDATA[Where do we stand in 2015?]]></description>
+			<content:encoded><![CDATA[<p>Where do we stand in 2015?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Comment on How to localize your API by Jason Harmon		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-5107</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2014 15:35:49 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-5107</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/25/how-to-localize-your-api/#comment-5097&quot;&gt;Budy&lt;/a&gt;.
+
+ISO8601 specifies Gregorian calendar only. Past that, determining the local timezone is the UX&#039;s responsibility. This can be quite complicated in mobile scenarios, so the API should stick to UTC in the response. See my article 5 Laws of API Dates and Times for more info.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/25/how-to-localize-your-api/#comment-5097">Budy</a>.</p>
+<p>ISO8601 specifies Gregorian calendar only. Past that, determining the local timezone is the UX&#8217;s responsibility. This can be quite complicated in mobile scenarios, so the API should stick to UTC in the response. See my article 5 Laws of API Dates and Times for more info.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

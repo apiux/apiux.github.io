@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Content &#8211; API UX</title>
+	<atom:link href="/tag/content/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 07 May 2013 13:02:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Implementing API Content Negotiation</title>
+		<link>/2013/05/07/api-content-negotiation/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-content-negotiation</link>
+					<comments>/2013/05/07/api-content-negotiation/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 13:00:01 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[Accept-encoding]]></category>
+		<category><![CDATA[Accept-language]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[Content]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[Negotiation]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=348</guid>
+
+					<description><![CDATA[Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.]]></description>
+		
+					<wfw:commentRss>/2013/05/07/api-content-negotiation/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

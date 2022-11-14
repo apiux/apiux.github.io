@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>automation &#8211; API UX</title>
+	<atom:link href="/tag/automation/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 25 Jun 2014 16:30:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Time To Leave Your Keys At Home Or Better Yet Trash Them Forever</title>
+		<link>/2014/06/25/leave-keys-home/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=leave-keys-home</link>
+					<comments>/2014/06/25/leave-keys-home/#respond</comments>
+		
+		<dc:creator><![CDATA[Andree Huk]]></dc:creator>
+		<pubDate>Wed, 25 Jun 2014 16:30:27 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[CarPlay]]></category>
+		<category><![CDATA[HomeKit]]></category>
+		<category><![CDATA[integration]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[keys]]></category>
+		<category><![CDATA[sensor]]></category>
+		<category><![CDATA[TouchID]]></category>
+		<guid isPermaLink="false">/?p=1033</guid>
+
+					<description><![CDATA[This post originally appeared on Andree&#8217;s personal blog. You can follow him here @andreehuk. Apple&#8216;s design goal is to create holistic and consistent experiences. Apple focuses exclusively on devices and services that they can control. In fact, this control actually has likely increased as Walt Mossberg writes about WWDC 2014 on re/code. Customers are being enticed more and more to stay [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/06/25/leave-keys-home/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

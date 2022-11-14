@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: API Hierarchy of Needs	</title>
+	<atom:link href="/2013/05/29/api-hierarchy-needs/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/05/29/api-hierarchy-needs/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-hierarchy-needs</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 31 Jul 2015 13:52:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Applying Psychology to APIs: the Best of API Hierarchies of Needs		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-8981</link>
+
+		<dc:creator><![CDATA[Applying Psychology to APIs: the Best of API Hierarchies of Needs]]></dc:creator>
+		<pubDate>Fri, 31 Jul 2015 13:52:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-8981</guid>
+
+					<description><![CDATA[[&#8230;] Read the article here. [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Read the article here. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: API Hierarchy of Needs &#124; Software Development &#124;...		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-357</link>
+
+		<dc:creator><![CDATA[API Hierarchy of Needs &#124; Software Development &#124;...]]></dc:creator>
+		<pubDate>Sat, 22 Mar 2014 01:05:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-357</guid>
+
+					<description><![CDATA[[&#8230;] &#8220; The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.&#8221;&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] &ldquo; The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.&rdquo;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: API Hierarchy of Needs &#124; API Magazine: About AP...		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-356</link>
+
+		<dc:creator><![CDATA[API Hierarchy of Needs &#124; API Magazine: About AP...]]></dc:creator>
+		<pubDate>Fri, 21 Mar 2014 14:49:36 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-356</guid>
+
+					<description><![CDATA[[&#8230;] The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-228</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 31 Jul 2013 16:01:52 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-228</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/29/api-hierarchy-needs/#comment-221&quot;&gt;Peter Verhas&lt;/a&gt;.
+
+I wouldn&#039;t worry so much about the possibility of breaking backward compatibility. If things are done the right way, you should offer API versioning (/2013/05/14/api-versioning/), meaning that there&#039;s no way to break things.
+
+I agree with your way of looking at the API with a dynamic view -- thanks for sharing it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/29/api-hierarchy-needs/#comment-221">Peter Verhas</a>.</p>
+<p>I wouldn&#8217;t worry so much about the possibility of breaking backward compatibility. If things are done the right way, you should offer API versioning (<a href="/2013/05/14/api-versioning/" rel="nofollow ugc">/2013/05/14/api-versioning/</a>), meaning that there&#8217;s no way to break things.</p>
+<p>I agree with your way of looking at the API with a dynamic view &#8212; thanks for sharing it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Peter Verhas		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-221</link>
+
+		<dc:creator><![CDATA[Peter Verhas]]></dc:creator>
+		<pubDate>Tue, 30 Jul 2013 14:22:29 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-221</guid>
+
+					<description><![CDATA[&quot;Can it be used in unexpected ways?&quot; That really would worry me. Your argument is absolutely valid on one hand. The more versatile, open and applicable the API is the more attractive it is for the developers/users. On the other hand if you open up your application giving access to all internal features you did not even have ideas how could be used, you may end up with an application that you can not develop without breaking backward compatibility.
+
+API should be designed with the open/close principle in mind. You model is static, looking at the values the API can deliver for a certain version. Looking at the API with a dynamic view is more important: what value can your API deliver during the life time of the domain and you application supporting that domain.]]></description>
+			<content:encoded><![CDATA[<p>&#8220;Can it be used in unexpected ways?&#8221; That really would worry me. Your argument is absolutely valid on one hand. The more versatile, open and applicable the API is the more attractive it is for the developers/users. On the other hand if you open up your application giving access to all internal features you did not even have ideas how could be used, you may end up with an application that you can not develop without breaking backward compatibility.</p>
+<p>API should be designed with the open/close principle in mind. You model is static, looking at the values the API can deliver for a certain version. Looking at the API with a dynamic view is more important: what value can your API deliver during the life time of the domain and you application supporting that domain.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Reed		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-178</link>
+
+		<dc:creator><![CDATA[Scott Reed]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 17:16:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-178</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/29/api-hierarchy-needs/#comment-177&quot;&gt;Bruno Pedro&lt;/a&gt;.
+
+And conversely if your API has broken features or has bad uptime it doesn&#039;t really matter how usable it is. A pyramid model which places one of several important needs over others might not be the best idea. A better model would be one which places equal importance on needs such as usability, functionality and reliability.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/29/api-hierarchy-needs/#comment-177">Bruno Pedro</a>.</p>
+<p>And conversely if your API has broken features or has bad uptime it doesn&#8217;t really matter how usable it is. A pyramid model which places one of several important needs over others might not be the best idea. A better model would be one which places equal importance on needs such as usability, functionality and reliability.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-177</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 08:12:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-177</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/29/api-hierarchy-needs/#comment-176&quot;&gt;Scott Reed&lt;/a&gt;.
+
+Placing Usability at the bottom of the pyramid is generating an interesting debate among several people.
+
+If your goal is to make your API successful, you need to be able to evangelize developers into using it. If developers cannot even use it, it really doesn&#039;t matter if your API works at all, does it?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/29/api-hierarchy-needs/#comment-176">Scott Reed</a>.</p>
+<p>Placing Usability at the bottom of the pyramid is generating an interesting debate among several people.</p>
+<p>If your goal is to make your API successful, you need to be able to evangelize developers into using it. If developers cannot even use it, it really doesn&#8217;t matter if your API works at all, does it?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Reed		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-176</link>
+
+		<dc:creator><![CDATA[Scott Reed]]></dc:creator>
+		<pubDate>Wed, 05 Jun 2013 17:28:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-176</guid>
+
+					<description><![CDATA[I disagree with placing usability above functionality and reliability in importance. An API actually working is much more important to me. For example, the Twilio API has great usability but the biggest frustration I&#039;ve had with it is when features did not work. With the AWS API, the error codes it gives are pretty much useless.]]></description>
+			<content:encoded><![CDATA[<p>I disagree with placing usability above functionality and reliability in importance. An API actually working is much more important to me. For example, the Twilio API has great usability but the biggest frustration I&#8217;ve had with it is when features did not work. With the AWS API, the error codes it gives are pretty much useless.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bridging the Gap Between APIs and Customers &#124; Bruno Pedro		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-164</link>
+
+		<dc:creator><![CDATA[Bridging the Gap Between APIs and Customers &#124; Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2013 11:19:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-164</guid>
+
+					<description><![CDATA[[...] customers need is represented in one of the slides as the &#8220;API Hierarchy of Needs&#8220;, an adaptation of Maslow&#8217;s Hierarchy of Needs to the context of APIs from a customer [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] customers need is represented in one of the slides as the &#8220;API Hierarchy of Needs&#8220;, an adaptation of Maslow&#8217;s Hierarchy of Needs to the context of APIs from a customer [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/29/api-hierarchy-needs/#comment-162</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2013 09:21:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=454#comment-162</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/29/api-hierarchy-needs/#comment-159&quot;&gt;API Rating Agency (@API500)&lt;/a&gt;.
+
+Thanks for sharing the link, so we can all see different perspectives!
+
+The pyramid I presented at APIdays was not this one. It was an adaptation of this one but from a customer (not a developer) point of view.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/29/api-hierarchy-needs/#comment-159">API Rating Agency (@API500)</a>.</p>
+<p>Thanks for sharing the link, so we can all see different perspectives!</p>
+<p>The pyramid I presented at APIdays was not this one. It was an adaptation of this one but from a customer (not a developer) point of view.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

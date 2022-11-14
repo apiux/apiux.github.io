@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Webhooks, REST and the Open Web</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/09/12/webhooks/">
+	<link rel="author" href="https://plus.google.com/101249307703031157715">
+	<meta name="description" content="PuSH is an open protocol that treats webhooks like subscriptions.">
+	<meta name="keywords" content="API,hook,HTTP,Open,ping,protocol,publish,pubsubhubbub,REST,specification,standard,subscription,Web,webhook,server,subscriber,push,apis,ux,apiux,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Webhooks, REST and the Open Web">
+	<meta property="og:description" content="PuSH is an open protocol that treats webhooks like subscriptions.">
+	<meta property="og:url" content="/2013/09/12/webhooks/">
+	<meta property="article:published_time" content="2013-09-12">
+	<meta property="article:modified_time" content="2013-09-12">
+	<meta property="article:author" content="/author/bpedro/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="hook">
+	<meta property="article:tag" content="HTTP">
+	<meta property="article:tag" content="Open">
+	<meta property="article:tag" content="ping">
+	<meta property="article:tag" content="protocol">
+	<meta property="article:tag" content="publish">
+	<meta property="article:tag" content="pubsubhubbub">
+	<meta property="article:tag" content="REST">
+	<meta property="article:tag" content="specification">
+	<meta property="article:tag" content="standard">
+	<meta property="article:tag" content="subscription">
+	<meta property="article:tag" content="Web">
+	<meta property="article:tag" content="webhook">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Webhooks, REST and the Open Web Comments Feed" href="/2013/09/12/webhooks/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=2521166e51","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/495">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=495">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F09%2F12%2Fwebhooks%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F09%2F12%2Fwebhooks%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '495';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Webhooks%2C+REST+and+the+Open+Web';
+	window._wp_rp_post_tags = ['web', 'pubsubhubbub', 'http', 'specification', 'ping', 'subscription', 'publish', 'hook', 'webhook', 'rest', 'open', 'standard', 'protocol', 'api', 'opinion', 'web', 'a', 'poll', 'jeff', 'resourc', 'hook', 'api', 'programm', 'side', 'world', 'pattern', 'coin', 'lindsai', 'compani', 'logo'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-495 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-495" class="post-495 post type-post status-publish format-standard hentry category-opinion tag-api tag-hook tag-http tag-open tag-ping tag-protocol tag-publish tag-pubsubhubbub tag-rest tag-specification tag-standard tag-subscription tag-web tag-webhook">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Webhooks, REST and the Open Web</h1>
+										<div class="comments-link">
+					<a href="/2013/09/12/webhooks/#comments">8 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p><span style="line-height: 1.714285714; font-size: 1rem;">Back in 2006, </span><a style="line-height: 1.714285714; font-size: 1rem;" title="Jeff Lindsay" href="http://progrium.com/about.html" target="_blank">Jeff Lindsay</a> <span style="line-height: 1.714285714; font-size: 1rem;">proposed</span><span style="line-height: 1.714285714; font-size: 1rem;"> a different way of consuming Web resources that would eliminate the need for constantly polling APIs for changes. This new </span><strong style="line-height: 1.714285714; font-size: 1rem;">pattern</strong><span style="line-height: 1.714285714; font-size: 1rem;"> was called </span><em style="line-height: 1.714285714; font-size: 1rem;">webhooks</em><span style="line-height: 1.714285714; font-size: 1rem;"> and has since been adopted by companies such as </span><a style="line-height: 1.714285714; font-size: 1rem;" title="GitHub" href="http://github.com/" target="_blank">GitHub</a><span style="line-height: 1.714285714; font-size: 1rem;"> and </span><a style="line-height: 1.714285714; font-size: 1rem;" title="Google" href="http://google.com/" target="_blank">Google</a><span style="line-height: 1.714285714; font-size: 1rem;">.</span></p>
+<div id="attachment_646" style="width: 317px" class="wp-caption aligncenter">
+<a href="http://www.slideshare.net/progrium/web-hooks-and-the-programmable-world-of-tomorrow-presentation" target="_blank"><img aria-describedby="caption-attachment-646" loading="lazy" class="size-full wp-image-646  logo" style="border: 0px;" title="REST and webhooks are two sides of the same coin" alt="REST and webhooks are two sides of the same coin" src="/wp-content/uploads/2013/09/RESTHooks.png" width="307" height="299" srcset="/wp-content/uploads/2013/09/RESTHooks.png 307w, /wp-content/uploads/2013/09/RESTHooks-300x292.png 300w" sizes="(max-width: 307px) 100vw, 307px"></a><p id="caption-attachment-646" class="wp-caption-text">REST and webhooks are two sides of the same coin. In &#8220;<a title="Web Hooks and the Programmable World of Tomorrow" href="http://www.slideshare.net/progrium/web-hooks-and-the-programmable-world-of-tomorrow-presentation" target="_blank">Web Hooks and the Programmable World of Tomorrow</a>&#8220;, Jeff Lindsay, October 2008</p>
+</div>
+<p>The main advantage of the webhooks pattern is that your application doesn&#8217;t have to make periodic calls to APIs while it&#8217;s waiting for changes. Instead, APIs will call your application on a specific endpoint informing that something interesting has happened. What&#8217;s missing is a way to <strong>programmatically</strong> tell APIs that you&#8217;re interested in receiving calls and registering endpoints.<strong><br>
+</strong></p>
+<p><span id="more-495"></span></p>
+<h2>Alternatives to webhooks</h2>
+<p>As the webhooks pattern gained popularity and more companies started using it, it became the <em>de facto</em> standard way of implementing asynchronous API requests. So much that, in 2009, it was used as the basis of an <strong>open</strong> publish/subscribe protocol called <strong><a title="PubSubHubbub" href="http://code.google.com/p/pubsubhubbub/" target="_blank">PubSubHubbub</a></strong>.</p>
+<p>PubSubHubbub, or PuSH, has the goal of letting parties <em>&#8220;get near-instant notifications (via <strong>webhook</strong> callbacks) when a topic (resource URL) they&#8217;re interested in is updated.&#8221;</em> The protocol has gone through several revisions and the latest one, <a title="PubSubHubbub 0.4" href="https://pubsubhubbub.googlecode.com/git/pubsubhubbub-core-0.4.html" target="_blank">0.4</a>, is from <strong>June 2013</strong> and is backed by numerous individuals and companies.</p>
+<p style="text-align: center;"><img loading="lazy" class="aligncenter size-full wp-image-650 logo" style="border: 0px;" alt="PuSH" src="/wp-content/uploads/2013/09/PuSH.png" width="286" height="133"></p>
+<p><span style="line-height: 1.714285714; font-size: 1rem;">The  PuSH protocol&#8217;s main features let a caller </span><strong style="line-height: 1.714285714; font-size: 1rem;">subscribe</strong><span style="line-height: 1.714285714; font-size: 1rem;"> to and </span><strong style="line-height: 1.714285714; font-size: 1rem;">unsubscribe</strong><span style="line-height: 1.714285714; font-size: 1rem;"> from topics. It also has a number of mechanisms to control subscription </span><strong style="line-height: 1.714285714; font-size: 1rem;">validation</strong><span style="line-height: 1.714285714; font-size: 1rem;">, verification of </span><strong style="line-height: 1.714285714; font-size: 1rem;">intent</strong><span style="line-height: 1.714285714; font-size: 1rem;"> and </span><strong style="line-height: 1.714285714; font-size: 1rem;">authentication</strong><span style="line-height: 1.714285714; font-size: 1rem;"> of content distribution.</span></p>
+<p>Another approach to solve the subscription problem is the <a title="HTTP Subscription Specification" href="https://github.com/progrium/http-subscriptions/blob/master/SPEC.md" target="_blank"><strong>HTTP Subscription</strong> Specification</a>, whose main goal is to extend <em>&#8220;HTTP to support subscribing to events based on HTTP callbacks (webhooks).&#8221;</em> The specification is backed by Jeff Lindsay and folks from GitHub and its latest revision is from <strong>February 2013</strong>.</p>
+<p>The main difference between PuSH and the HTTP Subscription Specification is that PuSH offers validation, verification of intent and authentication on top of the basic subscribe and unsubscribe operations.</p>
+<p>To summarize, PuSH offers a simple way to programmatically subscribe and unsubscribe to notifications of events happening at a server while taking care of security issues like validation, verification of intent and authentication. In short, <strong>PuSH is an open protocol that treats webhooks like subscriptions</strong>.</p>
+<h2>REST well</h2>
+<p>While It makes sense to follow the Representational state transfer approach when dealing with operations that directly map to application objects, in the case of subscription management there is no direct advantage in doing it.</p>
+<p><span style="font-size: 1rem; line-height: 1.714285714;">PuSH handles the complexity of managing subscriptions in a very simple way, defining the following subscriber operations:</span></p>
+<ul>
+<li>Subscription request (for creating a subscription): HTTP POST to the subscription server URL passing the callback, the topic and <strong>hub.mode</strong> parameter set to &#8220;subscribe&#8221;;</li>
+<li>Unsubscription request (for deleting a subscription): similar to the subscription request but setting the hub.mode parameter to &#8220;unsubscribe&#8221;.</li>
+</ul>
+<p>In addition to these operations, the subscription server may verify the intent of the subscriber by making an HTTP call to the provided callback with the same parameters requested before and an additional <strong>hub.challenge</strong> that must be echoed back by the subscriber.</p>
+<div id="attachment_652" style="width: 482px" class="wp-caption aligncenter">
+<a href="/wp-content/uploads/2013/09/PuSHSubscribeDiagram.png" target="_blank"><img aria-describedby="caption-attachment-652" loading="lazy" class=" wp-image-652    " style="border: 0px;" alt="PuSH subscription" src="/wp-content/uploads/2013/09/PuSHSubscribeDiagram.png" width="472" height="442" srcset="/wp-content/uploads/2013/09/PuSHSubscribeDiagram.png 780w, /wp-content/uploads/2013/09/PuSHSubscribeDiagram-300x280.png 300w, /wp-content/uploads/2013/09/PuSHSubscribeDiagram-624x584.png 624w" sizes="(max-width: 472px) 100vw, 472px"></a><p id="caption-attachment-652" class="wp-caption-text">PuSH subscription</p>
+</div>
+<h2>Fat is better</h2>
+<p>After a subscription has been created and validated the server will start pushing information about interesting events down to the subscriber. These calls, usually called <strong>pings</strong>, should give the subscriber enough information about the event.</p>
+<p>These pings can contain less or more information, depending on the server implementation. If a ping payload doesn&#8217;t contain enough information, the subscriber needs to make an additional call to the server, asking for all the information about the event.</p>
+<p>A skinny payload has 3 <strong>disadvantages</strong>, from the <strong>server</strong> point of view:</p>
+<ol>
+<li>
+<strong>Latency</strong>: a skinny payload requires at least 3 hops: <em>1)</em> server informs subscriber of new event; <em>2)</em> subscriber asks server for event information; and <em>3)</em> server returns event information.</li>
+<li>
+<strong>Bandwidth</strong>: a skinny payload consumes more bandwidth as the server has to address two additional calls (see <em>Latency</em> above).</li>
+<li>
+<strong>CPU usage</strong>: a skinny payload consumes more CPU as the server has to handle the call from the subscriber asking for more information, with additional cost.</li>
+</ol>
+<p>From the <strong>subscriber</strong> point of view, a <strong>fat payload</strong> is always preferred, unless a high percentage of pings are misses, in which case it&#8217;s better to stop using a publish/subscribe model altogether.</p>
+<h2>The Web is Open</h2>
+<p>Initiatives like webhooks, PubSubHubbub and the HTTP Subscription Specification contribute to a more Open and interoperable Web and should be embraced and adopted whenever possible.</p>
+<p>If you&#8217;re a company working with different APIs you should definitely follow the standards and contribute to making them better.</p>
+<p><em>Please join in the discussion on this article over on <a title="Webhooks, REST and the Open Web" href="https://news.ycombinator.com/item?id=6374954" target="_blank">Hacker News</a> and <a title="Webhooks, REST and the Open Web" href="http://www.reddit.com/r/webdev/comments/1m95c4/webhooks_rest_and_the_open_web/" target="_blank">reddit</a>.</em></p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-572" data-post-type="none">
+<a href="/2013/07/23/http2-0-initial-draft-released/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/07/5659840592_3085048dfb-150x150.jpg" alt="HTTP/2.0 Initial Draft Released" width="150" height="150"></a><a href="/2013/07/23/http2-0-initial-draft-released/" class="wp_rp_title">HTTP/2.0 Initial Draft Released</a>
+</li>
+<li data-position="1" data-poid="in-233" data-post-type="none">
+<a href="/2013/04/03/url-design-restful-web-services/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/04/N24yRP11-150x150.png" alt="URL Design for RESTful Web Services" width="150" height="150"></a><a href="/2013/04/03/url-design-restful-web-services/" class="wp_rp_title">URL Design for RESTful Web Services</a>
+</li>
+<li data-position="2" data-poid="in-171" data-post-type="none">
+<a href="/2013/03/28/2-steps-api-error-codes/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/03/3356951969_df2c4186ac-150x150.jpg" alt="2 steps to better API Error Codes" width="150" height="150"></a><a href="/2013/03/28/2-steps-api-error-codes/" class="wp_rp_title">2 steps to better API Error Codes</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/09/12/webhooks/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/bpedro/" class="authorsure-author-link">Bruno Pedro</a></span></span> at <time itemprop="dateModified" datetime="2013-09-12T18:12:47+02:00">September 12, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/hook/" rel="tag">hook</a>, <a href="/tag/http/" rel="tag">HTTP</a>, <a href="/tag/open/" rel="tag">Open</a>, <a href="/tag/ping/" rel="tag">ping</a>, <a href="/tag/protocol/" rel="tag">protocol</a>, <a href="/tag/publish/" rel="tag">publish</a>, <a href="/tag/pubsubhubbub/" rel="tag">pubsubhubbub</a>, <a href="/tag/rest/" rel="tag">REST</a>, <a href="/tag/specification/" rel="tag">specification</a>, <a href="/tag/standard/" rel="tag">standard</a>, <a href="/tag/subscription/" rel="tag">subscription</a>, <a href="/tag/web/" rel="tag">Web</a>, <a href="/tag/webhook/" rel="tag">webhook</a> on <a href="/2013/09/12/webhooks/" title="6:08 pm" rel="bookmark"><time class="entry-date" datetime="2013-09-12T18:08:19+02:00">September 12, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/bpedro/" title="View all posts by Bruno Pedro" rel="author">Bruno Pedro</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Bruno Pedro</h2>
+						<p>Bruno Pedro is a Web and Business developer with over fifteen years’ experience in both startups and large corporations.</p>
+						<div class="author-link">
+							<a href="/author/bpedro/" rel="author">
+								View all posts by Bruno Pedro <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/09/11/api-timezones/" rel="prev"><span class="meta-nav">&larr;</span> When API time zones make the difference</a></span>
+					<span class="nav-next"><a href="/2013/09/19/tictail-api-launch-focuses-ux/" rel="next">Tictail API launch focuses on UX <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			8 thoughts on &ldquo;<span>Webhooks, REST and the Open Web</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="pingback even thread-even depth-1" id="comment-245">
+		<p>Pingback: <a href="http://www.rocketboom.com/news/webhooks-rest-and-the-open-web/" rel="external nofollow ugc" class="url">Webhooks, REST and the Open Web &#124; Rocketboom</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-246">
+		<article id="comment-246" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/93750d2bdb6a60f59414920fdb24f509?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/93750d2bdb6a60f59414920fdb24f509?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">Nightwolf</b> </cite><a href="/2013/09/12/webhooks/#comment-246"><time datetime="2013-09-12T19:53:51+02:00">September 12, 2013 at 7:53 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Isn&#8217;t this the same as <a href="http://resthooks.org/docs/" rel="nofollow ugc">http://resthooks.org/docs/</a>?</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/09/12/webhooks/?replytocom=246#respond" data-commentid="246" data-postid="495" data-belowelement="comment-246" data-respondelement="respond" data-replyto="Reply to Nightwolf" aria-label="Reply to Nightwolf">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment even depth-2" id="li-comment-247">
+		<article id="comment-247" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/9b8040ddc722d1dfb53476732de767d9?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/9b8040ddc722d1dfb53476732de767d9?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="https://www.facebook.com/johnjelinek" rel="external nofollow ugc" class="url">Johnny Jelinek IV</a></b> </cite><a href="/2013/09/12/webhooks/#comment-247"><time datetime="2013-09-12T20:37:43+02:00">September 12, 2013 at 8:37 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>REST hooks are an evolution of webhooks.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/09/12/webhooks/?replytocom=247#respond" data-commentid="247" data-postid="495" data-belowelement="comment-247" data-respondelement="respond" data-replyto="Reply to Johnny Jelinek IV" aria-label="Reply to Johnny Jelinek IV">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment odd alt depth-3" id="li-comment-249">
+		<article id="comment-249" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/b30ce50678f0e934eaa6697425c59dd7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/b30ce50678f0e934eaa6697425c59dd7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">julien51</b> </cite><a href="/2013/09/12/webhooks/#comment-249"><time datetime="2013-09-13T00:35:07+02:00">September 13, 2013 at 12:35 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Not really. They&#8217;re just a proprietary attempt to compete with an open protocol.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/09/12/webhooks/?replytocom=249#respond" data-commentid="249" data-postid="495" data-belowelement="comment-249" data-respondelement="respond" data-replyto="Reply to julien51" aria-label="Reply to julien51">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment even depth-4" id="li-comment-362">
+		<article id="comment-362" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/49985caa648373388ac0f9c7c3e0e21d?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/49985caa648373388ac0f9c7c3e0e21d?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn">W van Dam</b> </cite><a href="/2013/09/12/webhooks/#comment-362"><time datetime="2014-04-20T14:37:58+02:00">April 20, 2014 at 2:37 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Resthook are actually exactly the same as Webhooks*. However, their docs are a good introduction on scenarios you got to keep in mind when setting up webhooks. They also got a few basic case studies on how others implemented webhooks.</p>
+<p>*) The only difference they state is that Resthooks can be subscribed to via REST as opposed to via a webform, which is a rather obvious step to take and something Jeff Lindsey already mentioned years ago.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/09/12/webhooks/?replytocom=362#respond" data-commentid="362" data-postid="495" data-belowelement="comment-362" data-respondelement="respond" data-replyto="Reply to W van Dam" aria-label="Reply to W van Dam">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-248">
+		<p>Pingback: <a href="http://www.scoop.it/t/4-nodejs/p/4007530767/webhooks-rest-and-the-open-web" rel="external nofollow ugc" class="url">Webhooks, REST and the Open Web | nodeJS and RE...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-251">
+		<article id="comment-251" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/f93dfe5377de1798d0c6bd5264f32b72?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/f93dfe5377de1798d0c6bd5264f32b72?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/abhinav" rel="external nofollow ugc" class="url">Abhinav Saxena (@abhinav)</a></b> </cite><a href="/2013/09/12/webhooks/#comment-251"><time datetime="2013-09-14T10:29:14+02:00">September 14, 2013 at 10:29 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Would love to get your feedback on <a href="https://github.com/abhinavs/webhooks" rel="nofollow ugc">https://github.com/abhinavs/webhooks</a></p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/09/12/webhooks/?replytocom=251#respond" data-commentid="251" data-postid="495" data-belowelement="comment-251" data-respondelement="respond" data-replyto="Reply to Abhinav Saxena (@abhinav)" aria-label="Reply to Abhinav Saxena (@abhinav)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-255">
+		<p>Pingback: <a href="http://www.scoop.it/t/entropic-synergies/p/4007875414/webhooks-rest-and-the-open-web" rel="external nofollow ugc" class="url">Webhooks, REST and the Open Web | Entropic Syne...</a> </p>
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/09/12/webhooks/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="495" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="25a5ef8f76"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="6"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.961 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-23 23:19:11 -->
+
+<!-- Compression = gzip -->
+</html>

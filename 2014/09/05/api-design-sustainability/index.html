@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>How to design APIs that last</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2014/09/05/api-design-sustainability/">
+	<link rel="author" href="https://plus.google.com/111160376507741662259">
+	<meta name="description" content="In the software world, we often refer to building ‘extensible’ designs. In essence, this means that we can build a system that is light and nimble, capable of changing and growing over time.">
+	<meta name="keywords" content="API,CRUD,implementation,resource,sustainability,version,resources,apis,ux,apiux,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="How to design APIs that last">
+	<meta property="og:description" content="In the software world, we often refer to building ‘extensible’ designs. In essence, this means that we can build a system that is light and nimble, capable of changing and growing over time.">
+	<meta property="og:url" content="/2014/09/05/api-design-sustainability/">
+	<meta property="article:published_time" content="2014-09-05">
+	<meta property="article:modified_time" content="2014-09-12">
+	<meta property="article:author" content="/author/jasonharmon/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="CRUD">
+	<meta property="article:tag" content="implementation">
+	<meta property="article:tag" content="resource">
+	<meta property="article:tag" content="sustainability">
+	<meta property="article:tag" content="version">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; How to design APIs that last Comments Feed" href="/2014/09/05/api-design-sustainability/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=bc7389530a","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/1115">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=1115">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2014%2F09%2F05%2Fapi-design-sustainability%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2014%2F09%2F05%2Fapi-design-sustainability%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '1115';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'How+to+design+APIs+that+last';
+	window._wp_rp_post_tags = ['sustainability', 'crud', 'resource', 'version', 'api', 'implementation', 'opinion', 'pratt', 'nimbl', 'build', 'world', 'a', 'intern', 'api', '1', 'system', 'softwar', 'essenc', 'light', 'design', 'rapid', 'guid'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-1115 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-1115" class="post-1115 post type-post status-publish format-standard hentry category-opinion tag-api tag-crud tag-implementation tag-resource tag-sustainability tag-version">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">How to design APIs that last</h1>
+										<div class="comments-link">
+					<a href="/2014/09/05/api-design-sustainability/#comments">6 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>[Caveat: this is focused on HTTP-based, or REST APIs]</p>
+<p>In the software world, we often refer to building ‘extensible’ designs. In essence, this means that we can build a system that is light and nimble, capable of changing and growing over time.</p>
+<p>In the world of API design, we can’t always make rapid changes. Many API clients become dependent on existing functionality.</p>
+<p>Think about this from the perspective of sustainability:<br>
+How long can we keep and grow this design?<br>
+How long before we have to start over on another version?</p>
+<p><a href="/wp-content/uploads/2014/09/old_reliable_api.png"><img loading="lazy" class="alignleft size-full wp-image-1116" src="/wp-content/uploads/2014/09/old_reliable_api.png" alt="old_reliable_api" width="600" height="335" srcset="/wp-content/uploads/2014/09/old_reliable_api.png 600w, /wp-content/uploads/2014/09/old_reliable_api-300x167.png 300w" sizes="(max-width: 600px) 100vw, 600px"></a><br>
+<span id="more-1115"></span></p>
+<p>There are many other factors in wholistic design such as performance, usability, flow and many others. However, there are some initial design principles which help guide those other important aspects. These concepts will serve internal and external facing design well.</p>
+<h3>Rule #1 of API versioning</h3>
+<p>We can all agree API versioning rule #1 is not like fight club…we always seem to talk about it.<br>
+The practical rule is: <strong>don’t, as long as you can</strong>.</p>
+<p>URI-based, header-based or other (<a title="Ways to version your API" href="http://urthen.github.io/2013/05/09/ways-to-version-your-api/" target="_blank">versioning options</a> by <a title="Michael Pratt @bazaarvoice" href="https://twitter.com/urthen" target="_blank">@urthen</a>), always strive for long-lived, durable versions. API clients want long-term reliability. Supporting concurrent API versions is an exhausting and expensive undertaking. There are many complexities beyond deploying software and servers with parallel versions. Some of these complexities are solvable, but they&#8217;ll impede delivering value.</p>
+<p>Here are a few considerations involved with creating a new version:</p>
+<ul>
+<li>Your developer portals will need info architecture revamps to deal with the extra versions.</li>
+<li>If one set of resources needs a v2, what’s the plan for all the others? Version completeness at every iteration should be a consideration. Using v11 on one resource while using v1 is likely to cause confusion.</li>
+<li>Got hypermedia? Questions will arise about which version of any given resource you should be linking to.</li>
+<li>Deprecation of your v1 APIs will be in your future the moment you release v2.</li>
+<li>API client communication needs will grow rapidly. Planning for migrations, deprecation, and bugs in new versions will cost time and money.</li>
+</ul>
+<p>Keep in mind this doesn’t mean zero change is a good policy.</p>
+<ul>
+<li>Non-breaking changes mean you can make additive changes.</li>
+<li>Use caution with any validation changes that could manifest new errors.</li>
+<li>Don&#8217;t add so much to a resource that it’s bloat becomes an issue.</li>
+</ul>
+<p>The longer you wait to version, the better your next version will be. More time allows for perspective on feedback about usage of your previous version.</p>
+<p>Simply put: <strong>version durability is a winning strategy</strong>. Accomplishing that durability takes discipline.</p>
+<p>More details on <a title="API Versioning" href="/2013/05/14/api-versioning/" target="_blank">versioning risks</a> from <a title="Andreas Krohn" href="https://twitter.com/andreaskrohn" target="_blank">@andreaskrohn</a></p>
+<h3>Less versions, more URIs</h3>
+<p>Sometimes the need arises to significantly change the functionality of an existing API. This can mean scaling the resource up or down (see “The Goldilocks principle below”). Other times, it makes sense to massage the usability to fit into a broader flow of API calls.<br>
+It&#8217;s usually time to consider if the URI is going to change completely. <strong>If you’re changing the intent or granularity of the operations, you’re probably looking at a different resource</strong>.</p>
+<p>This provides the opportunity to deploy parallel APIs on different URIs, all in “v1”. Meanwhile, plan to create a deprecation plan for your old URIs. Always communicate well in advance with your developer communities. If you’ve built something which provides better value on the new URIs, it’s an easier sell. This avoids the Herculean feat of deprecating all your platform’s functionality at once.</p>
+<p>Custom media types are notable as a way to creating new functionality on the same URIs. Yet this can definitely lead to some confusion in usability. This is probably why we haven’t seen a broad trend of multiple custom media types on the same URI.</p>
+<h3>Resource-oriented</h3>
+<p>When you begin learning REST APIs, the notion of resources appears simple, and yet oddly abstract. The first concept to understand is that APIs are not just table updaters, or data transmission mechanisms. Think from your customer and developer’s perspectives on their goals. Create resources which complement that behavior.</p>
+<p>There is a broad notion in the blogosphere that REST is four verbs and they spell CRUD. This is definitely not a truism, as some operations must fit into an RPC-shaped container, whether it feels right or not. Yet the more you can avoid RPC-style design, the longer your API can live and grow.</p>
+<p><strong>Think of every ‘<a href="http://books.google.com/books?id=LDuzpQlVuG4C&amp;lpg=PP1&amp;dq=restful%20web%20services%20cookbook&amp;pg=PA39#v=onepage&amp;q=restful%20web%20services%20cookbook&amp;f=false">controller resource</a>’ as a dead end</strong>. You often can’t add sub-resources to RPC-style operations.</p>
+<p>As a contrived example, <code>/activate</code> might seem to make sense, but there is no resource identifier. You can’t make up a resource ID to get to <code>/activate/{id}/related-subresource</code>. Additionally, how do you know about all the activation operations that took place over time?</p>
+<h3>Learn from history</h3>
+<p>When an RPC design seems to make the most sense, ask questions about the operation&#8217;s history. Who will want to know how often this action took place? Often, creating a CRUD-style resource allows for future query ability of this history of those items.</p>
+<p>In our prior <code>/activate</code> example, let’s make our <code>/activations</code> more resource oriented as <code>/activations</code>. Nouns serve us better for the sake of history than verbs. Now we can query out <code>/activations?start_date=2014-03-01</code> and gain insight on prior activations. For internal administrative use, this design extension is often invaluable. Resource-orientation avoids duplicating resource elements and adding complexity by extending your design with /activation-history.</p>
+<p>Additionally, now we can add sub-resources. <code>/activations/{id}/devices</code> is elegant. To achieve this you must think about resource identifiers early on in your system design.</p>
+<p>The principle here is that <strong>you can’t fit everything into a CRUD shape, but you should usually try</strong>.</p>
+<h3>The Goldilocks principle</h3>
+<p>When resource design is on the table, think small, and work your way up…just not too small.</p>
+<p>Also use caution in over-granularity of resources, as HTTP chattiness is likely. The most common mistake early on is to map resources to each table in your system. Usable customer-facing resources almost always are a composite of underlying data.</p>
+<p>Conversely, starting with monolithic resources creates problems. Think of this as an entropy problem: the more material you put into a resource, the greater the chaos that ensues. There are often potential network and system performance implications, of course. Additionally, large resources often display tight coupled implementations. The underlying systems could be better served in their own bounded contexts.<br>
+Any breaking change in one underlying system breaks the entire API.</p>
+<p>Time to find middle ground. You can often aggregate smaller resources into larger composites as you identify chatty behavior. An elegant solution is using an orchestration layer. Regardless, the risk of starting with granular resources is your composites will end up more complex. Thinking early about logical bounded contexts in your systems can help define some of these boundaries as well.</p>
+<h3>Make uniqueness first-class</h3>
+<p>Since we tend to organize systems and resources with hierarchy it would seem we should manifest that hierarchy in our URIs. As an example, <code>/assemblies/{id}/sub-assemblies/{id}</code> seems natural at first blush. What happens when we have to add parts to our sub-assemblies? Now we’re fringing into usability problems with <code>/assemblies/{id}/sub-assemblies/{id}/parts/{id}</code>.</p>
+<p>When API clients use multiple identifiers to interact with resources, they will be force to write state management code to traverse this hierarchy. In our example, to GET the part we need, we would also need to remember the assembly and sub-assembly IDs.</p>
+<p>Ensure your <strong>resources use unique identifiers as often as possible</strong>. If you need to GET a part, it’s simply <code>GET /parts/{id}</code>. If you need to provide relationships between resources, use one level of sub-resources. <code>/sub-assemblies/{id}/parts</code> or even <code>/assemblies/{id}/parts</code> will work just fine, assuming all the resource IDs are unique.</p>
+<p>Clearly there are many use cases where this doesn’t work out, and composite identifiers are requisite. As a rule of thumb, it’s a great starting point.</p>
+<h3>Hide implementation details</h3>
+<p>We often take for granted underlying architectural components, vendor relationships and internal jargon. <strong>Today’s backend is tomorrow’s trash bin</strong>. The moment that implementation details make it through to your APIs uniform interface, the trap is sprung. <strong>Most often, implementation details leak out in errors</strong>. API clients&#8217;s app behavior is relying on error objects. If it changes…your clients break.<br>
+&#8211; Stick with well-known industry terminology when possible<br>
+&#8211; Always provide errors with specific fault conditions, without referencing any underlying systems or vendors.<br>
+&#8211; Use caution naming URIs/resources/fields based on product names. Re-branding and product re-org can wreak havoc.</p>
+<h3>TL;DR</h3>
+<ol>
+<li>Avoid the complexity of API versioning</li>
+<li>Be smart about ‘just right’ sized resources</li>
+<li>RPC operations lead to dead ends</li>
+<li>Use unique identifiers to interact with a resource</li>
+<li>Don’t expose implementation details</li>
+</ol>
+<p>Long live v1!</p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-379" data-post-type="none">
+<a href="/2013/05/14/api-versioning/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/05/5312353610_8fde2ab7182-150x150.jpg" alt="Do you really need API Versioning?" width="150" height="150"></a><a href="/2013/05/14/api-versioning/" class="wp_rp_title">Do you really need API Versioning?</a>
+</li>
+<li data-position="1" data-poid="in-1151" data-post-type="none">
+<a href="/2014/11/10/predictive-apis/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/11/Fish-BCN-1024x4401-150x150.jpg" alt="Predictive APIs: Bringing Machine Learning to the Masses" width="150" height="150"></a><a href="/2014/11/10/predictive-apis/" class="wp_rp_title">Predictive APIs: Bringing Machine Learning to the Masses</a>
+</li>
+<li data-position="2" data-poid="in-1111" data-post-type="none">
+<a href="/2014/09/04/apistrat-chicago/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/05/20140327-untitled-shoot-5556-300x1991-150x150.jpg" alt="API Strategy &#038; Practice Chicago" width="150" height="150"></a><a href="/2014/09/04/apistrat-chicago/" class="wp_rp_title">API Strategy &#038; Practice Chicago</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2014/09/05/api-design-sustainability/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/jasonharmon/" class="authorsure-author-link">Jason Harmon</a></span></span> at <time itemprop="dateModified" datetime="2014-09-12T18:56:46+02:00">September 12, 2014</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/crud/" rel="tag">CRUD</a>, <a href="/tag/implementation/" rel="tag">implementation</a>, <a href="/tag/resource/" rel="tag">resource</a>, <a href="/tag/sustainability/" rel="tag">sustainability</a>, <a href="/tag/version/" rel="tag">version</a> on <a href="/2014/09/05/api-design-sustainability/" title="6:30 pm" rel="bookmark"><time class="entry-date" datetime="2014-09-05T18:30:36+02:00">September 5, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/jasonharmon/" title="View all posts by Jason Harmon" rel="author">Jason Harmon</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Jason Harmon</h2>
+						<p>API Architect @Paypal. 
+Blogger/evangelist for #API. 
+Purveyor of #BDD process. 
+#Android tinkerer.
+#Quadcopter crasher.</p>
+						<div class="author-link">
+							<a href="/author/jasonharmon/" rel="author">
+								View all posts by Jason Harmon <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2014/09/04/apistrat-chicago/" rel="prev"><span class="meta-nav">&larr;</span> API Strategy &#038; Practice Chicago</a></span>
+					<span class="nav-next"><a href="/2014/11/10/predictive-apis/" rel="next">Predictive APIs: Bringing Machine Learning to the Masses <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			6 thoughts on &ldquo;<span>How to design APIs that last</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-2005">
+		<article id="comment-2005" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/eb97d3e93ac9fe9758b3beb229ae6d1b?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/eb97d3e93ac9fe9758b3beb229ae6d1b?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://www.kairos.com/" rel="external nofollow ugc" class="url">Ben Virdee-Chapman</a></b> </cite><a href="/2014/09/05/api-design-sustainability/#comment-2005"><time datetime="2014-09-12T10:14:10+02:00">September 12, 2014 at 10:14 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Very useful write up, thanks 🙂</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/09/05/api-design-sustainability/?replytocom=2005#respond" data-commentid="2005" data-postid="1115" data-belowelement="comment-2005" data-respondelement="respond" data-replyto="Reply to Ben Virdee-Chapman" aria-label="Reply to Ben Virdee-Chapman">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-2388">
+		<p>Pingback: <a href="http://janatdevelopment.com/2014/09/30/links-of-the-month-september-edition-2/" rel="external nofollow ugc" class="url">Links of the month (September Edition) | Jan @ Development</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-even depth-1" id="comment-2437">
+		<p>Pingback: <a href="http://www.dirkstrauss.com/the-daily-six-pack/windows-10" rel="external nofollow ugc" class="url">Windows 10 - The Daily Six Pack: October 2, 2014</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-2439">
+		<p>Pingback: <a href="http://www.scoop.it/t/api-mag/p/4029083464/2014/10/02/how-to-design-apis-that-last" rel="external nofollow ugc" class="url">How to design APIs that last | API Magazine: Ab...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3628">
+		<article id="comment-3628" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/a4c6b24cfc255a1c59bfaf868f206dc0?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/a4c6b24cfc255a1c59bfaf868f206dc0?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/kylehayes" rel="external nofollow ugc" class="url">Kyle Hayes (@kylehayes)</a></b> </cite><a href="/2014/09/05/api-design-sustainability/#comment-3628"><time datetime="2014-10-27T16:10:01+01:00">October 27, 2014 at 4:10 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thank you for such an eloquent post of some guiding rules to follow with API design. I&#8217;ve been working on something similar but much prefer your wording. Thank you!</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2014/09/05/api-design-sustainability/?replytocom=3628#respond" data-commentid="3628" data-postid="1115" data-belowelement="comment-3628" data-respondelement="respond" data-replyto="Reply to Kyle Hayes (@kylehayes)" aria-label="Reply to Kyle Hayes (@kylehayes)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-4020">
+		<p>Pingback: <a href="http://www.3scale.net/2014/11/practical-advice-api-lifecycle-stages/" rel="external nofollow ugc" class="url">Practical Advice - Stages Of The API Lifecycle (Part 1/4)3scale &#8211; The API Management Solution</a> </p>
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/09/05/api-design-sustainability/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1115" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="69113f6c03"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="146"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.414 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-22 11:33:02 -->
+
+<!-- Compression = gzip -->
+</html>

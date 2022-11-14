@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Announcement &#8211; API UX</title>
+	<atom:link href="/announcement/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 04 Sep 2014 20:19:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>API Strategy &#038; Practice Chicago</title>
+		<link>/2014/09/04/apistrat-chicago/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apistrat-chicago</link>
+					<comments>/2014/09/04/apistrat-chicago/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 04 Sep 2014 20:19:34 +0000</pubDate>
+				<category><![CDATA[Announcement]]></category>
+		<category><![CDATA[Conference]]></category>
+		<category><![CDATA[3scale]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[api evangelist]]></category>
+		<category><![CDATA[APIStrat]]></category>
+		<category><![CDATA[Chicago]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[hackathon]]></category>
+		<guid isPermaLink="false">/?p=1111</guid>
+
+					<description><![CDATA[The API Strategy &#038; Practice Conference (APIStrat) focuses on what works for API creators and consumers alike by bringing industry leaders together in one forum.]]></description>
+		
+					<wfw:commentRss>/2014/09/04/apistrat-chicago/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Nordic APIs Platform Summit &#8211; Call for Speakers</title>
+		<link>/2014/09/02/nordic-apis-platform-summit-call-speakers/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=nordic-apis-platform-summit-call-speakers</link>
+					<comments>/2014/09/02/nordic-apis-platform-summit-call-speakers/#respond</comments>
+		
+		<dc:creator><![CDATA[Andreas Krohn]]></dc:creator>
+		<pubDate>Tue, 02 Sep 2014 16:30:37 +0000</pubDate>
+				<category><![CDATA[Announcement]]></category>
+		<category><![CDATA[Conference]]></category>
+		<category><![CDATA[apis]]></category>
+		<category><![CDATA[call]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[nordic]]></category>
+		<category><![CDATA[platform]]></category>
+		<category><![CDATA[speaker]]></category>
+		<category><![CDATA[speakers]]></category>
+		<category><![CDATA[Summit]]></category>
+		<guid isPermaLink="false">/?p=1104</guid>
+
+					<description><![CDATA[At the next Nordic APIs conference we are going to talk about API Platforms and we are currently looking for speakers.]]></description>
+		
+					<wfw:commentRss>/2014/09/02/nordic-apis-platform-summit-call-speakers/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is API User Experience?</title>
+		<link>/2013/03/19/what-is-api-user-experience/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=what-is-api-user-experience</link>
+					<comments>/2013/03/19/what-is-api-user-experience/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 19 Mar 2013 17:00:51 +0000</pubDate>
+				<category><![CDATA[Announcement]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[definition]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[ease of use]]></category>
+		<category><![CDATA[efficiency]]></category>
+		<category><![CDATA[emotion]]></category>
+		<category><![CDATA[ISO 9241-210]]></category>
+		<category><![CDATA[perception]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[system]]></category>
+		<category><![CDATA[user]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=24</guid>
+
+					<description><![CDATA[API User Experience, or API UX, is a person's perceptions of the utility, ease of use and efficiency of an application API that result from its direct or indirect use. API UX covers two major types of users: developers, who benefit from direct use of APIs and end-users, who use APIs indirectly through consumer applications.]]></description>
+		
+					<wfw:commentRss>/2013/03/19/what-is-api-user-experience/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

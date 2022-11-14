@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>usability &#8211; API UX</title>
+	<atom:link href="/tag/usability/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 10 Jul 2014 16:22:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Usability Review: SoundCloud API</title>
+		<link>/2014/07/10/usability-soundcloud-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=usability-soundcloud-api</link>
+					<comments>/2014/07/10/usability-soundcloud-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 10 Jul 2014 16:30:14 +0000</pubDate>
+				<category><![CDATA[Review]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[Ruby]]></category>
+		<category><![CDATA[SDK]]></category>
+		<category><![CDATA[SoundCloud]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[usability]]></category>
+		<guid isPermaLink="false">/?p=1070</guid>
+
+					<description><![CDATA[API provides methods that make sense from a developer point of view. API documentation and SDK could be improved to make developers lives easier.]]></description>
+		
+					<wfw:commentRss>/2014/07/10/usability-soundcloud-api/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Usability Review: Dropbox API</title>
+		<link>/2014/06/10/usability-dropbox-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=usability-dropbox-api</link>
+					<comments>/2014/06/10/usability-dropbox-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 10 Jun 2014 16:30:31 +0000</pubDate>
+				<category><![CDATA[Review]]></category>
+		<category><![CDATA[3rd]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[datastore]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[Dropbox]]></category>
+		<category><![CDATA[module]]></category>
+		<category><![CDATA[nodejs]]></category>
+		<category><![CDATA[official]]></category>
+		<category><![CDATA[party]]></category>
+		<category><![CDATA[review]]></category>
+		<category><![CDATA[test]]></category>
+		<category><![CDATA[usability]]></category>
+		<guid isPermaLink="false">/?p=1009</guid>
+
+					<description><![CDATA[Well designed API that fits well into its target use cases. Documentation could be improved, making developer on boarding experience much smoother.]]></description>
+		
+					<wfw:commentRss>/2014/06/10/usability-dropbox-api/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>API Hierarchy of Needs</title>
+		<link>/2013/05/29/api-hierarchy-needs/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-hierarchy-needs</link>
+					<comments>/2013/05/29/api-hierarchy-needs/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 29 May 2013 21:07:30 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[creativity]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[functionality]]></category>
+		<category><![CDATA[hierarchy]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[Maslow]]></category>
+		<category><![CDATA[need]]></category>
+		<category><![CDATA[proficiency]]></category>
+		<category><![CDATA[pyramid]]></category>
+		<category><![CDATA[reliability]]></category>
+		<category><![CDATA[usability]]></category>
+		<guid isPermaLink="false">/?p=454</guid>
+
+					<description><![CDATA[The hierarchy of needs is a pyramid divided into five different layers that represent different characteristics that you should consider when launching and maintaining an API.]]></description>
+		
+					<wfw:commentRss>/2013/05/29/api-hierarchy-needs/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

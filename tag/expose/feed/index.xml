@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>expose &#8211; API UX</title>
+	<atom:link href="/tag/expose/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 12 Apr 2013 07:56:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>How to Expose User Information</title>
+		<link>/2013/04/11/how-to-expose-user-information/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-expose-user-information</link>
+					<comments>/2013/04/11/how-to-expose-user-information/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2013 16:00:16 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[expose]]></category>
+		<category><![CDATA[information]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[sensitive]]></category>
+		<category><![CDATA[user]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=275</guid>
+
+					<description><![CDATA[If you provide the right amount of information, applications built on top of your API will be able to offer a better service to your users. Your final user will have a better experience and that might turn out to generate more business for you.]]></description>
+		
+					<wfw:commentRss>/2013/04/11/how-to-expose-user-information/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Implementing API Content Negotiation	</title>
+	<atom:link href="/2013/05/07/api-content-negotiation/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/05/07/api-content-negotiation/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-content-negotiation</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 11 Jun 2013 16:01:28 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: The Accept Header: A Quick Primer		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-189</link>
+
+		<dc:creator><![CDATA[The Accept Header: A Quick Primer]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 16:01:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-189</guid>
+
+					<description><![CDATA[[...] allow the requestor to determine what data type is best for them. If you&#8217;ve read the post on API Content Negotiation, you&#8217;ll know the best way to approach content negotiation is to follow the [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] allow the requestor to determine what data type is best for them. If you&#8217;ve read the post on API Content Negotiation, you&#8217;ll know the best way to approach content negotiation is to follow the [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-110</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 15 May 2013 11:19:02 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-110</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/api-content-negotiation/#comment-108&quot;&gt;Andrei Neculau (@andreineculau)&lt;/a&gt;.
+
+You say that content negotiation is &quot;not when you request X1 and get JSON, and then you request X2 and get XML&quot; -- not according to RFC 2295 §4.6 (Retrieving a variant by hand), where the consumer requests different resources in order to receive different content types.
+
+It seems that we agree on something, though: only a few people really read RFCs these days.
+
+Anyway, thanks for the interesting discussion.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/api-content-negotiation/#comment-108">Andrei Neculau (@andreineculau)</a>.</p>
+<p>You say that content negotiation is &#8220;not when you request X1 and get JSON, and then you request X2 and get XML&#8221; &#8212; not according to RFC 2295 §4.6 (Retrieving a variant by hand), where the consumer requests different resources in order to receive different content types.</p>
+<p>It seems that we agree on something, though: only a few people really read RFCs these days.</p>
+<p>Anyway, thanks for the interesting discussion.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrei Neculau (@andreineculau)		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-108</link>
+
+		<dc:creator><![CDATA[Andrei Neculau (@andreineculau)]]></dc:creator>
+		<pubDate>Wed, 15 May 2013 08:57:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-108</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/api-content-negotiation/#comment-104&quot;&gt;Bruno Pedro&lt;/a&gt;.
+
+I stick to what I wrote before, and please don&#039;t assume that nobody reads the RFCs, albeit I reckon it is only a few.
+
+FWIW I still think you&#039;re missing the point - content negotiation is when you request X twice, and one time you can get JSON, one time you can get XML. Not when you request X1 and get JSON, and then you request X2 and get XML. It&#039;s irrelevant that the resources map to the same entity, it is still resource*S*
+
+But let&#039;s leave it to each and every potential reader to make up their mind.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/api-content-negotiation/#comment-104">Bruno Pedro</a>.</p>
+<p>I stick to what I wrote before, and please don&#8217;t assume that nobody reads the RFCs, albeit I reckon it is only a few.</p>
+<p>FWIW I still think you&#8217;re missing the point &#8211; content negotiation is when you request X twice, and one time you can get JSON, one time you can get XML. Not when you request X1 and get JSON, and then you request X2 and get XML. It&#8217;s irrelevant that the resources map to the same entity, it is still resource*S*</p>
+<p>But let&#8217;s leave it to each and every potential reader to make up their mind.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-104</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 14 May 2013 09:30:49 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-104</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/api-content-negotiation/#comment-102&quot;&gt;Andrei Neculau (@andreineculau)&lt;/a&gt;.
+
+I appreciate your comment and clarification, but I didn&#039;t miss Darrel&#039;s point -- I even agreed with him that the first two techniques were presented because many APIs rely on them to provide content negotiation.
+
+Now, replying to you, if you read RFC 2616 §12.1 (Server-driven Negotiation) carefully, you&#039;ll notice the following phrase:
+
+&quot;However, an origin server is not limited to these dimensions (request-header fields) and MAY vary the response based on *any aspect of the request*, including information outside the request-header fields or within extension header fields not defined by this specification.&quot; (bolds and contextual information added by me)
+
+Also, by reading RFC 2396 §1.1, you&#039;d know that a &quot;resource is the conceptual mapping to an entity or set of entities, not necessarily the entity which corresponds to that mapping&quot; and by reading RFC 2295 (Transparent Content Negotiation in HTTP) §4.6 (Retrieving a variant by hand) you&#039;d know that the &quot;user agent can use this list (of variants) to make available a menu of all variants and their characteristics to the user.&quot;
+
+So, negotiation can assume many different forms, including one where the consumer directly requests a variant of the resource obtained from a previously published list (the API documentation, in our case).]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/api-content-negotiation/#comment-102">Andrei Neculau (@andreineculau)</a>.</p>
+<p>I appreciate your comment and clarification, but I didn&#8217;t miss Darrel&#8217;s point &#8212; I even agreed with him that the first two techniques were presented because many APIs rely on them to provide content negotiation.</p>
+<p>Now, replying to you, if you read RFC 2616 §12.1 (Server-driven Negotiation) carefully, you&#8217;ll notice the following phrase:</p>
+<p>&#8220;However, an origin server is not limited to these dimensions (request-header fields) and MAY vary the response based on *any aspect of the request*, including information outside the request-header fields or within extension header fields not defined by this specification.&#8221; (bolds and contextual information added by me)</p>
+<p>Also, by reading RFC 2396 §1.1, you&#8217;d know that a &#8220;resource is the conceptual mapping to an entity or set of entities, not necessarily the entity which corresponds to that mapping&#8221; and by reading RFC 2295 (Transparent Content Negotiation in HTTP) §4.6 (Retrieving a variant by hand) you&#8217;d know that the &#8220;user agent can use this list (of variants) to make available a menu of all variants and their characteristics to the user.&#8221;</p>
+<p>So, negotiation can assume many different forms, including one where the consumer directly requests a variant of the resource obtained from a previously published list (the API documentation, in our case).</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrei Neculau (@andreineculau)		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-102</link>
+
+		<dc:creator><![CDATA[Andrei Neculau (@andreineculau)]]></dc:creator>
+		<pubDate>Mon, 13 May 2013 20:32:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-102</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/api-content-negotiation/#comment-93&quot;&gt;Bruno Pedro&lt;/a&gt;.
+
+-- For future readers --
+
+For what it&#039;s worth, you&#039;re missing Darrel&#039;s point. The first 2 ways to &quot;provide Content Negotiation&quot; - query and &quot;extension&quot; - are not about negotiation. If you have a static web server, you request a file with extension .json .png etc. No negotiation happens. Same with the query param. You request &quot;http://example.com/x?format=json&quot; - that&#039;s the URI of the &quot;document&quot; - the atomic resource URI. The document you requested it&#039;s not &quot;http://example.com/x&quot;
+
+Negotiation is a give&#038;take not all-or-nothing process. And that only happens for &quot;the 3rd way&quot;. The client can say &quot;Accept: application/json, application/xml&quot; and the server can reply with either of the two, or with text/html, and in all 3 situations the negotiation succeeded, or with 406 Not Acceptable - negotiation failed.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/api-content-negotiation/#comment-93">Bruno Pedro</a>.</p>
+<p>&#8212; For future readers &#8212;</p>
+<p>For what it&#8217;s worth, you&#8217;re missing Darrel&#8217;s point. The first 2 ways to &#8220;provide Content Negotiation&#8221; &#8211; query and &#8220;extension&#8221; &#8211; are not about negotiation. If you have a static web server, you request a file with extension .json .png etc. No negotiation happens. Same with the query param. You request &#8220;http://example.com/x?format=json&#8221; &#8211; that&#8217;s the URI of the &#8220;document&#8221; &#8211; the atomic resource URI. The document you requested it&#8217;s not &#8220;http://example.com/x&#8221;</p>
+<p>Negotiation is a give&amp;take not all-or-nothing process. And that only happens for &#8220;the 3rd way&#8221;. The client can say &#8220;Accept: application/json, application/xml&#8221; and the server can reply with either of the two, or with text/html, and in all 3 situations the negotiation succeeded, or with 406 Not Acceptable &#8211; negotiation failed.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Implementing API Content Negotiation &#124; CodingSc...		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-97</link>
+
+		<dc:creator><![CDATA[Implementing API Content Negotiation &#124; CodingSc...]]></dc:creator>
+		<pubDate>Thu, 09 May 2013 01:39:55 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-97</guid>
+
+					<description><![CDATA[[...] Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive.&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive.&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-96</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 08 May 2013 13:48:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-96</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/api-content-negotiation/#comment-95&quot;&gt;Jorge Simão&lt;/a&gt;.
+
+Thanks, Jorge!
+
+Although XML promised a huge number of advantages, reality is that most Web APIs are not using it.
+
+The advantages of JSON over XML make it a popular choice nowadays. I recommend you read this interesting piece comparing both formats: http://www.json.org/xml.html]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/api-content-negotiation/#comment-95">Jorge Simão</a>.</p>
+<p>Thanks, Jorge!</p>
+<p>Although XML promised a huge number of advantages, reality is that most Web APIs are not using it.</p>
+<p>The advantages of JSON over XML make it a popular choice nowadays. I recommend you read this interesting piece comparing both formats: <a href="http://www.json.org/xml.html" rel="nofollow ugc">http://www.json.org/xml.html</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jorge Simão		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-95</link>
+
+		<dc:creator><![CDATA[Jorge Simão]]></dc:creator>
+		<pubDate>Wed, 08 May 2013 10:18:34 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-95</guid>
+
+					<description><![CDATA[Great Post, Bruno!
+
+On motivating the need/usefulness to support multiple data-formats (a.k.a. resource representations)...but should make a stronger point in defence of XML (not only &quot;backward compatibility&quot;).
+
+If the client is not JavaScript, in principle, odds should favour XML over JSON (since its a more complete and rich technology ecosystem -- e.g. more expressive syntax, namespaces, XSLT transformation, XPATH selector, better and more libraries, etc.).
+
+However, because most apps and business models build these days are really around webapps, we actually see a tendency to support mostly JSON in HTTP based APIs (flanking the original spirit layed down in HTTP1.1 spec).
+
+Maybe because people think its easier, faster, and cheaper to support only one format. This is the case is app rely a lot on manual marshaling, but not so if automated marshaling is put in place.
+
+Cheers, Jorge.]]></description>
+			<content:encoded><![CDATA[<p>Great Post, Bruno!</p>
+<p>On motivating the need/usefulness to support multiple data-formats (a.k.a. resource representations)&#8230;but should make a stronger point in defence of XML (not only &#8220;backward compatibility&#8221;).</p>
+<p>If the client is not JavaScript, in principle, odds should favour XML over JSON (since its a more complete and rich technology ecosystem &#8212; e.g. more expressive syntax, namespaces, XSLT transformation, XPATH selector, better and more libraries, etc.).</p>
+<p>However, because most apps and business models build these days are really around webapps, we actually see a tendency to support mostly JSON in HTTP based APIs (flanking the original spirit layed down in HTTP1.1 spec).</p>
+<p>Maybe because people think its easier, faster, and cheaper to support only one format. This is the case is app rely a lot on manual marshaling, but not so if automated marshaling is put in place.</p>
+<p>Cheers, Jorge.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-93</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 15:36:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-93</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/05/07/api-content-negotiation/#comment-92&quot;&gt;Darrel Miller (@darrel_miller)&lt;/a&gt;.
+
+I disagree. In the context of Web APIs it&#039;s important to show different options because some APIs are implementing them.
+
+For example, Highrise API uses resource extensions as a mechanism to negotiate different formats (https://github.com/37signals/highrise-api#alternative-formats). They support XML as a standard but they can respond with VCF on some resources related with contacts.
+
+Strictly speaking, HTTP Content Negotiation doesn&#039;t involve GET parameters or resource extensions. As I wrote on the article &quot;the best approach is to follow the standards&quot;.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/05/07/api-content-negotiation/#comment-92">Darrel Miller (@darrel_miller)</a>.</p>
+<p>I disagree. In the context of Web APIs it&#8217;s important to show different options because some APIs are implementing them.</p>
+<p>For example, Highrise API uses resource extensions as a mechanism to negotiate different formats (<a href="https://github.com/37signals/highrise-api#alternative-formats" rel="nofollow ugc">https://github.com/37signals/highrise-api#alternative-formats</a>). They support XML as a standard but they can respond with VCF on some resources related with contacts.</p>
+<p>Strictly speaking, HTTP Content Negotiation doesn&#8217;t involve GET parameters or resource extensions. As I wrote on the article &#8220;the best approach is to follow the standards&#8221;.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Darrel Miller (@darrel_miller)		</title>
+		<link>/2013/05/07/api-content-negotiation/#comment-92</link>
+
+		<dc:creator><![CDATA[Darrel Miller (@darrel_miller)]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 15:23:27 +0000</pubDate>
+		<guid isPermaLink="false">/?p=348#comment-92</guid>
+
+					<description><![CDATA[You should not ever need to provide an input parameter.  The Content-Type header is required when sending a payload and will provide the media type.  
+
+Having clients construct a URI with a format=x is not really content negotiation because there isn&#039;t really any negotiation going on.  All that is happening is that you are providing multiple resources that expose different media types.  This is necessary when doing agent driven negotiation, but in itself, it is not negotiation.
+
+When discussing conneg it is important to consider caching issues and it is worth explaining how different options can be presented to a client to enable agent driven negotiation.]]></description>
+			<content:encoded><![CDATA[<p>You should not ever need to provide an input parameter.  The Content-Type header is required when sending a payload and will provide the media type.  </p>
+<p>Having clients construct a URI with a format=x is not really content negotiation because there isn&#8217;t really any negotiation going on.  All that is happening is that you are providing multiple resources that expose different media types.  This is necessary when doing agent driven negotiation, but in itself, it is not negotiation.</p>
+<p>When discussing conneg it is important to consider caching issues and it is worth explaining how different options can be presented to a client to enable agent driven negotiation.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

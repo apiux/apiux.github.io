@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>JSON &#8211; API UX</title>
+	<atom:link href="/tag/json/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Tue, 11 Jun 2013 16:14:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>The Accept Header: A Quick Primer</title>
+		<link>/2013/06/11/accept-header-quick-primer/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=accept-header-quick-primer</link>
+					<comments>/2013/06/11/accept-header-quick-primer/#comments</comments>
+		
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 16:00:44 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=480</guid>
+
+					<description><![CDATA[Why should you use the Accept header? So many APIs can simply get by with a string comparison against "application/json" or "application/xml", why is it important?]]></description>
+		
+					<wfw:commentRss>/2013/06/11/accept-header-quick-primer/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Implementing API Content Negotiation</title>
+		<link>/2013/05/07/api-content-negotiation/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-content-negotiation</link>
+					<comments>/2013/05/07/api-content-negotiation/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 13:00:01 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[Accept-encoding]]></category>
+		<category><![CDATA[Accept-language]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[Content]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[Negotiation]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=348</guid>
+
+					<description><![CDATA[Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.]]></description>
+		
+					<wfw:commentRss>/2013/05/07/api-content-negotiation/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to Expose User Information</title>
+		<link>/2013/04/11/how-to-expose-user-information/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-expose-user-information</link>
+					<comments>/2013/04/11/how-to-expose-user-information/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2013 16:00:16 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[expose]]></category>
+		<category><![CDATA[information]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[sensitive]]></category>
+		<category><![CDATA[user]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=275</guid>
+
+					<description><![CDATA[If you provide the right amount of information, applications built on top of your API will be able to offer a better service to your users. Your final user will have a better experience and that might turn out to generate more business for you.]]></description>
+		
+					<wfw:commentRss>/2013/04/11/how-to-expose-user-information/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>An Overview of REST Metadata Formats</title>
+		<link>/2013/04/09/rest-metadata-formats/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rest-metadata-formats</link>
+					<comments>/2013/04/09/rest-metadata-formats/#comments</comments>
+		
+		<dc:creator><![CDATA[Ole Lensmar]]></dc:creator>
+		<pubDate>Tue, 09 Apr 2013 16:00:55 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[HAL]]></category>
+		<category><![CDATA[hypermedia]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[metadata]]></category>
+		<category><![CDATA[QoS]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[schema]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[WADL]]></category>
+		<category><![CDATA[WSDL]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=264</guid>
+
+					<description><![CDATA[Although the REST community initially took a stance against metadata for REST APIs, a number of metadata standards have none-the-less emerged over the last couple of years, mainly fueled by the need to document APIs for their consumers.]]></description>
+		
+					<wfw:commentRss>/2013/04/09/rest-metadata-formats/feed/</wfw:commentRss>
+			<slash:comments>10</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>2 steps to better API Error Codes</title>
+		<link>/2013/03/28/2-steps-api-error-codes/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=2-steps-api-error-codes</link>
+					<comments>/2013/03/28/2-steps-api-error-codes/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 28 Mar 2013 17:00:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[error]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[integration]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[steps]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML.protocol]]></category>
+		<guid isPermaLink="false">/?p=171</guid>
+
+					<description><![CDATA[One of the biggest difficulties developers can have when writing code that talks with an API is dealing with errors and exceptions, and translating those errors into something meaningful for their applications.]]></description>
+		
+					<wfw:commentRss>/2013/03/28/2-steps-api-error-codes/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Authentication: Don&#8217;t be Clever</title>
+		<link>/2013/03/21/authentication-dont-be-clever/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=authentication-dont-be-clever</link>
+					<comments>/2013/03/21/authentication-dont-be-clever/#comments</comments>
+		
+		<dc:creator><![CDATA[John Sheehan]]></dc:creator>
+		<pubDate>Thu, 21 Mar 2013 17:00:00 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[credential]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[error message]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[REST]]></category>
+		<guid isPermaLink="false">/?p=112</guid>
+
+					<description><![CDATA[HTTP API authentication has evolved through many forms over the years. As so-called RESTful APIs gained popularity, a variety of methods sprung up: key passing, plain-old HTTP Basic Auth, OAuth 1.0, OAuth 1.0a, OAuth 2.0 (and it&#8217;s 40 revision) and some less-common custom schemes. With the OAuth 2.0 specification finalized, things are finally starting to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/03/21/authentication-dont-be-clever/feed/</wfw:commentRss>
+			<slash:comments>14</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

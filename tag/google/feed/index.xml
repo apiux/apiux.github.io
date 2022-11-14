@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Google &#8211; API UX</title>
+	<atom:link href="/tag/google/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 17 Apr 2013 14:41:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Review: Google Glass API</title>
+		<link>/2013/04/17/review-google-glass-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=review-google-glass-api</link>
+					<comments>/2013/04/17/review-google-glass-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 17 Apr 2013 16:00:31 +0000</pubDate>
+				<category><![CDATA[Review]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[endpoint]]></category>
+		<category><![CDATA[Glass]]></category>
+		<category><![CDATA[Glassware]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Mirror]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[review]]></category>
+		<category><![CDATA[timeline]]></category>
+		<guid isPermaLink="false">/?p=296</guid>
+
+					<description><![CDATA[Since Google's announcement of Glass people have been wondering on the possible applications that can be built on it and how it might increase one's productivity. Well, your wait is over now, because Google has just recently released the documentation on how to interact with Glass through their Mirror API.]]></description>
+		
+					<wfw:commentRss>/2013/04/17/review-google-glass-api/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Dark Matter in the API Universe	</title>
+	<atom:link href="/2014/02/06/dark-matter-api-universe/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/02/06/dark-matter-api-universe/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dark-matter-api-universe</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 06 Mar 2014 01:32:03 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: valt0r		</title>
+		<link>/2014/02/06/dark-matter-api-universe/#comment-355</link>
+
+		<dc:creator><![CDATA[valt0r]]></dc:creator>
+		<pubDate>Thu, 06 Mar 2014 01:32:03 +0000</pubDate>
+		<guid isPermaLink="false">/?p=777#comment-355</guid>
+
+					<description><![CDATA[Here is an &lt;a href=&quot;http://www.3scale.net/api-management&quot; rel=&quot;nofollow&quot;&gt;API Management&lt;/a&gt; platform that i&#039;ve been using for my work for a while.
+Im gonna read more about the other options on the market, but im actually happy with 3scale.
+I havent had any security problems yet, all monetization as easy as pie, everthing working right i believe, web is 3scale.net, there are other options like apigee and mashery, but couldnt convince me.]]></description>
+			<content:encoded><![CDATA[<p>Here is an <a href="http://www.3scale.net/api-management" rel="nofollow">API Management</a> platform that i&#8217;ve been using for my work for a while.<br />
+Im gonna read more about the other options on the market, but im actually happy with 3scale.<br />
+I havent had any security problems yet, all monetization as easy as pie, everthing working right i believe, web is 3scale.net, there are other options like apigee and mashery, but couldnt convince me.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Top Integration &#38; API Articles of the Week &#124; MuleSoft Blog		</title>
+		<link>/2014/02/06/dark-matter-api-universe/#comment-344</link>
+
+		<dc:creator><![CDATA[Top Integration &#38; API Articles of the Week &#124; MuleSoft Blog]]></dc:creator>
+		<pubDate>Fri, 07 Feb 2014 19:23:06 +0000</pubDate>
+		<guid isPermaLink="false">/?p=777#comment-344</guid>
+
+					<description><![CDATA[[&#8230;] Dark Matter in the API Universe [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Dark Matter in the API Universe [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dark Matter in the API Universe (private vs pub...		</title>
+		<link>/2014/02/06/dark-matter-api-universe/#comment-343</link>
+
+		<dc:creator><![CDATA[Dark Matter in the API Universe (private vs pub...]]></dc:creator>
+		<pubDate>Fri, 07 Feb 2014 09:05:50 +0000</pubDate>
+		<guid isPermaLink="false">/?p=777#comment-343</guid>
+
+					<description><![CDATA[[&#8230;] In the late 20th century, scientists began to flirt with proof that there is dark matter in our universe. As we learned that as much as 96% of the mass of the universe is represented by something we cannot observe,...&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] In the late 20th century, scientists began to flirt with proof that there is dark matter in our universe. As we learned that as much as 96% of the mass of the universe is represented by something we cannot observe,&#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

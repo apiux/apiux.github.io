@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: An Overview of REST Metadata Formats	</title>
+	<atom:link href="/2013/04/09/rest-metadata-formats/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/04/09/rest-metadata-formats/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rest-metadata-formats</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 23 Apr 2015 22:18:06 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Gavin Engel		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-7930</link>
+
+		<dc:creator><![CDATA[Gavin Engel]]></dc:creator>
+		<pubDate>Thu, 23 Apr 2015 22:18:06 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-7930</guid>
+
+					<description><![CDATA[Where do we stand in 2015?]]></description>
+			<content:encoded><![CDATA[<p>Where do we stand in 2015?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Data Modeling for APIs. Part 2: REST and JSON &#124; Linked Data Orchestration		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-341</link>
+
+		<dc:creator><![CDATA[Data Modeling for APIs. Part 2: REST and JSON &#124; Linked Data Orchestration]]></dc:creator>
+		<pubDate>Tue, 28 Jan 2014 10:03:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-341</guid>
+
+					<description><![CDATA[[&#8230;] falls under the category of API documentation, and you can check a nice writeup of the options here, with the notable exception of Rest.li which is LinkedIn&#8217;s recently open-sourced framework [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] falls under the category of API documentation, and you can check a nice writeup of the options here, with the notable exception of Rest.li which is LinkedIn&#8217;s recently open-sourced framework [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Danilo Tuler		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-340</link>
+
+		<dc:creator><![CDATA[Danilo Tuler]]></dc:creator>
+		<pubDate>Wed, 22 Jan 2014 09:44:59 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-340</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/09/rest-metadata-formats/#comment-339&quot;&gt;Ole Lensmar&lt;/a&gt;.
+
+I&#039;d also say that some options are better than others for a design first approach.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/09/rest-metadata-formats/#comment-339">Ole Lensmar</a>.</p>
+<p>I&#8217;d also say that some options are better than others for a design first approach.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ole Lensmar		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-339</link>
+
+		<dc:creator><![CDATA[Ole Lensmar]]></dc:creator>
+		<pubDate>Wed, 22 Jan 2014 08:47:09 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-339</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/09/rest-metadata-formats/#comment-338&quot;&gt;Danilo Tuler&lt;/a&gt;.
+
+Thanks - I agree; both RAML and API Blueprint deserve mention - and there are quite a few Hypermedia related metadata initiatives as well... 
+
+/Ole]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/09/rest-metadata-formats/#comment-338">Danilo Tuler</a>.</p>
+<p>Thanks &#8211; I agree; both RAML and API Blueprint deserve mention &#8211; and there are quite a few Hypermedia related metadata initiatives as well&#8230; </p>
+<p>/Ole</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Danilo Tuler		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-338</link>
+
+		<dc:creator><![CDATA[Danilo Tuler]]></dc:creator>
+		<pubDate>Wed, 22 Jan 2014 02:13:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-338</guid>
+
+					<description><![CDATA[Nice article. It deserves an update, as the scene evolved a little. Should add RAML to the analysis.]]></description>
+			<content:encoded><![CDATA[<p>Nice article. It deserves an update, as the scene evolved a little. Should add RAML to the analysis.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mike Amundsen (@mamund)		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-59</link>
+
+		<dc:creator><![CDATA[Mike Amundsen (@mamund)]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2013 12:59:47 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-59</guid>
+
+					<description><![CDATA[Another way to view this space is to think about the differences between 
+- a Service document approach (WSDL/WADL, etc), 
+- a Discovery document approach (JSON-LD/Hydra, Nottingham&#039;s JSON Home documents, Google&#039;s Python library, etc.)
+- a Hypermedia approach (Collection JSON, HAL, Siren, etc.).
+
+While they all attempt to expose metadata about a service or API, they not only do this in different ways, but rely on different optimizations. Service docs optimize the build experience (via proxy generation). Discovery documents optimize the runtime via configurability; essentially   Discovery documents are consumed by a static runtime client. Both of these approaches favor &quot;knowing&quot; the entire set of possibilities are design/build-time.
+
+Hypermedia is a runtime optimization based on _not_ knowing the entire set of possibilities. Hypermedia metadata is served up on an &quot;as needed&quot; basis - a very diff approach and one that continues to vex those attempting to create documentation for APIs.]]></description>
+			<content:encoded><![CDATA[<p>Another way to view this space is to think about the differences between<br />
+&#8211; a Service document approach (WSDL/WADL, etc),<br />
+&#8211; a Discovery document approach (JSON-LD/Hydra, Nottingham&#8217;s JSON Home documents, Google&#8217;s Python library, etc.)<br />
+&#8211; a Hypermedia approach (Collection JSON, HAL, Siren, etc.).</p>
+<p>While they all attempt to expose metadata about a service or API, they not only do this in different ways, but rely on different optimizations. Service docs optimize the build experience (via proxy generation). Discovery documents optimize the runtime via configurability; essentially   Discovery documents are consumed by a static runtime client. Both of these approaches favor &#8220;knowing&#8221; the entire set of possibilities are design/build-time.</p>
+<p>Hypermedia is a runtime optimization based on _not_ knowing the entire set of possibilities. Hypermedia metadata is served up on an &#8220;as needed&#8221; basis &#8211; a very diff approach and one that continues to vex those attempting to create documentation for APIs.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Scott Banwart&#039;s Blog &#8250; Distributed Weekly 202		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-58</link>
+
+		<dc:creator><![CDATA[Scott Banwart&#039;s Blog &#8250; Distributed Weekly 202]]></dc:creator>
+		<pubDate>Fri, 12 Apr 2013 09:13:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-58</guid>
+
+					<description><![CDATA[[...] An Overview of REST Metadata Formats [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] An Overview of REST Metadata Formats [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ole Lensmar		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-57</link>
+
+		<dc:creator><![CDATA[Ole Lensmar]]></dc:creator>
+		<pubDate>Thu, 11 Apr 2013 08:14:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-57</guid>
+
+					<description><![CDATA[Hi Jason,
+
+Thanks for this! Regarding if links/actions are metadata or not - perhaps there is an academic distinction as you say, but personally I find that describing and providing available actions for a resource inline (as part of the response) or externally (for example in a swagger definition) is still the same &quot;metadata&quot; and there are pros and cons for each approach (maybe that would be a good follow-up post!?) - once again knowing your end users and how they will want to consume your API is crucial to making the right choice.
+
+cheers!
+
+/Ole]]></description>
+			<content:encoded><![CDATA[<p>Hi Jason,</p>
+<p>Thanks for this! Regarding if links/actions are metadata or not &#8211; perhaps there is an academic distinction as you say, but personally I find that describing and providing available actions for a resource inline (as part of the response) or externally (for example in a swagger definition) is still the same &#8220;metadata&#8221; and there are pros and cons for each approach (maybe that would be a good follow-up post!?) &#8211; once again knowing your end users and how they will want to consume your API is crucial to making the right choice.</p>
+<p>cheers!</p>
+<p>/Ole</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: An Overview of REST Metadata Formats &#124; Next Web...		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-55</link>
+
+		<dc:creator><![CDATA[An Overview of REST Metadata Formats &#124; Next Web...]]></dc:creator>
+		<pubDate>Wed, 10 Apr 2013 21:19:11 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-55</guid>
+
+					<description><![CDATA[[...] Although the REST community initially took a stance against metadata for REST APIs, a number of metadata standards have none-the-less emerged over the last couple of years, mainly fueled by the nee...&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Although the REST community initially took a stance against metadata for REST APIs, a number of metadata standards have none-the-less emerged over the last couple of years, mainly fueled by the nee&#8230;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Harmon		</title>
+		<link>/2013/04/09/rest-metadata-formats/#comment-54</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 10 Apr 2013 15:15:46 +0000</pubDate>
+		<guid isPermaLink="false">/?p=264#comment-54</guid>
+
+					<description><![CDATA[This is one of those perspectives that reminds us we are just at the edge of a new frontier. The liberty of choice is presenting us with so many options that the best is not yet clear. While standards helped drive the SOA adoption in the SOAP era, our lack of standards is driving more innovation. I like that you touched on meta as a topic, but I&#039;m sure some folks will take issue with referring to Hypermedia links as meta (versus being a direct aspect of the content).
+Great stuff!]]></description>
+			<content:encoded><![CDATA[<p>This is one of those perspectives that reminds us we are just at the edge of a new frontier. The liberty of choice is presenting us with so many options that the best is not yet clear. While standards helped drive the SOA adoption in the SOAP era, our lack of standards is driving more innovation. I like that you touched on meta as a topic, but I&#8217;m sure some folks will take issue with referring to Hypermedia links as meta (versus being a direct aspect of the content).<br />
+Great stuff!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

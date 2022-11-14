@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>publish &#8211; API UX</title>
+	<atom:link href="/tag/publish/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 12 Sep 2013 16:12:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Webhooks, REST and the Open Web</title>
+		<link>/2013/09/12/webhooks/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=webhooks</link>
+					<comments>/2013/09/12/webhooks/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 16:08:19 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[Open]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[protocol]]></category>
+		<category><![CDATA[publish]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[specification]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[subscription]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=495</guid>
+
+					<description><![CDATA[Back in 2006, Jeff Lindsay proposed a different way of consuming Web resources that would eliminate the need for constantly polling APIs for changes. This new pattern was called webhooks and has since been adopted by companies such as GitHub and Google. The main advantage of the webhooks pattern is that your application doesn&#8217;t have to make [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/12/webhooks/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

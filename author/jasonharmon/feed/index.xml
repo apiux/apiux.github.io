@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Jason Harmon &#8211; API UX</title>
+	<atom:link href="/author/jasonharmon/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 12 Sep 2014 16:56:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>How to design APIs that last</title>
+		<link>/2014/09/05/api-design-sustainability/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-design-sustainability</link>
+					<comments>/2014/09/05/api-design-sustainability/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 05 Sep 2014 16:30:36 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[CRUD]]></category>
+		<category><![CDATA[implementation]]></category>
+		<category><![CDATA[resource]]></category>
+		<category><![CDATA[sustainability]]></category>
+		<category><![CDATA[version]]></category>
+		<guid isPermaLink="false">/?p=1115</guid>
+
+					<description><![CDATA[In the software world, we often refer to building ‘extensible’ designs. In essence, this means that we can build a system that is light and nimble, capable of changing and growing over time.]]></description>
+		
+					<wfw:commentRss>/2014/09/05/api-design-sustainability/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Who are the best API Product Managers?</title>
+		<link>/2014/02/13/api-product-manager/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-product-manager</link>
+					<comments>/2014/02/13/api-product-manager/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 13 Feb 2014 19:37:37 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[Product Manager]]></category>
+		<category><![CDATA[strategy]]></category>
+		<guid isPermaLink="false">/?p=773</guid>
+
+					<description><![CDATA[When I look around the little village of API specialists within the tech world, there are an increasing number, in the last year, with the title “API Product Manager&#8221;. Keep in mind that just a few years ago, this job title didn’t exist. There are so many other roles involved in what it takes to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/13/api-product-manager/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dark Matter in the API Universe</title>
+		<link>/2014/02/06/dark-matter-api-universe/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dark-matter-api-universe</link>
+					<comments>/2014/02/06/dark-matter-api-universe/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 06 Feb 2014 17:29:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Private]]></category>
+		<category><![CDATA[Trends]]></category>
+		<guid isPermaLink="false">/?p=777</guid>
+
+					<description><![CDATA[In the late 20th century, scientists began to flirt with proof that there is dark matter in our universe. As we learned that as much as 96% of the mass of the universe is represented by something we cannot observe, we&#8217;re entering a new era of understanding about the nature of matter. However, the struggle [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/06/dark-matter-api-universe/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why no one wants to use your API</title>
+		<link>/2013/10/18/why-no-one-wants-to-use-your-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=why-no-one-wants-to-use-your-api</link>
+					<comments>/2013/10/18/why-no-one-wants-to-use-your-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 18 Oct 2013 13:00:27 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[feedback]]></category>
+		<category><![CDATA[outreach]]></category>
+		<category><![CDATA[strategy]]></category>
+		<category><![CDATA[support]]></category>
+		<guid isPermaLink="false">/?p=683</guid>
+
+					<description><![CDATA[A brilliant, undiscovered app developer just logged into the front page for your API program (please don&#8217;t tell me you just emailed a PDF), and made their first successful call. They&#8217;re frustrated, feeling like they don&#8217;t understand what just happened, and generally just exhausted. Hopes of impressing colleagues with a quick demo espousing the ease [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/10/18/why-no-one-wants-to-use-your-api/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>When API time zones make the difference</title>
+		<link>/2013/09/11/api-timezones/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-timezones</link>
+					<comments>/2013/09/11/api-timezones/#respond</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 11 Sep 2013 16:00:35 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[geolocation]]></category>
+		<category><![CDATA[globalization]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[timezone]]></category>
+		<category><![CDATA[UTC]]></category>
+		<guid isPermaLink="false">/?p=618</guid>
+
+					<description><![CDATA[Globalizing APIs is hard. I&#8217;ve posted before about some of the pitfalls of dates and times in APIs in The 5 Laws of API Dates and Times, as well as content and currency localization in How to Localize Your API . One area that I did not get into was how timezones can play a [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/11/api-timezones/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How OAuth 2 trumps Basic authentication</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=oauth-2-trumps-basic-authentication</link>
+					<comments>/2013/07/10/oauth-2-trumps-basic-authentication/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 10 Jul 2013 16:00:23 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[access]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authorization]]></category>
+		<category><![CDATA[flow]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[OAuth2]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[scope]]></category>
+		<category><![CDATA[secret]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SSL]]></category>
+		<guid isPermaLink="false">/?p=390</guid>
+
+					<description><![CDATA[So many negatives have been brought forth in the past on OAuth 2. Where there might be continuing points of contention, there is one area which seems to be clear: the &#8220;Resource Owner Password Credentials Grant&#8221; (OAuth 2 Spec, section 4.3) pattern as defined in the OAuth 2 spec is fundamentally superior to HTTP Basic [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/07/10/oauth-2-trumps-basic-authentication/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to localize your API</title>
+		<link>/2013/04/25/how-to-localize-your-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-localize-your-api</link>
+					<comments>/2013/04/25/how-to-localize-your-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 25 Apr 2013 16:27:36 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[culture]]></category>
+		<category><![CDATA[currency]]></category>
+		<category><![CDATA[i18n]]></category>
+		<category><![CDATA[internationalization]]></category>
+		<category><![CDATA[iso]]></category>
+		<category><![CDATA[l10n]]></category>
+		<category><![CDATA[language]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[native]]></category>
+		<category><![CDATA[nls]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[support]]></category>
+		<guid isPermaLink="false">/?p=325</guid>
+
+					<description><![CDATA[Operating a business in the global market is not as trivial as it might seem, if you've never seen it through. Everyone not only speaks different languages and has different currencies (not to mention driving on the different sides of the road), but they also have different cultural norms.]]></description>
+		
+					<wfw:commentRss>/2013/04/25/how-to-localize-your-api/feed/</wfw:commentRss>
+			<slash:comments>9</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How safe is your API from its users?</title>
+		<link>/2013/04/02/how-safe-is-your-api-from-user/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-safe-is-your-api-from-user</link>
+					<comments>/2013/04/02/how-safe-is-your-api-from-user/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Tue, 02 Apr 2013 16:00:53 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Anonymous]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[API Gateway]]></category>
+		<category><![CDATA[Attack vectors]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[Cross-site scripting]]></category>
+		<category><![CDATA[Hackers]]></category>
+		<category><![CDATA[Metrics]]></category>
+		<category><![CDATA[Tokens]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<category><![CDATA[XSS]]></category>
+		<guid isPermaLink="false">/?p=194</guid>
+
+					<description><![CDATA[Availability and safety are some of the most important implicit factors to the user experience of your platform's users. When we discuss web security to ensure these factors, images of criminal rings using sophisticated techniques come to mind.]]></description>
+		
+					<wfw:commentRss>/2013/04/02/how-safe-is-your-api-from-user/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The 5 laws of API dates and times</title>
+		<link>/2013/03/20/5-laws-api-dates-and-times/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=5-laws-api-dates-and-times</link>
+					<comments>/2013/03/20/5-laws-api-dates-and-times/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 20 Mar 2013 17:00:17 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Dates]]></category>
+		<category><![CDATA[Formatting]]></category>
+		<category><![CDATA[GMT]]></category>
+		<category><![CDATA[ISO 8601]]></category>
+		<category><![CDATA[Standards]]></category>
+		<category><![CDATA[Times]]></category>
+		<category><![CDATA[UTC]]></category>
+		<guid isPermaLink="false">/?p=73</guid>
+
+					<description><![CDATA[Let&#8217;s say you&#8217;re building your first API. Be it public, private, or some hybrid thereof, don&#8217;t be surprised if your first defect is date/time-related. Do not underestimate how much trouble you can get into when it comes to handling date and times. Here are some tips which might keep you out of this potential future. [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/03/20/5-laws-api-dates-and-times/feed/</wfw:commentRss>
+			<slash:comments>24</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

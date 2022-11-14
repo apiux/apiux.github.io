@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Why no one wants to use your API</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/10/18/why-no-one-wants-to-use-your-api/">
+	<link rel="author" href="https://plus.google.com/111160376507741662259">
+	<meta name="description" content="They&#039;re frustrated, feeling like they don&#039;t understand what just happened, and generally just exhausted.">
+	<meta name="keywords" content="API,documentation,feedback,outreach,strategy,support,developers,great,apis,ux,apiux,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Why no one wants to use your API">
+	<meta property="og:description" content="They&#039;re frustrated, feeling like they don&#039;t understand what just happened, and generally just exhausted.">
+	<meta property="og:url" content="/2013/10/18/why-no-one-wants-to-use-your-api/">
+	<meta property="article:published_time" content="2013-10-18">
+	<meta property="article:modified_time" content="2013-10-18">
+	<meta property="article:author" content="/author/jasonharmon/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="documentation">
+	<meta property="article:tag" content="feedback">
+	<meta property="article:tag" content="outreach">
+	<meta property="article:tag" content="strategy">
+	<meta property="article:tag" content="support">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Why no one wants to use your API Comments Feed" href="/2013/10/18/why-no-one-wants-to-use-your-api/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=41e8490450","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/683">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=683">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F10%2F18%2Fwhy-no-one-wants-to-use-your-api%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F10%2F18%2Fwhy-no-one-wants-to-use-your-api%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '683';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Why+no+one+wants+to+use+your+API';
+	window._wp_rp_post_tags = ['strategy', 'feedback', 'outreach', 'support', 'api', 'documentation', 'opinion', 'tip', 'scale', 'a', 'catalog', 'compani', 'gener', 'api', 'dash', 'lose', 'develop', 'program', 'pdf', 'app', 'demo', 'system'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-683 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-683" class="post-683 post type-post status-publish format-standard hentry category-opinion tag-api tag-documentation tag-feedback tag-outreach tag-strategy tag-support">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Why no one wants to use your API</h1>
+										<div class="comments-link">
+					<a href="/2013/10/18/why-no-one-wants-to-use-your-api/#comments">6 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>A brilliant, undiscovered app developer just logged into the front page for your API program (please don&#8217;t tell me you just emailed a PDF), and made their first successful call. They&#8217;re frustrated, feeling like they don&#8217;t understand what just happened, and generally just exhausted.</p>
+<p>Hopes of impressing colleagues with a quick demo espousing the ease of adoption have been dashed. They are eagerly digging through your content trying to find a way to explain the value of what your API brings to his company.</p>
+<p style="text-align: center"><img loading="lazy" class="aligncenter" alt="This is too hard!" src="/wp-content/uploads/2013/10/Shot-To-The-Head-Blam-Reaction-Gif-In-Scott-Pilgrim-Vs.-The-World.gif" width="500" height="265"></p>
+<p style="text-align: left"><b><em>…you might be about to lose out on the most serendipitous moment in your companies&#8217; future</em></b>. Developers you have never met might have the potential to <b><em>change your future</em></b>…but only if it&#8217;s <b><em>easy to get started</em></b>.<br>
+<span id="more-683"></span></p>
+<h2>Getting started</h2>
+<p style="text-align: center"><img loading="lazy" class="aligncenter" alt="Just out of reach" src="/wp-content/uploads/2013/10/a42a296057ec5ca85fb3a82dd0ae924e.jpeg" width="556" height="413"></p>
+<p>The first thing your new API developer sees should be something along the lines of &#8220;<b><em>Getting Started</em></b>&#8220;, or &#8220;<b><em>Quick start</em></b>&#8220;. If the first thing they see is a catalog of URLs, with esoteric systemic descriptors…you may have already tipped the scales of effort versus reward. If a developer has to read every detail of your system in order to understand the first call, <b><em>they&#8217;re likely to look for an easier alternative</em></b> before they write any code, or even bother to register.</p>
+<p>We&#8217;ve all heard the mantra that <b><em>good developers are lazy developers</em></b>. Developers want to feel like they have <b><em>superhuman powers</em></b>, while they <b><em>sit in their underwear eating peanut butter</em></b>. Maybe I&#8217;m stretching a stereotype here, but the truth is that if we make it easy to nail that first call in a few minutes, we&#8217;ve infused confidence that your API is going to work in their company.</p>
+<h3><b>Some great &#8220;Quick Start&#8221; examples:</b></h3>
+<p><b style="line-height: 1.714285714;font-size: 1rem"><a href="https://www.twilio.com/docs/quickstart/php/sms/sending-via-rest" target="_new">Twilio SMS Quickstart</a></b><span style="line-height: 1.714285714;font-size: 1rem">: In a quick scroll, and a copy-paste, you can send an SMS. While not all APIs are that simple, this is a great example of a walk-through that a monkey could probably be trained to do it. The best part is, there are four more languages just one drop-down away.</span></p>
+<p><b><a href="https://www.parse.com/apps/quickstart#js/blank" target="_new">Parse Quick Start Guide</a></b>: Download a blank project, change one config line, and copy-paste a 7 line sample. You&#8217;ve saved an object to the cloud. Put on your Superman underoos, and open a fresh jar of peanut butter!</p>
+<h2>Concise errors</h2>
+<p>The worst feeling as a new developer trying out an API is seeing an error code with a generic description. Provisioning an account and keys, grinding through gritty documentation, building authentication code, and dancing through configuration, only to be met by &#8220;<b><em>500 Server Error</em></b>&#8221; (or worse yet, a <b><em>nasty stacktrace</em></b>) instantly feels like you are looking at a major waste of time.</p>
+<p><b>Create consistent data in how your errors are presented. </b></p>
+<ul>
+<ul>
+<ul>
+<ul>
+<li>Every time a 40x or 50x range HTTP error is presented, there should be data to go along with it.</li>
+<li>The shape of that error data should be the same across all of your endpoints.</li>
+</ul>
+</ul>
+</ul>
+</ul>
+<p><b>Study errors and exceptions </b></p>
+<ul>
+<ul>
+<ul>
+<ul>
+<ul>
+<li>Pay attention to what developers are tripping on the most.</li>
+<li>Provide extra &#8216;helper&#8217; messages in the errors indicating what the easiest and most common fix should be.</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+<p><b>Smooth out bumps in the road through error messaging</b></p>
+<ul>
+<ul>
+<ul>
+<ul>
+<ul>
+<ul>
+<li>This is often superior to adding more documentation, which developers are all too often going to miss.</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+<p>For an example of an informative, consistent error, Twilio does a great job.</p>
+<script src="https://gist.github.com/7028296.js"></script>
+<p>I have a fairly good idea that I need to authenticate before making this call. However if I hit the link provided in &#8216;more_info&#8217;, <a href="https://www.twilio.com/docs/errors/20003" target="_blank">https://www.twilio.com/docs/errors/20003</a>, I can see a more detailed explanation.</p>
+<h2>When errors aren&#8217;t enough</h2>
+<p>When it&#8217;s not easy to create good error messaging due to systemic constraints, <b>reach out to your developers</b>. I recently tried running a Twitter API sample on my <a href="http://arduino.cc/en/Main/ArduinoBoardYun?from=Main.ArduinoYUN" target="_new">Arduino Yun</a> using <a href="http://temboo.com/" target="_new">Temboo</a>. The error didn&#8217;t tell me a lot. I&#8217;m sure I just don&#8217;t know where to look yet. I figured I&#8217;d spend more time digging in and didn&#8217;t look at it for a day. <b><em>Automagically</em></b>, I get an email from Temboo&#8217;s head of product <b><em>telling me what I did wrong</em></b>, and how to fix it. Not only did I feel like I was being tended to, but now I&#8217;ve probably saved quite a bit of time on figuring this out myself.<br>
+<img loading="lazy" class="alignleft  wp-image-687" style="border: 0px" alt="Temboo help email" src="/wp-content/uploads/2013/10/Screenshot-2013-10-17-10.40.56.png" width="729" height="300" srcset="/wp-content/uploads/2013/10/Screenshot-2013-10-17-10.40.56.png 729w, /wp-content/uploads/2013/10/Screenshot-2013-10-17-10.40.56-300x123.png 300w, /wp-content/uploads/2013/10/Screenshot-2013-10-17-10.40.56-624x256.png 624w" sizes="(max-width: 729px) 100vw, 729px"></p>
+<h2><span style="font-size: 1.142857143rem;line-height: 1.846153846">SDK are easier than the REST</span></h2>
+<p>While developers love a clean, beautiful RESTful API, they love being able to download an SDK, make a reference, and make call <b><em>without knowing how every underlying aspect works</em></b>. Don&#8217;t get me wrong, before it goes out to the public, good developers will learn some of those details. That said, providing <em><strong>quick feedback on how your system works</strong></em> is the <strong><em>first priority</em></strong>.</p>
+<p>Clearly, if you&#8217;re just getting started, writing SDKs for ten programming languages is going to be beyond your scale. However, if you are building a platform using a given language, and you are building an API-driven platform…you should have the <strong><em>best possible client for your API</em></strong>, and it should be <strong><em>available for download</em></strong>. This approach is the best way to <strong><em>start eating your own dog food</em></strong>.</p>
+<p>If you are lucky, your clients will publish their clients, and you can provide links and support. If good abstractions aren&#8217;t coming your way on Github, perhaps you should challenge your staff to <strong><em>flex their polyglot muscles</em></strong> in your company&#8217;s next <strong><em>internal hackathon</em></strong> (yes, you should have those). Many developers have different language experience outside of their job, and are itching for a chance to stretch their skills.</p>
+<h3><b>A few great examples</b></h3>
+<p><b></b><span style="text-decoration: underline"><a href="https://stripe.com/docs/libraries" target="_blank">Stripe</a></span>: a great blend of in-house developed SDKs, and plenty of links to community-provided options for abstractions and plugins.</p>
+<p><span style="text-decoration: underline"><a href="https://www.dropbox.com/developers/datastore/sdks" target="_blank">Dropbox</a></span>: again, a handful of sanctioned languages, as well as links to &#8220;Others&#8221;, community and commercial options in languages not officially supported by SDKs.</p>
+<h2>TL;DR, what does this thing do?</h2>
+<p>Sometimes, business folks discover an API before developers do. Explain in <strong><em>simple, non-technical terms</em></strong>…what exactly is the <strong><em>business value</em></strong> in spending time on this integration?<br>
+In a world where even images have to be animated to grab attention, video is often the most efficient way to rapidly communicate value. While it make take a few paragraphs to describe your real value, you&#8217;ll find most of the content is rarely read.</p>
+<p><a href="https://zapier.com/how-it-works/" target="_blank">Zapier</a>: this is a great example of a quick &#8216;executive summary&#8217; of how Zapier&#8217;s product works.</p>
+<p>When video doesn&#8217;t quite makes sense, or you don&#8217;t have video production resources, an <strong><em>informative information flow</em></strong> with bulleted points can get the job done as well.</p>
+<p><span style="line-height: 1.714285714;font-size: 1rem"><a title="Yummly" href="https://developer.yummly.com/" target="_blank">Yummly</a>: while there are no flashy videos here, a solid responsive design with great photography and crisp bulleted content gets the point across very succinctly.</span></p>
+<h2>Adoption by Demo</h2>
+<p>If a developer can <strong><em>steal a code sample</em></strong>, fill in data that looks like something their customers would make, and <strong><em>show it to leadership</em></strong>, they can get buy-in faster than any other means. As an evangelist for your platform, this is the best way to teach your community&#8217;s developers to fish. Provide easy to <strong><em>adapt code samples</em></strong> that can rapidly be used to build demos.</p>
+<p>If a developer has to convince their boss to take a week out of providing deliverables to make a simple demo, you&#8217;re probably not even in the running. If they can whip up a demo while eating lunch at their desk, you might be in the running for running a new piece of a budding star&#8217;s key strategic infrastructure.</p>
+<h2>It&#8217;s not you, it&#8217;s me</h2>
+<p style="text-align: center"><img loading="lazy" class="aligncenter" alt="It's not you, it's me" src="/wp-content/uploads/2013/10/download.jpeg" width="500" height="332"></p>
+<p style="text-align: left"><span style="line-height: 1.714285714;font-size: 1rem">Maybe you&#8217;re in the minority. You work for an up and coming company with a rockstar API; people are integrating constantly, your support costs are low, and everyone is talking about how easy it was.</span></p>
+<p style="text-align: left"><em><strong>My guess is if you read this far, that&#8217;s probably not the case.</strong></em></p>
+<p style="text-align: left">Success stories in APIs are fewer than you think, and it&#8217;s because many of the points in this post are not respected. Take a long hard look at the API you&#8217;re working on, and <em><strong>be honest with yourself and your colleagues</strong></em>.</p>
+<p style="text-align: left">If you&#8217;re already in a bad spot, and feeling hopeless, <strong><em>take material steps to change your momentum</em></strong>. Work on convincing your internal developers that there is a problem.</p>
+<ul style="text-align: left">
+<ul>
+<ul>
+<ul>
+<li>Do your own <em><strong>demo in-house</strong></em> of <em><strong>how hard it is to get started</strong></em> in a lunch and learn or other technical venue. This might help shift the conversation toward broader concerns, instead of developers and product getting bogged down in the inconsequential details.</li>
+<li>
+<em><strong>Ask people with experience</strong></em> (that don&#8217;t draw a paycheck from your company) to give it a shot. Don&#8217;t help them, and ask for detailed notes, and/or record video to share with others.</li>
+<li>
+<em><strong>Listen. Talk to developers</strong></em> who have recently integrated and take <em><strong>copious notes</strong></em>.</li>
+</ul>
+</ul>
+</ul>
+</ul>
+<p style="text-align: left"><em><strong>Build the backlog</strong></em> for your API product based on <em><strong>real experiences</strong></em>. Study the behavior of the developers who want to use your core business value. Your software might provide serious value, but if it&#8217;s <em><strong>not easy to get started</strong></em> you might never have a chance to be considered.</p>
+<p style="text-align: left">Image Attribution:<br>
+http://mrwgifs.com/shot-to-the-head-blam-reaction-gif-in-scott-pilgrim-vs-the-world/<br>
+http://cheezburger.com/4067821824<br>
+http://www.seanet.com/~rod/images/raccoon.jpg</p>
+<p style="text-align: left"><em>Please join in the discussion on this article over on <a title="Hacker News" href="https://news.ycombinator.com/item?id=6571095" target="_blank">Hacker News</a> and <a title="reddit" href="http://www.reddit.com/r/webdev/comments/1opmvy/why_no_one_wants_to_use_your_api/" target="_blank">reddit</a>.</em></p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-1092" data-post-type="none">
+<a href="/2014/09/01/endpoint-kamyar-mohager/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/09/166c2a3-300x3001-150x150.jpg" alt="Endpoint speaker highlight: Kamyar Mohager" width="150" height="150"></a><a href="/2014/09/01/endpoint-kamyar-mohager/" class="wp_rp_title">Endpoint speaker highlight: Kamyar Mohager</a>
+</li>
+<li data-position="1" data-poid="in-1070" data-post-type="none">
+<a href="/2014/07/10/usability-soundcloud-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/07/SoundCloud_logo-300x1711-150x150.png" alt="Usability Review: SoundCloud API" width="150" height="150"></a><a href="/2014/07/10/usability-soundcloud-api/" class="wp_rp_title">Usability Review: SoundCloud API</a>
+</li>
+<li data-position="2" data-poid="in-1009" data-post-type="none">
+<a href="/2014/06/10/usability-dropbox-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2014/06/dropbox-logo1-300x3001-150x150.png" alt="Usability Review: Dropbox API" width="150" height="150"></a><a href="/2014/06/10/usability-dropbox-api/" class="wp_rp_title">Usability Review: Dropbox API</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/10/18/why-no-one-wants-to-use-your-api/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/jasonharmon/" class="authorsure-author-link">Jason Harmon</a></span></span> at <time itemprop="dateModified" datetime="2013-10-18T15:22:51+02:00">October 18, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/documentation/" rel="tag">documentation</a>, <a href="/tag/feedback/" rel="tag">feedback</a>, <a href="/tag/outreach/" rel="tag">outreach</a>, <a href="/tag/strategy/" rel="tag">strategy</a>, <a href="/tag/support/" rel="tag">support</a> on <a href="/2013/10/18/why-no-one-wants-to-use-your-api/" title="3:00 pm" rel="bookmark"><time class="entry-date" datetime="2013-10-18T15:00:27+02:00">October 18, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/jasonharmon/" title="View all posts by Jason Harmon" rel="author">Jason Harmon</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Jason Harmon</h2>
+						<p>API Architect @Paypal. 
+Blogger/evangelist for #API. 
+Purveyor of #BDD process. 
+#Android tinkerer.
+#Quadcopter crasher.</p>
+						<div class="author-link">
+							<a href="/author/jasonharmon/" rel="author">
+								View all posts by Jason Harmon <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/09/24/nordic-apis-wrap-up/" rel="prev"><span class="meta-nav">&larr;</span> Nordic APIs conference wrap-up</a></span>
+					<span class="nav-next"><a href="/2013/12/17/swedish-api-license/" rel="next">The Swedish API License <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			6 thoughts on &ldquo;<span>Why no one wants to use your API</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="pingback even thread-even depth-1" id="comment-272">
+		<p>Pingback: <a href="http://www.scoop.it/t/ip-telephony-in-europe/p/4009489785/why-no-one-wants-to-use-your-api" rel="external nofollow ugc" class="url">Why no one wants to use your API | IP telephony...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-273">
+		<article id="comment-273" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/28c44437c470660d07d9e3c12a25f409?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/28c44437c470660d07d9e3c12a25f409?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="https://plus.google.com/117721039065381075971" rel="external nofollow ugc" class="url">Terris Linenbach</a></b> </cite><a href="/2013/10/18/why-no-one-wants-to-use-your-api/#comment-273"><time datetime="2013-10-19T17:29:09+02:00">October 19, 2013 at 5:29 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I&#8217;d read this but it&#8217;s totally your gif.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/10/18/why-no-one-wants-to-use-your-api/?replytocom=273#respond" data-commentid="273" data-postid="683" data-belowelement="comment-273" data-respondelement="respond" data-replyto="Reply to Terris Linenbach" aria-label="Reply to Terris Linenbach">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-even depth-1" id="comment-316">
+		<p>Pingback: <a href="http://www.openprisetech.com/2013/12/awesome-api-user-experience-include-operations-users/" rel="external nofollow ugc" class="url">API User Experience Should Include The Operations Users - Openprise</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-336">
+		<p>Pingback: <a href="http://www.scoop.it/t/api-mag/p/4014192227/2014/01/14/why-no-one-wants-to-use-your-api" rel="external nofollow ugc" class="url">Why no one wants to use your API | API Magazine...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-even depth-1" id="comment-342">
+		<p>Pingback: <a href="/2014/02/06/dark-matter-api-universe/" rel="external nofollow ugc" class="url">Dark Matter in the API Universe | API UX</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-358">
+		<article id="comment-358" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/87fa178f2c5afa717a3b9389fd6b829c?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/87fa178f2c5afa717a3b9389fd6b829c?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/ajaxjones" rel="external nofollow ugc" class="url">ajax jones (@ajaxjones)</a></b> </cite><a href="/2013/10/18/why-no-one-wants-to-use-your-api/#comment-358"><time datetime="2014-04-14T01:20:25+02:00">April 14, 2014 at 1:20 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Totes agree. Just tried temboo, instructions included for Mac, and line that said windows might be similar, wasn&#8217;t.  Dire and error so gave up. Gone native</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/10/18/why-no-one-wants-to-use-your-api/?replytocom=358#respond" data-commentid="358" data-postid="683" data-belowelement="comment-358" data-respondelement="respond" data-replyto="Reply to ajax jones (@ajaxjones)" aria-label="Reply to ajax jones (@ajaxjones)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/10/18/why-no-one-wants-to-use-your-api/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="683" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4336e28dc0"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="5"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.916 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-23 04:19:58 -->
+
+<!-- Compression = gzip -->
+</html>

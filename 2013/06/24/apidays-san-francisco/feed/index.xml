@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: APIDays San Francisco	</title>
+	<atom:link href="/2013/06/24/apidays-san-francisco/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/06/24/apidays-san-francisco/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apidays-san-francisco</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 14 May 2014 14:00:14 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>
+		By: APIdays Mediterranea		</title>
+		<link>/2013/06/24/apidays-san-francisco/#comment-493</link>
+
+		<dc:creator><![CDATA[APIdays Mediterranea]]></dc:creator>
+		<pubDate>Wed, 14 May 2014 14:00:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=497#comment-493</guid>
+
+					<description><![CDATA[[&#8230;] was born in 2012 in Paris and spread internationally during 2013 with local editions in San Francisco and Madrid. In 2014, Berlin, Dublin, Tokyo and Moscow will also be joining the Apidays [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] was born in 2012 in Paris and spread internationally during 2013 with local editions in San Francisco and Madrid. In 2014, Berlin, Dublin, Tokyo and Moscow will also be joining the Apidays [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

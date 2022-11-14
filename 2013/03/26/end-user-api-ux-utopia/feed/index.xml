@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Is end-user API UX a Utopia?	</title>
+	<atom:link href="/2013/03/26/end-user-api-ux-utopia/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/03/26/end-user-api-ux-utopia/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=end-user-api-ux-utopia</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 02 May 2013 12:37:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Thad Puckett (@ThadPuckett)		</title>
+		<link>/2013/03/26/end-user-api-ux-utopia/#comment-28</link>
+
+		<dc:creator><![CDATA[Thad Puckett (@ThadPuckett)]]></dc:creator>
+		<pubDate>Tue, 26 Mar 2013 18:43:44 +0000</pubDate>
+		<guid isPermaLink="false">/?p=155#comment-28</guid>
+
+					<description><![CDATA[I am not a coder, but am a purchaser of cloud integrations, and I think you are absolutely correct.  The idea that coders only have to sprinkle a bit of pixie dust and everything works magically is testimony to how much impact web integrations have had and continue to have.  The point is not that UX is not working...it is that the expectation is that it is easy to develop.  It isn&#039;t.]]></description>
+			<content:encoded><![CDATA[<p>I am not a coder, but am a purchaser of cloud integrations, and I think you are absolutely correct.  The idea that coders only have to sprinkle a bit of pixie dust and everything works magically is testimony to how much impact web integrations have had and continue to have.  The point is not that UX is not working&#8230;it is that the expectation is that it is easy to develop.  It isn&#8217;t.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

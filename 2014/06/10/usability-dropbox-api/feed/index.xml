@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Usability Review: Dropbox API	</title>
+	<atom:link href="/2014/06/10/usability-dropbox-api/feed/" rel="self" type="application/rss+xml" />
+	<link>/2014/06/10/usability-dropbox-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=usability-dropbox-api</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 13 Jun 2014 10:51:23 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2014/06/10/usability-dropbox-api/#comment-719</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Fri, 13 Jun 2014 10:51:23 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1009#comment-719</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/06/10/usability-dropbox-api/#comment-713&quot;&gt;michael pearson&lt;/a&gt;.
+
+Thanks Michael!
+
+Are there any other APIs that you&#039;d like to see tested?]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/06/10/usability-dropbox-api/#comment-713">michael pearson</a>.</p>
+<p>Thanks Michael!</p>
+<p>Are there any other APIs that you&#8217;d like to see tested?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: michael pearson		</title>
+		<link>/2014/06/10/usability-dropbox-api/#comment-713</link>
+
+		<dc:creator><![CDATA[michael pearson]]></dc:creator>
+		<pubDate>Thu, 12 Jun 2014 16:21:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1009#comment-713</guid>
+
+					<description><![CDATA[Nice writeup and tests! I&#039;d love to see a more intuitive chunked upload interface in the node library (without micro-managing the chunk cursor) - a major gotcha in uploading large files with writeFile in node&#039;s async environment is keeping these enormous buffers in memory, which doesn&#039;t scale out too well.]]></description>
+			<content:encoded><![CDATA[<p>Nice writeup and tests! I&#8217;d love to see a more intuitive chunked upload interface in the node library (without micro-managing the chunk cursor) &#8211; a major gotcha in uploading large files with writeFile in node&#8217;s async environment is keeping these enormous buffers in memory, which doesn&#8217;t scale out too well.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Usability Review: Dropbox API &#124; API Usability Testing – The fastest way to get feedback on your API		</title>
+		<link>/2014/06/10/usability-dropbox-api/#comment-707</link>
+
+		<dc:creator><![CDATA[Usability Review: Dropbox API &#124; API Usability Testing – The fastest way to get feedback on your API]]></dc:creator>
+		<pubDate>Wed, 11 Jun 2014 12:44:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1009#comment-707</guid>
+
+					<description><![CDATA[&lt;p&gt;[&#8230;] Also, Bruno summed up the results and wrote a nice summary. Check it out here: &lt;a href=&quot;/2014/06/10/usability-dropbox-api/&quot;  rel=&quot;nofollow&quot;&gt;/2014/06/10/usability-dropbox-api/&lt;/a&gt; [&#8230;]&lt;/p&gt;]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Also, Bruno summed up the results and wrote a nice summary. Check it out here: <a href="/2014/06/10/usability-dropbox-api/"  rel="nofollow">/2014/06/10/usability-dropbox-api/</a> [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Yu-Cheng Wang		</title>
+		<link>/2014/06/10/usability-dropbox-api/#comment-704</link>
+
+		<dc:creator><![CDATA[Yu-Cheng Wang]]></dc:creator>
+		<pubDate>Wed, 11 Jun 2014 01:49:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1009#comment-704</guid>
+
+					<description><![CDATA[nice website and nice review!]]></description>
+			<content:encoded><![CDATA[<p>nice website and nice review!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2014/06/10/usability-dropbox-api/#comment-700</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 10 Jun 2014 19:10:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1009#comment-700</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2014/06/10/usability-dropbox-api/#comment-699&quot;&gt;Steve Marx&lt;/a&gt;.
+
+Thanks for the comment, Steve!
+
+I&#039;m sure the results would be better it a supported language were used but Node.js is increasingly gaining popularity and it would be great if Dropbox started supporting it.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2014/06/10/usability-dropbox-api/#comment-699">Steve Marx</a>.</p>
+<p>Thanks for the comment, Steve!</p>
+<p>I&#8217;m sure the results would be better it a supported language were used but Node.js is increasingly gaining popularity and it would be great if Dropbox started supporting it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Steve Marx		</title>
+		<link>/2014/06/10/usability-dropbox-api/#comment-699</link>
+
+		<dc:creator><![CDATA[Steve Marx]]></dc:creator>
+		<pubDate>Tue, 10 Jun 2014 18:03:13 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1009#comment-699</guid>
+
+					<description><![CDATA[&lt;p&gt;Thanks for doing this! Clearly there&#8217;s a lot of work we could do to improve things for Node.js developers. Frankly, I&#8217;m impressed that all three developers managed to work with the Datastore API despite there being no library (from us or a third party) for using that API with Node.js.&lt;/p&gt;
+&lt;p&gt;I&#8217;d be curious to see how a similar usability study would go if a supported language/library were used (e.g. Python or Objective-C).&lt;/p&gt;
+&lt;p&gt;Feel free to reach out if you have any questions about the Dropbox platform: &lt;a href=&quot;mailto:smarx@dropbox.com&quot; rel=&quot;nofollow&quot;&gt;smarx@dropbox.com&lt;/a&gt;. I work on Dropbox&#8217;s developer relations team.&lt;/p&gt;]]></description>
+			<content:encoded><![CDATA[<p>Thanks for doing this! Clearly there&#8217;s a lot of work we could do to improve things for Node.js developers. Frankly, I&#8217;m impressed that all three developers managed to work with the Datastore API despite there being no library (from us or a third party) for using that API with Node.js.</p>
+<p>I&#8217;d be curious to see how a similar usability study would go if a supported language/library were used (e.g. Python or Objective-C).</p>
+<p>Feel free to reach out if you have any questions about the Dropbox platform: <a href="mailto:smarx@dropbox.com" rel="nofollow">smarx@dropbox.com</a>. I work on Dropbox&#8217;s developer relations team.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How OAuth 2 trumps Basic authentication	</title>
+	<atom:link href="/2013/07/10/oauth-2-trumps-basic-authentication/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/07/10/oauth-2-trumps-basic-authentication/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=oauth-2-trumps-basic-authentication</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 29 Oct 2015 17:48:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: zonbii		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-9889</link>
+
+		<dc:creator><![CDATA[zonbii]]></dc:creator>
+		<pubDate>Thu, 29 Oct 2015 17:48:50 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-9889</guid>
+
+					<description><![CDATA[SSL + Basic Auth if using server cert pinning or a 3rd party signed cert shouldn&#039;t be an issue.  Is only when you pass the exchange self signed public key in the open that contain the risk.]]></description>
+			<content:encoded><![CDATA[<p>SSL + Basic Auth if using server cert pinning or a 3rd party signed cert shouldn&#8217;t be an issue.  Is only when you pass the exchange self signed public key in the open that contain the risk.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: PK		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-463</link>
+
+		<dc:creator><![CDATA[PK]]></dc:creator>
+		<pubDate>Thu, 08 May 2014 21:06:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-463</guid>
+
+					<description><![CDATA[Hi,
+I think the last line of the &quot;RESTful Web Services Cookbook” excerpt is actually about OAUTH v1  where the AT secret is used in the signed part of the request. OAUTH v2 has no AT-secrets and signing is solely done byTLS.]]></description>
+			<content:encoded><![CDATA[<p>Hi,<br />
+I think the last line of the &#8220;RESTful Web Services Cookbook” excerpt is actually about OAUTH v1  where the AT secret is used in the signed part of the request. OAUTH v2 has no AT-secrets and signing is solely done byTLS.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Servicios web RESTful con HTTP. Parte II: ejemplos &#124; ADWE		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-337</link>
+
+		<dc:creator><![CDATA[Servicios web RESTful con HTTP. Parte II: ejemplos &#124; ADWE]]></dc:creator>
+		<pubDate>Tue, 21 Jan 2014 10:28:08 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-337</guid>
+
+					<description><![CDATA[[&#8230;] http://developer.github.com/v3/ [2] /2013/07/10/oauth-2-trumps-basic-authentication/ [3] [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://developer.github.com/v3/" rel="nofollow ugc">http://developer.github.com/v3/</a> [2] <a href="/2013/07/10/oauth-2-trumps-basic-authentication/" rel="nofollow ugc">/2013/07/10/oauth-2-trumps-basic-authentication/</a> [3] [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: My take on RESTful authentication &#124; No silver bullet		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-324</link>
+
+		<dc:creator><![CDATA[My take on RESTful authentication &#124; No silver bullet]]></dc:creator>
+		<pubDate>Tue, 24 Dec 2013 02:28:20 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-324</guid>
+
+					<description><![CDATA[[&#8230;] for a token that can be used to authenticate (and authorize) subsequent requests. This is an alternative to Basic Auth, slightly better in the sense that you just include credentials on the first call (thus you [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] for a token that can be used to authenticate (and authorize) subsequent requests. This is an alternative to Basic Auth, slightly better in the sense that you just include credentials on the first call (thus you [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: How OAuth 2 trumps Basic authentication &#124; nodeJ...		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-209</link>
+
+		<dc:creator><![CDATA[How OAuth 2 trumps Basic authentication &#124; nodeJ...]]></dc:creator>
+		<pubDate>Mon, 15 Jul 2013 17:49:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-209</guid>
+
+					<description><![CDATA[[...] The Resource Owner Password Credentials Grant pattern defined in the OAuth 2 spec is fundamentally superior to HTTP Basic authentication.&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] The Resource Owner Password Credentials Grant pattern defined in the OAuth 2 spec is fundamentally superior to HTTP Basic authentication.&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Dew Drop &#8211; July 11, 2013 (#1,583) &#124; Alvin Ashcraft&#039;s Morning Dew		</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/#comment-206</link>
+
+		<dc:creator><![CDATA[Dew Drop &#8211; July 11, 2013 (#1,583) &#124; Alvin Ashcraft&#039;s Morning Dew]]></dc:creator>
+		<pubDate>Thu, 11 Jul 2013 11:28:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=390#comment-206</guid>
+
+					<description><![CDATA[[...] How OAuth 2 trumps Basic authentication (@jason_h_austin) (John Sheehan) [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] How OAuth 2 trumps Basic authentication (@jason_h_austin) (John Sheehan) [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

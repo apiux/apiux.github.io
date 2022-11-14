@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Times &#8211; API UX</title>
+	<atom:link href="/tag/times/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 20 Mar 2013 17:05:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>The 5 laws of API dates and times</title>
+		<link>/2013/03/20/5-laws-api-dates-and-times/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=5-laws-api-dates-and-times</link>
+					<comments>/2013/03/20/5-laws-api-dates-and-times/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 20 Mar 2013 17:00:17 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Dates]]></category>
+		<category><![CDATA[Formatting]]></category>
+		<category><![CDATA[GMT]]></category>
+		<category><![CDATA[ISO 8601]]></category>
+		<category><![CDATA[Standards]]></category>
+		<category><![CDATA[Times]]></category>
+		<category><![CDATA[UTC]]></category>
+		<guid isPermaLink="false">/?p=73</guid>
+
+					<description><![CDATA[Let&#8217;s say you&#8217;re building your first API. Be it public, private, or some hybrid thereof, don&#8217;t be surprised if your first defect is date/time-related. Do not underestimate how much trouble you can get into when it comes to handling date and times. Here are some tips which might keep you out of this potential future. [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/03/20/5-laws-api-dates-and-times/feed/</wfw:commentRss>
+			<slash:comments>24</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

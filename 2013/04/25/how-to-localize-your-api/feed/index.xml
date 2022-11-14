@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to localize your API	</title>
+	<atom:link href="/2013/04/25/how-to-localize-your-api/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/04/25/how-to-localize-your-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-localize-your-api</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 03 Dec 2014 15:35:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: Jason Harmon		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-5107</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2014 15:35:49 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-5107</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/25/how-to-localize-your-api/#comment-5097&quot;&gt;Budy&lt;/a&gt;.
+
+ISO8601 specifies Gregorian calendar only. Past that, determining the local timezone is the UX&#039;s responsibility. This can be quite complicated in mobile scenarios, so the API should stick to UTC in the response. See my article 5 Laws of API Dates and Times for more info.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/25/how-to-localize-your-api/#comment-5097">Budy</a>.</p>
+<p>ISO8601 specifies Gregorian calendar only. Past that, determining the local timezone is the UX&#8217;s responsibility. This can be quite complicated in mobile scenarios, so the API should stick to UTC in the response. See my article 5 Laws of API Dates and Times for more info.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Budy		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-5097</link>
+
+		<dc:creator><![CDATA[Budy]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2014 06:57:19 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-5097</guid>
+
+					<description><![CDATA[thanks. 
+What about different date for each countries ?]]></description>
+			<content:encoded><![CDATA[<p>thanks.<br />
+What about different date for each countries ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: When API time zones make the difference		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-244</link>
+
+		<dc:creator><![CDATA[When API time zones make the difference]]></dc:creator>
+		<pubDate>Wed, 11 Sep 2013 16:01:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-244</guid>
+
+					<description><![CDATA[[&#8230;] times in APIs in The 5 Laws of API Dates and Times, as well as content and currency localization in How to Localize Your API . One area that I did not get into was how timezones can play a role when a specific time and [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] times in APIs in The 5 Laws of API Dates and Times, as well as content and currency localization in How to Localize Your API . One area that I did not get into was how timezones can play a role when a specific time and [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Interview with Jason Harmon, API Architect at uShip.com		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-211</link>
+
+		<dc:creator><![CDATA[Interview with Jason Harmon, API Architect at uShip.com]]></dc:creator>
+		<pubDate>Tue, 16 Jul 2013 11:04:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-211</guid>
+
+					<description><![CDATA[[...] was personally taken by surprise when my third post caught some pretty heavy traction, and actually made the front page of hackernews.com for a few [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] was personally taken by surprise when my third post caught some pretty heavy traction, and actually made the front page of hackernews.com for a few [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Harmon		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-89</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 14:33:48 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-89</guid>
+
+					<description><![CDATA[Just to address some finer points you made Andrei:
+#2: Locale is critical in translations. The easiest examples are fr-FR vs fr-CA and pt_BR vs pt-PT. French in Canada translates quite different from French in France, as well as Portuguese in Brazil and Portugal. 
+3. If there are multiple currencies at play in one body of content, specifying currency alongside amount is probably useful. In most situations, one currency is at play per call, so the headers are a more consistent manner across the platform to specify currency. As far as currency conversion goes, it&#039;s definitely a risky business. There&#039;s lots more work in providing business process on the backend that can mitigate those risks than there are in technology solutions from an API perspective.]]></description>
+			<content:encoded><![CDATA[<p>Just to address some finer points you made Andrei:<br />
+#2: Locale is critical in translations. The easiest examples are fr-FR vs fr-CA and pt_BR vs pt-PT. French in Canada translates quite different from French in France, as well as Portuguese in Brazil and Portugal.<br />
+3. If there are multiple currencies at play in one body of content, specifying currency alongside amount is probably useful. In most situations, one currency is at play per call, so the headers are a more consistent manner across the platform to specify currency. As far as currency conversion goes, it&#8217;s definitely a risky business. There&#8217;s lots more work in providing business process on the backend that can mitigate those risks than there are in technology solutions from an API perspective.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Implementing API Content Negotiation &#124; API UX		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-88</link>
+
+		<dc:creator><![CDATA[Implementing API Content Negotiation &#124; API UX]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 13:00:27 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-88</guid>
+
+					<description><![CDATA[[...] by specifying which language you&#8217;d like to accept you can hint the server about localization options, such as currency or other specific international [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] by specifying which language you&#8217;d like to accept you can hint the server about localization options, such as currency or other specific international [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Andrei Neculau (@andreineculau)		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-84</link>
+
+		<dc:creator><![CDATA[Andrei Neculau (@andreineculau)]]></dc:creator>
+		<pubDate>Sat, 04 May 2013 16:29:12 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-84</guid>
+
+					<description><![CDATA[For future readers, a clarification and a reminder to KISS:
+
+1) ISO 4217 only holds information about the currency code (alpha &#038; numeric) and number of decimals. For the rest, it&#039;s really wrong to say the code &quot;helps to dictate&quot; but &quot;helps to make fragile assumptions&quot; - e.g. EUR isn&#039;t to be appended to the amount, just because it&#039;s EUR; in English, Latvian and other locales, it&#039;s supposed to be prepended. Point is: use locale to determine things currency format settings. As an American (en-us), you want the code/symbol to be prepended USD 12, $12, even if we&#039;re not talking USD - €12. Same goes for formatting an amount - thousand symbol (dot, comma, space, nothing), decimal symbol (comma, dot)
+
+2) I might be in the wrong here, but I see no reason why one would make the distinction between language and locale in terms of the Accept-Language header. If the API is localized (though IMO it&#039;s the client that should care about localization), then Accept-Language: it-it should output localized content (not just take care of translation, while leaving out the format of 12$ as is).
+
+3) Before one dives into using X-Currency, one has to ask a few questions
+- is my product/service/whatever offered in more than a handful of currencies? If not, then consider just dumping all prices and all available currencies. e.g. instead of {price:10, currency:&quot;EUR&quot;}, output {prices: [{amount:10, currency:&quot;EUR&quot;}, {amount:20, currency:&quot;USD&quot;}]
+- I use more than a handful of currencies, but am I in the business of currency conversion? Most probably not, because your prices are biased towards marketing and other factors, and thus you fix your prices manually - you don&#039;t just say I want to make 100 EUR on this product, and then people pay the equivalent in their currency. If you are certain of it, build up or recommend a 3rd party currency-conversion service endpoint. This way, your regular output is still in 1..5 major currencies; if another currency is desired, the client can use the service endpoint to convert prices.
+
+Thanks]]></description>
+			<content:encoded><![CDATA[<p>For future readers, a clarification and a reminder to KISS:</p>
+<p>1) ISO 4217 only holds information about the currency code (alpha &amp; numeric) and number of decimals. For the rest, it&#8217;s really wrong to say the code &#8220;helps to dictate&#8221; but &#8220;helps to make fragile assumptions&#8221; &#8211; e.g. EUR isn&#8217;t to be appended to the amount, just because it&#8217;s EUR; in English, Latvian and other locales, it&#8217;s supposed to be prepended. Point is: use locale to determine things currency format settings. As an American (en-us), you want the code/symbol to be prepended USD 12, $12, even if we&#8217;re not talking USD &#8211; €12. Same goes for formatting an amount &#8211; thousand symbol (dot, comma, space, nothing), decimal symbol (comma, dot)</p>
+<p>2) I might be in the wrong here, but I see no reason why one would make the distinction between language and locale in terms of the Accept-Language header. If the API is localized (though IMO it&#8217;s the client that should care about localization), then Accept-Language: it-it should output localized content (not just take care of translation, while leaving out the format of 12$ as is).</p>
+<p>3) Before one dives into using X-Currency, one has to ask a few questions<br />
+&#8211; is my product/service/whatever offered in more than a handful of currencies? If not, then consider just dumping all prices and all available currencies. e.g. instead of {price:10, currency:&#8221;EUR&#8221;}, output {prices: [{amount:10, currency:&#8221;EUR&#8221;}, {amount:20, currency:&#8221;USD&#8221;}]<br />
+&#8211; I use more than a handful of currencies, but am I in the business of currency conversion? Most probably not, because your prices are biased towards marketing and other factors, and thus you fix your prices manually &#8211; you don&#8217;t just say I want to make 100 EUR on this product, and then people pay the equivalent in their currency. If you are certain of it, build up or recommend a 3rd party currency-conversion service endpoint. This way, your regular output is still in 1..5 major currencies; if another currency is desired, the client can use the service endpoint to convert prices.</p>
+<p>Thanks</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jason Harmon		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-78</link>
+
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 25 Apr 2013 17:35:16 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-78</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/04/25/how-to-localize-your-api/#comment-77&quot;&gt;Mathieu Fenniak&lt;/a&gt;.
+
+In write-capable scenarios, I would recommend some additional internal systems design. Namely ensuring that users have a currency preference set in their account preferences, and only allow updates in that currency. In scenarios where they have no &#039;account&#039; (unlikely with money involved, but possible in financial industries), the X-Currency header can be utilized as a non-negotiated request header, specifying the currency in the POST/PUT data.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/04/25/how-to-localize-your-api/#comment-77">Mathieu Fenniak</a>.</p>
+<p>In write-capable scenarios, I would recommend some additional internal systems design. Namely ensuring that users have a currency preference set in their account preferences, and only allow updates in that currency. In scenarios where they have no &#8216;account&#8217; (unlikely with money involved, but possible in financial industries), the X-Currency header can be utilized as a non-negotiated request header, specifying the currency in the POST/PUT data.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Mathieu Fenniak		</title>
+		<link>/2013/04/25/how-to-localize-your-api/#comment-77</link>
+
+		<dc:creator><![CDATA[Mathieu Fenniak]]></dc:creator>
+		<pubDate>Thu, 25 Apr 2013 17:20:42 +0000</pubDate>
+		<guid isPermaLink="false">/?p=325#comment-77</guid>
+
+					<description><![CDATA[Great article, thanks for publishing it.
+
+Typically I think of prices and other money values as fixed in a specific currency, but they can also be displayed approximately in other currencies for localization.  This article doesn&#039;t touch on a write-capable API.  Would you accept a client-side request for a specific currency (eg. X-Currency header) and actually affect something material, like the charge for an ecommerce purchase?
+
+@mfenniak]]></description>
+			<content:encoded><![CDATA[<p>Great article, thanks for publishing it.</p>
+<p>Typically I think of prices and other money values as fixed in a specific currency, but they can also be displayed approximately in other currencies for localization.  This article doesn&#8217;t touch on a write-capable API.  Would you accept a client-side request for a specific currency (eg. X-Currency header) and actually affect something material, like the charge for an ecommerce purchase?</p>
+<p>@mfenniak</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

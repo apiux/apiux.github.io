@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>days &#8211; API UX</title>
+	<atom:link href="/tag/days/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 14 May 2014 13:59:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>APIdays Mediterranea</title>
+		<link>/2014/05/14/apidays-mediterranea-2014/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apidays-mediterranea-2014</link>
+					<comments>/2014/05/14/apidays-mediterranea-2014/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 14 May 2014 12:20:39 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[apis]]></category>
+		<category><![CDATA[Barcelona]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[days]]></category>
+		<category><![CDATA[Mobile World Centre]]></category>
+		<guid isPermaLink="false">/?p=868</guid>
+
+					<description><![CDATA[APIdays Mediterranea 2014 will be held in Barcelona on May 29th and 30th at the Mobile World Centre.]]></description>
+		
+					<wfw:commentRss>/2014/05/14/apidays-mediterranea-2014/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>API Days Berlin</title>
+		<link>/2014/03/31/api-days-berlin/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-days-berlin</link>
+					<comments>/2014/03/31/api-days-berlin/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Mon, 31 Mar 2014 12:30:32 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[apis]]></category>
+		<category><![CDATA[berlin]]></category>
+		<category><![CDATA[betahaus]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[days]]></category>
+		<guid isPermaLink="false">/?p=823</guid>
+
+					<description><![CDATA[The event will take place in Betahaus Berlin on the 5th and 6th of May, 2014. For more information, please visit the APIDays Berlin Web site.]]></description>
+		
+					<wfw:commentRss>/2014/03/31/api-days-berlin/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>APIdays Mediterranea</title>
+		<link>/2013/05/16/apidays-mediterranea/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apidays-mediterranea</link>
+					<comments>/2013/05/16/apidays-mediterranea/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 16 May 2013 09:57:29 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[days]]></category>
+		<category><![CDATA[Madrid]]></category>
+		<category><![CDATA[Spain]]></category>
+		<guid isPermaLink="false">/?p=404</guid>
+
+					<description><![CDATA[APIdays Mediterranea is the event that will get together business, projects and people from the API ecosystem in Southern Europe and Mediterranean countries.]]></description>
+		
+					<wfw:commentRss>/2013/05/16/apidays-mediterranea/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

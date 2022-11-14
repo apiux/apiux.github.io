@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>APIUX &#8211; API UX</title>
+	<atom:link href="/tag/apiux/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 24 Jun 2013 10:49:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>APIDays San Francisco</title>
+		<link>/2013/06/24/apidays-san-francisco/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apidays-san-francisco</link>
+					<comments>/2013/06/24/apidays-san-francisco/#comments</comments>
+		
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Mon, 24 Jun 2013 10:49:55 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[developer]]></category>
+		<guid isPermaLink="false">/?p=497</guid>
+
+					<description><![CDATA[At the conclusion of the first API Days San Francisco, one thing is clear above all else: APIs are in. Huge growth in the startup space developing APIs and major acquisitions amongst the larger companies are a great indicator of a burgeoning API ecosystem. Despite a wide variety of opinions and philosophies in the speaking [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/06/24/apidays-san-francisco/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Accept Header: A Quick Primer</title>
+		<link>/2013/06/11/accept-header-quick-primer/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=accept-header-quick-primer</link>
+					<comments>/2013/06/11/accept-header-quick-primer/#comments</comments>
+		
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 16:00:44 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=480</guid>
+
+					<description><![CDATA[Why should you use the Accept header? So many APIs can simply get by with a string comparison against "application/json" or "application/xml", why is it important?]]></description>
+		
+					<wfw:commentRss>/2013/06/11/accept-header-quick-primer/feed/</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Implementing API Content Negotiation</title>
+		<link>/2013/05/07/api-content-negotiation/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-content-negotiation</link>
+					<comments>/2013/05/07/api-content-negotiation/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 07 May 2013 13:00:01 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Accept]]></category>
+		<category><![CDATA[Accept-encoding]]></category>
+		<category><![CDATA[Accept-language]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[Content]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[JSON]]></category>
+		<category><![CDATA[Negotiation]]></category>
+		<category><![CDATA[RFC 2616]]></category>
+		<category><![CDATA[UX]]></category>
+		<category><![CDATA[XML]]></category>
+		<guid isPermaLink="false">/?p=348</guid>
+
+					<description><![CDATA[Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.]]></description>
+		
+					<wfw:commentRss>/2013/05/07/api-content-negotiation/feed/</wfw:commentRss>
+			<slash:comments>12</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>What is API User Experience?</title>
+		<link>/2013/03/19/what-is-api-user-experience/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=what-is-api-user-experience</link>
+					<comments>/2013/03/19/what-is-api-user-experience/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Tue, 19 Mar 2013 17:00:51 +0000</pubDate>
+				<category><![CDATA[Announcement]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APIUX]]></category>
+		<category><![CDATA[definition]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[ease of use]]></category>
+		<category><![CDATA[efficiency]]></category>
+		<category><![CDATA[emotion]]></category>
+		<category><![CDATA[ISO 9241-210]]></category>
+		<category><![CDATA[perception]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[service]]></category>
+		<category><![CDATA[system]]></category>
+		<category><![CDATA[user]]></category>
+		<category><![CDATA[utility]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=24</guid>
+
+					<description><![CDATA[API User Experience, or API UX, is a person's perceptions of the utility, ease of use and efficiency of an application API that result from its direct or indirect use. API UX covers two major types of users: developers, who benefit from direct use of APIs and end-users, who use APIs indirectly through consumer applications.]]></description>
+		
+					<wfw:commentRss>/2013/03/19/what-is-api-user-experience/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

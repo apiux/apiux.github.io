@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Tictail API launch focuses on UX	</title>
+	<atom:link href="/2013/09/19/tictail-api-launch-focuses-ux/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/09/19/tictail-api-launch-focuses-ux/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tictail-api-launch-focuses-ux</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 20 Sep 2013 08:46:34 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.5</generator>
+	<item>
+		<title>
+		By: Bruno Pedro		</title>
+		<link>/2013/09/19/tictail-api-launch-focuses-ux/#comment-259</link>
+
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Fri, 20 Sep 2013 08:46:34 +0000</pubDate>
+		<guid isPermaLink="false">/?p=659#comment-259</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/09/19/tictail-api-launch-focuses-ux/#comment-258&quot;&gt;Gavin Johnson (@snow6oy)&lt;/a&gt;.
+
+I think this is a great strategy: aligning their internal product to their API makes both improve a lot more over time.
+
+I do understand your concern that product development might suffer from using the same API that users are consuming but, if your number one priority is offering users the best possible experience, that shouldn&#039;t be an issue.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/09/19/tictail-api-launch-focuses-ux/#comment-258">Gavin Johnson (@snow6oy)</a>.</p>
+<p>I think this is a great strategy: aligning their internal product to their API makes both improve a lot more over time.</p>
+<p>I do understand your concern that product development might suffer from using the same API that users are consuming but, if your number one priority is offering users the best possible experience, that shouldn&#8217;t be an issue.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Gavin Johnson (@snow6oy)		</title>
+		<link>/2013/09/19/tictail-api-launch-focuses-ux/#comment-258</link>
+
+		<dc:creator><![CDATA[Gavin Johnson (@snow6oy)]]></dc:creator>
+		<pubDate>Thu, 19 Sep 2013 19:32:52 +0000</pubDate>
+		<guid isPermaLink="false">/?p=659#comment-258</guid>
+
+					<description><![CDATA[What interests me is this &quot;they decided to offer developers the same tools they use internally to build this new platform&quot;. Do they really mean exactly the same tools? Was it that their internal API was already suitable for external consumption. Seems like a happy accident. And now their internal and external APIs are tightly coupled, will development continue to remain agile.]]></description>
+			<content:encoded><![CDATA[<p>What interests me is this &#8220;they decided to offer developers the same tools they use internally to build this new platform&#8221;. Do they really mean exactly the same tools? Was it that their internal API was already suitable for external consumption. Seems like a happy accident. And now their internal and external APIs are tightly coupled, will development continue to remain agile.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

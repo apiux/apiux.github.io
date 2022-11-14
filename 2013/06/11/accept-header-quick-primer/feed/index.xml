@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The Accept Header: A Quick Primer	</title>
+	<atom:link href="/2013/06/11/accept-header-quick-primer/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/06/11/accept-header-quick-primer/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=accept-header-quick-primer</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Wed, 19 Jun 2013 21:18:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>
+		By: The Accept Header: A Quick Primer &#124; nodeJS and ...		</title>
+		<link>/2013/06/11/accept-header-quick-primer/#comment-199</link>
+
+		<dc:creator><![CDATA[The Accept Header: A Quick Primer &#124; nodeJS and ...]]></dc:creator>
+		<pubDate>Wed, 19 Jun 2013 21:18:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=480#comment-199</guid>
+
+					<description><![CDATA[[...] Why should you use the Accept header? So many APIs can simply get by with a string comparison against &#034;application/json&#034; or &#034;application/xml&#034;, why is it important?&#160; [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Why should you use the Accept header? So many APIs can simply get by with a string comparison against &quot;application/json&quot; or &quot;application/xml&quot;, why is it important?&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael Pratt		</title>
+		<link>/2013/06/11/accept-header-quick-primer/#comment-194</link>
+
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Wed, 12 Jun 2013 20:04:40 +0000</pubDate>
+		<guid isPermaLink="false">/?p=480#comment-194</guid>
+
+					<description><![CDATA[Thanks for sharing! That does look like a promising library. If only more API frameworks adopted it, we&#039;d be in much better position in terms of introducing new developers to compliant APIs. A big reason not many people properly parse the accept header is it&#039;s so darn obscure.]]></description>
+			<content:encoded><![CDATA[<p>Thanks for sharing! That does look like a promising library. If only more API frameworks adopted it, we&#8217;d be in much better position in terms of introducing new developers to compliant APIs. A big reason not many people properly parse the accept header is it&#8217;s so darn obscure.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Ivan Zuzak		</title>
+		<link>/2013/06/11/accept-header-quick-primer/#comment-192</link>
+
+		<dc:creator><![CDATA[Ivan Zuzak]]></dc:creator>
+		<pubDate>Wed, 12 Jun 2013 08:00:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=480#comment-192</guid>
+
+					<description><![CDATA[Cool post! Just wanted to mention a very useful project I use often for parsing Accept headers and matching them to a set of mime types: mimeparse (https://code.google.com/p/mimeparse/). It offers libraries for most popular languages.]]></description>
+			<content:encoded><![CDATA[<p>Cool post! Just wanted to mention a very useful project I use often for parsing Accept headers and matching them to a set of mime types: mimeparse (<a href="https://code.google.com/p/mimeparse/" rel="nofollow ugc">https://code.google.com/p/mimeparse/</a>). It offers libraries for most popular languages.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Michael Pratt		</title>
+		<link>/2013/06/11/accept-header-quick-primer/#comment-191</link>
+
+		<dc:creator><![CDATA[Michael Pratt]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 18:50:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=480#comment-191</guid>
+
+					<description><![CDATA[I definitely agree that in the absence of an Accept header, a default content type should be determined by the server and sent - after all, technically the requestor said they accept anything.
+
+However, I&#039;d be wary of sending a 200 response with a different content type if I specified something in the Accept header your service cannot provide. While it may help an inexperienced developer get ANY response back from your service, it doesn&#039;t really help them submit the correct request unless you have some sort of &quot;notes&quot; field stating &quot;We couldn&#039;t supply any of your specified content types, here is our default.&quot; I&#039;d rather see a 406 response with an appropriate human-readable message. Teach a man to fish, and all that.]]></description>
+			<content:encoded><![CDATA[<p>I definitely agree that in the absence of an Accept header, a default content type should be determined by the server and sent &#8211; after all, technically the requestor said they accept anything.</p>
+<p>However, I&#8217;d be wary of sending a 200 response with a different content type if I specified something in the Accept header your service cannot provide. While it may help an inexperienced developer get ANY response back from your service, it doesn&#8217;t really help them submit the correct request unless you have some sort of &#8220;notes&#8221; field stating &#8220;We couldn&#8217;t supply any of your specified content types, here is our default.&#8221; I&#8217;d rather see a 406 response with an appropriate human-readable message. Teach a man to fish, and all that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Brett Gerry		</title>
+		<link>/2013/06/11/accept-header-quick-primer/#comment-190</link>
+
+		<dc:creator><![CDATA[Brett Gerry]]></dc:creator>
+		<pubDate>Tue, 11 Jun 2013 17:30:06 +0000</pubDate>
+		<guid isPermaLink="false">/?p=480#comment-190</guid>
+
+					<description><![CDATA[Bruno mentions the importance of providing a reasonable default in his content negotiation post, /2013/05/07/api-content-negotiation/, which I think is important. What are your thoughts on &quot;bending&quot; RFC spec recommendations and responding with a default representation when an accept header is present, but you cannot respond with on of the appropriate representations? 
+
+For example, if for whatever reason the request contains application/hal+json or text/html and you support only application/json and application/xml.  From the RFC spec: &quot;If an Accept header field is present, and if the server cannot send a response which is acceptable according to the combined Accept field value, then the server SHOULD send a 406 (not acceptable) response.&quot;
+
+Given that many APIs are used by developers that can be very new to the API world, they may not be using accept headers properly or understand them. For that reason a good strategy may be to parse and honor the header as best as you can (per most of this post), but have that fallback that returns content rather than a 406. In other words, be liberal with the SHOULD in the RFC spec if you it makes life easier for the less skilled developer, while still serving the developer that is embracing the accept header.]]></description>
+			<content:encoded><![CDATA[<p>Bruno mentions the importance of providing a reasonable default in his content negotiation post, <a href="/2013/05/07/api-content-negotiation/" rel="nofollow ugc">/2013/05/07/api-content-negotiation/</a>, which I think is important. What are your thoughts on &#8220;bending&#8221; RFC spec recommendations and responding with a default representation when an accept header is present, but you cannot respond with on of the appropriate representations? </p>
+<p>For example, if for whatever reason the request contains application/hal+json or text/html and you support only application/json and application/xml.  From the RFC spec: &#8220;If an Accept header field is present, and if the server cannot send a response which is acceptable according to the combined Accept field value, then the server SHOULD send a 406 (not acceptable) response.&#8221;</p>
+<p>Given that many APIs are used by developers that can be very new to the API world, they may not be using accept headers properly or understand them. For that reason a good strategy may be to parse and honor the header as best as you can (per most of this post), but have that fallback that returns content rather than a 406. In other words, be liberal with the SHOULD in the RFC spec if you it makes life easier for the less skilled developer, while still serving the developer that is embracing the accept header.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

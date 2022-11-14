@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Opinion &#8211; API UX</title>
+	<atom:link href="/opinion/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Mon, 10 Nov 2014 10:08:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Predictive APIs: Bringing Machine Learning to the Masses</title>
+		<link>/2014/11/10/predictive-apis/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=predictive-apis</link>
+					<comments>/2014/11/10/predictive-apis/#comments</comments>
+		
+		<dc:creator><![CDATA[Manfred Bortenschlager]]></dc:creator>
+		<pubDate>Mon, 10 Nov 2014 10:08:37 +0000</pubDate>
+				<category><![CDATA[Conference]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[3scale]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[APItools]]></category>
+		<category><![CDATA[Barcelona]]></category>
+		<category><![CDATA[Bicing]]></category>
+		<category><![CDATA[BigML]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[PAPIs]]></category>
+		<category><![CDATA[predictive]]></category>
+		<category><![CDATA[tools]]></category>
+		<guid isPermaLink="false">/?p=1151</guid>
+
+					<description><![CDATA[To help make Predictive APIs more mainstream and accessible, Louis Dorard is organizing the 1st International Conference on Predictive APIs and Apps (PAPIs) as general chair.]]></description>
+		
+					<wfw:commentRss>/2014/11/10/predictive-apis/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to design APIs that last</title>
+		<link>/2014/09/05/api-design-sustainability/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-design-sustainability</link>
+					<comments>/2014/09/05/api-design-sustainability/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 05 Sep 2014 16:30:36 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[CRUD]]></category>
+		<category><![CDATA[implementation]]></category>
+		<category><![CDATA[resource]]></category>
+		<category><![CDATA[sustainability]]></category>
+		<category><![CDATA[version]]></category>
+		<guid isPermaLink="false">/?p=1115</guid>
+
+					<description><![CDATA[In the software world, we often refer to building ‘extensible’ designs. In essence, this means that we can build a system that is light and nimble, capable of changing and growing over time.]]></description>
+		
+					<wfw:commentRss>/2014/09/05/api-design-sustainability/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Time To Leave Your Keys At Home Or Better Yet Trash Them Forever</title>
+		<link>/2014/06/25/leave-keys-home/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=leave-keys-home</link>
+					<comments>/2014/06/25/leave-keys-home/#respond</comments>
+		
+		<dc:creator><![CDATA[Andree Huk]]></dc:creator>
+		<pubDate>Wed, 25 Jun 2014 16:30:27 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[automation]]></category>
+		<category><![CDATA[CarPlay]]></category>
+		<category><![CDATA[HomeKit]]></category>
+		<category><![CDATA[integration]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[keys]]></category>
+		<category><![CDATA[sensor]]></category>
+		<category><![CDATA[TouchID]]></category>
+		<guid isPermaLink="false">/?p=1033</guid>
+
+					<description><![CDATA[This post originally appeared on Andree&#8217;s personal blog. You can follow him here @andreehuk. Apple&#8216;s design goal is to create holistic and consistent experiences. Apple focuses exclusively on devices and services that they can control. In fact, this control actually has likely increased as Walt Mossberg writes about WWDC 2014 on re/code. Customers are being enticed more and more to stay [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/06/25/leave-keys-home/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Who are the best API Product Managers?</title>
+		<link>/2014/02/13/api-product-manager/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-product-manager</link>
+					<comments>/2014/02/13/api-product-manager/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 13 Feb 2014 19:37:37 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Architecture]]></category>
+		<category><![CDATA[product]]></category>
+		<category><![CDATA[Product Manager]]></category>
+		<category><![CDATA[strategy]]></category>
+		<guid isPermaLink="false">/?p=773</guid>
+
+					<description><![CDATA[When I look around the little village of API specialists within the tech world, there are an increasing number, in the last year, with the title “API Product Manager&#8221;. Keep in mind that just a few years ago, this job title didn’t exist. There are so many other roles involved in what it takes to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/13/api-product-manager/feed/</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dark Matter in the API Universe</title>
+		<link>/2014/02/06/dark-matter-api-universe/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dark-matter-api-universe</link>
+					<comments>/2014/02/06/dark-matter-api-universe/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 06 Feb 2014 17:29:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Private]]></category>
+		<category><![CDATA[Trends]]></category>
+		<guid isPermaLink="false">/?p=777</guid>
+
+					<description><![CDATA[In the late 20th century, scientists began to flirt with proof that there is dark matter in our universe. As we learned that as much as 96% of the mass of the universe is represented by something we cannot observe, we&#8217;re entering a new era of understanding about the nature of matter. However, the struggle [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/06/dark-matter-api-universe/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Swedish API License</title>
+		<link>/2013/12/17/swedish-api-license/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=swedish-api-license</link>
+					<comments>/2013/12/17/swedish-api-license/#respond</comments>
+		
+		<dc:creator><![CDATA[Andreas Krohn]]></dc:creator>
+		<pubDate>Tue, 17 Dec 2013 17:00:06 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[business]]></category>
+		<category><![CDATA[commercial]]></category>
+		<category><![CDATA[consumer]]></category>
+		<category><![CDATA[free]]></category>
+		<category><![CDATA[lawyer]]></category>
+		<category><![CDATA[legal]]></category>
+		<category><![CDATA[license]]></category>
+		<category><![CDATA[Open Source]]></category>
+		<category><![CDATA[publisher]]></category>
+		<category><![CDATA[requirement]]></category>
+		<category><![CDATA[Swedish]]></category>
+		<guid isPermaLink="false">/?p=726</guid>
+
+					<description><![CDATA[Developer Experience is important, and that includes much more than the technical design of an API. It also includes the documentation and support as well as the pricing and the legal licensing terms. In almost every API project I have been involved in the legal details have been slapped on last-minute, usually by a lawyer [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/12/17/swedish-api-license/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Why no one wants to use your API</title>
+		<link>/2013/10/18/why-no-one-wants-to-use-your-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=why-no-one-wants-to-use-your-api</link>
+					<comments>/2013/10/18/why-no-one-wants-to-use-your-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 18 Oct 2013 13:00:27 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[feedback]]></category>
+		<category><![CDATA[outreach]]></category>
+		<category><![CDATA[strategy]]></category>
+		<category><![CDATA[support]]></category>
+		<guid isPermaLink="false">/?p=683</guid>
+
+					<description><![CDATA[A brilliant, undiscovered app developer just logged into the front page for your API program (please don&#8217;t tell me you just emailed a PDF), and made their first successful call. They&#8217;re frustrated, feeling like they don&#8217;t understand what just happened, and generally just exhausted. Hopes of impressing colleagues with a quick demo espousing the ease [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/10/18/why-no-one-wants-to-use-your-api/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Tictail API launch focuses on UX</title>
+		<link>/2013/09/19/tictail-api-launch-focuses-ux/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=tictail-api-launch-focuses-ux</link>
+					<comments>/2013/09/19/tictail-api-launch-focuses-ux/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 19 Sep 2013 18:34:42 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[best practice]]></category>
+		<category><![CDATA[community]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[launch]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[portal]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[Tictail]]></category>
+		<category><![CDATA[UX]]></category>
+		<guid isPermaLink="false">/?p=659</guid>
+
+					<description><![CDATA[Tictail, a Swedish e-commerce platform that manages over 24,000 stores spread across 110 different countries, launched their API on September 16, 2013. Because Tictail&#8217;s main focus is simplicity of use, they decided to offer developers the same tools they use internally to build this new platform. According to Carl Waldekranz, Tictail CEO, they &#8220;want developers to [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/19/tictail-api-launch-focuses-ux/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Webhooks, REST and the Open Web</title>
+		<link>/2013/09/12/webhooks/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=webhooks</link>
+					<comments>/2013/09/12/webhooks/#comments</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 16:08:19 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[Open]]></category>
+		<category><![CDATA[ping]]></category>
+		<category><![CDATA[protocol]]></category>
+		<category><![CDATA[publish]]></category>
+		<category><![CDATA[pubsubhubbub]]></category>
+		<category><![CDATA[REST]]></category>
+		<category><![CDATA[specification]]></category>
+		<category><![CDATA[standard]]></category>
+		<category><![CDATA[subscription]]></category>
+		<category><![CDATA[Web]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=495</guid>
+
+					<description><![CDATA[Back in 2006, Jeff Lindsay proposed a different way of consuming Web resources that would eliminate the need for constantly polling APIs for changes. This new pattern was called webhooks and has since been adopted by companies such as GitHub and Google. The main advantage of the webhooks pattern is that your application doesn&#8217;t have to make [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/12/webhooks/feed/</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>When API time zones make the difference</title>
+		<link>/2013/09/11/api-timezones/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-timezones</link>
+					<comments>/2013/09/11/api-timezones/#respond</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 11 Sep 2013 16:00:35 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[geolocation]]></category>
+		<category><![CDATA[globalization]]></category>
+		<category><![CDATA[localization]]></category>
+		<category><![CDATA[timezone]]></category>
+		<category><![CDATA[UTC]]></category>
+		<guid isPermaLink="false">/?p=618</guid>
+
+					<description><![CDATA[Globalizing APIs is hard. I&#8217;ve posted before about some of the pitfalls of dates and times in APIs in The 5 Laws of API Dates and Times, as well as content and currency localization in How to Localize Your API . One area that I did not get into was how timezones can play a [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/09/11/api-timezones/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

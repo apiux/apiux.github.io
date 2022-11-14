@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Implementing API Content Negotiation | API UX</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/05/07/api-content-negotiation/">
+	<link rel="author" href="https://plus.google.com/101249307703031157715">
+	<meta name="description" content="Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.">
+	<meta name="keywords" content="Accept,Accept-encoding,Accept-language,API,APIUX,Content,header,JSON,Negotiation,RFC 2616,UX,XML,server,format,apis,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Implementing API Content Negotiation">
+	<meta property="og:description" content="Content Negotiation servers two purposes: making it possible to have different versions of the same response, and letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.">
+	<meta property="og:url" content="/2013/05/07/api-content-negotiation/">
+	<meta property="article:published_time" content="2013-05-07">
+	<meta property="article:modified_time" content="2013-05-07">
+	<meta property="article:author" content="/author/bpedro/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="Accept">
+	<meta property="article:tag" content="Accept-encoding">
+	<meta property="article:tag" content="Accept-language">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="APIUX">
+	<meta property="article:tag" content="Content">
+	<meta property="article:tag" content="header">
+	<meta property="article:tag" content="JSON">
+	<meta property="article:tag" content="Negotiation">
+	<meta property="article:tag" content="RFC 2616">
+	<meta property="article:tag" content="UX">
+	<meta property="article:tag" content="XML">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Implementing API Content Negotiation Comments Feed" href="/2013/05/07/api-content-negotiation/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=2521166e51","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/348">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=348">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F05%2F07%2Fapi-content-negotiation%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F05%2F07%2Fapi-content-negotiation%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '348';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Implementing+API+Content+Negotiation';
+	window._wp_rp_post_tags = ['json', 'accept-language', 'rfc+2616', 'apiux', 'xml', 'header', 'accept-encoding', 'negotiation', 'api', 'ux', 'content', 'accept', 'opinion', 'class', 'agent', 'alt', 'api', 'break', 'content', 'uri', 'consum', 'photo', 'json', 'a', 'fit', 'xml', 'http', 'jd'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-348 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-348" class="post-348 post type-post status-publish format-standard hentry category-opinion tag-accept tag-accept-encoding tag-accept-language tag-api tag-apiux tag-content tag-header tag-json tag-negotiation tag-rfc-2616 tag-ux tag-xml">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Implementing API Content Negotiation</h1>
+										<div class="comments-link">
+					<a href="/2013/05/07/api-content-negotiation/#comments">12 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>What exactly is Content Negotiation? According to&nbsp;<a title="Content Negotiation" href="https://en.wikipedia.org/wiki/Content_negotiation" target="_blank">Wikipedia</a> it&#8217;s &#8220;a mechanism defined in the HTTP specification that makes it possible to <strong>serve different versions</strong> of a document at the same URI, so that <strong>user agents can specify</strong> which version fit their capabilities the best&#8221;.</p>
+<div style="width: 510px" class="wp-caption aligncenter">
+<a href="http://www.flickr.com/photos/jdhancock/4658982704/" target="_blank"><img loading="lazy" class=" " style="border: 0px;" alt="" src="http://farm5.staticflickr.com/4013/4658982704_1cd132f682.jpg" width="500" height="333"></a><p class="wp-caption-text">photo by JD Hancock</p>
+</div>
+<p>So, it serves two purposes: (<em>1)&nbsp;</em>making it possible to have different versions of the same response, and (<em>2)&nbsp;</em>letting clients specify which version they want to receive. Usually, this technique is applied when there are several types of user agents consuming the same HTTP resource but, because they have different rendering capabilities, they might ask for different content types.</p>
+<p><span id="more-348"></span></p>
+<p>With APIs, this approach is followed whenever you&#8217;re able to handle different request and response formats,&nbsp;<em>e.g.</em> <a title="XML" href="http://www.xml.org/" target="_blank">XML</a> and <a title="JSON" href="http://json.org/" target="_blank">JSON</a>, and you&#8217;d like to offer the client the ability to choose which format to consume. The technique gained traction when JSON started having wide adoption and API providers didn&#8217;t want to break compatibility with existing consumers. Instead of replacing whatever they had (usually XML) with JSON, they offered Content Negotiation, letting clients decide which format to handle.</p>
+<p>There are several ways to provide Content Negotiation, from capturing GET parameters to fully using the HTTP protocol headers as they were intended.</p>
+<h2>Capture GET parameters</h2>
+<p>Most probably, the easiest way to offer Content Negotiation is to capture one or several HTTP GET parameters and changing the input filtering and the output format accordingly. You&#8217;ll obviously have to document or announce which formats you&#8217;re offering and how they are activated, but there&#8217;s not much else to it. Here&#8217;s an example call that would receive some content in XML format and the corresponding response:</p>
+<pre><strong>Call:</strong>
+GET /user/123?output=xml
+
+<strong>Output:</strong>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;user id="123"&gt;
+  &lt;firstName&gt;First Name&lt;/firstName&gt;
+  &lt;lastName&gt;Last Name&lt;/lastName&gt;
+&lt;/user&gt;
+</pre>
+<p>Now, the same call can be made so that consumers receive JSON instead of XML:</p>
+<pre><strong>Call:
+</strong>GET /user/123?output=json
+
+<strong>Output:</strong>
+{
+  "id": "123",
+  "firstName": "First Name",
+  "lastName": "Last Name"
+}</pre>
+<p>Another example is specifying&nbsp;<strong>both</strong> input and output formats using the same technique:</p>
+<pre><strong>Call:</strong>
+POST /user?input=json&amp;output=json
+
+<strong>Input:</strong>
+{
+  "firstName": "First Name",
+  "lastName": "Last Name"
+}
+
+<strong>Output:</strong>
+{
+  "id": "456"
+}</pre>
+<p>This is by far the easiest way to implement Content Negotiation, but there are other ways to do it.</p>
+<h2>Interpret resource&nbsp;<em>extension</em>
+</h2>
+<p>Since every resource can have an&nbsp;<em>extension</em>&nbsp;like regular files do, you can interpret that extension and act accordingly. The concept is the same as previously defined but might require more interpreting on the server side. On the other hand, this approach lets you define different controllers that will be called depending on the resource extension, making the solution easier to develop and maintain. Here&#8217;s an example of a call using the technique:</p>
+<pre><strong>Call:</strong>
+GET /user/123.json
+
+<strong>Output:</strong>
+{
+  "id": "123",
+  "firstName": "First Name",
+  "lastName": "Last Name"
+}</pre>
+<p>One thing to notice immediately is that you lose the ability to specify different input and output formats. While this is highly improbable to happen, if it&#8217;s a requirement you have you can&#8217;t choose this approach.</p>
+<h2>Use the right HTTP header</h2>
+<p>The best approach is to follow the standards. In this case, the HTTP protocol (<a title="RFC 2616, section 12" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec12.html" target="_blank">RFC 2616, section 12</a>) clearly defines how content should be negotiated between server and client. The protocol defines two different kinds of Content Negotiation:</p>
+<ul>
+<li>
+<strong>Agent-driven Negotiation</strong>: whenever the decision about content type or format is left to the client. The client makes a first call and obtains a resource which indicates possible alternative formats. A subsequent call is needed in order to obtain the intended resource representation.</li>
+<li><span style="line-height: 14px;"><strong>Server-driven Negotiation</strong>: whenever the server&nbsp;<em>decides</em> which content to deliver based on several factors obtained from the client call. In fact, all previous techniques are considered server-driven, but what&#8217;s interesting is a particular way to hint about which content types are supported:&nbsp;<strong>Accept</strong> headers.<br>
+</span></li>
+</ul>
+<div id="attachment_369" style="width: 241px" class="wp-caption aligncenter">
+<img aria-describedby="caption-attachment-369" loading="lazy" class="size-full wp-image-369" alt="HTTP Content Negotiation sequence diagram" src="/wp-content/uploads/2013/05/HTTPContentNegotiation.png" width="231" height="338" srcset="/wp-content/uploads/2013/05/HTTPContentNegotiation.png 231w, /wp-content/uploads/2013/05/HTTPContentNegotiation-205x300.png 205w" sizes="(max-width: 231px) 100vw, 231px"><p id="caption-attachment-369" class="wp-caption-text">Content Negotiation sequence diagram</p>
+</div>
+<p>The way these headers work is quite easy to understand. The client request will include a header specifying which formats are considered accepted. The server then chooses from those formats the one that best suits the purpose of the call. If only one format is specified by the client, the server responds using that format, if available. Here&#8217;s an example request:</p>
+<pre><strong>Call:</strong>
+HEADER Accept: application/json
+GET /user/123
+
+<strong>Output:</strong>
+{
+  "id": "123",
+  "firstName": "First Name",
+  "lastName": "Last Name"
+}</pre>
+<p>There are many other&nbsp;<strong>Accept</strong> header types that might hint the server about what types of information the consumer would prefer. The most important are related with data compression and localization:</p>
+<ul>
+<li><span style="line-height: 14px;"><span style="line-height: 14px;"><strong>Accept-Encoding</strong>: let&#8217;s you specify which types of data encoding you&#8217;d like to receive. This is very useful because it hints the server that you can consume&nbsp;<strong>compressed data</strong>,&nbsp;<em>e.g.</em> sending &#8220;gzip&#8221; as the header content would let the server know that you can processed zipped content.</span></span></li>
+<li>
+<strong>Accept-language</strong>: by specifying which language you&#8217;d like to accept you can hint the server about <a title="How to localize your API" href="/2013/04/25/how-to-localize-your-api/" target="_blank">localization options</a>, such as currency or other specific international symbols.</li>
+</ul>
+<h2>Offer a reasonable default</h2>
+<p>If you used to support XML and now you&#8217;d also like to support JSON, offer XML as your standard so that you don&#8217;t break any existing consumers. Otherwise, offer whichever format is the most widely used by the majority of your consumers.</p>
+<p>Content Negotiation, if used properly, can dramatically improve the UX of your API. You&#8217;ll get much closer to the way clients expect to consume your data making their lives easier and, in the end, making your final customers happier.</p>
+<p>Please join in the discussion on this article over on <a href="https://news.ycombinator.com/item?id=5667872" target="_blank">Hacker News</a> and <a href="http://www.reddit.com/r/webdev/comments/1duxl9/implementing_api_content_negotiation/" target="_blank">reddit</a>.</p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-480" data-post-type="none">
+<a href="/2013/06/11/accept-header-quick-primer/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/06/3527622458_893365322c2-150x150.jpg" alt="The Accept Header: A Quick Primer" width="150" height="150"></a><a href="/2013/06/11/accept-header-quick-primer/" class="wp_rp_title">The Accept Header: A Quick Primer</a>
+</li>
+<li data-position="1" data-poid="in-171" data-post-type="none">
+<a href="/2013/03/28/2-steps-api-error-codes/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/03/3356951969_df2c4186ac-150x150.jpg" alt="2 steps to better API Error Codes" width="150" height="150"></a><a href="/2013/03/28/2-steps-api-error-codes/" class="wp_rp_title">2 steps to better API Error Codes</a>
+</li>
+<li data-position="2" data-poid="in-275" data-post-type="none">
+<a href="/2013/04/11/how-to-expose-user-information/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/04/2203253497_4547eba18a1-150x150.jpg" alt="How to Expose User Information" width="150" height="150"></a><a href="/2013/04/11/how-to-expose-user-information/" class="wp_rp_title">How to Expose User Information</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/05/07/api-content-negotiation/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/bpedro/" class="authorsure-author-link">Bruno Pedro</a></span></span> at <time itemprop="dateModified" datetime="2013-05-07T15:02:40+02:00">May 7, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/accept/" rel="tag">Accept</a>, <a href="/tag/accept-encoding/" rel="tag">Accept-encoding</a>, <a href="/tag/accept-language/" rel="tag">Accept-language</a>, <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/apiux/" rel="tag">APIUX</a>, <a href="/tag/content/" rel="tag">Content</a>, <a href="/tag/header/" rel="tag">header</a>, <a href="/tag/json/" rel="tag">JSON</a>, <a href="/tag/negotiation/" rel="tag">Negotiation</a>, <a href="/tag/rfc-2616/" rel="tag">RFC 2616</a>, <a href="/tag/ux/" rel="tag">UX</a>, <a href="/tag/xml/" rel="tag">XML</a> on <a href="/2013/05/07/api-content-negotiation/" title="3:00 pm" rel="bookmark"><time class="entry-date" datetime="2013-05-07T15:00:01+02:00">May 7, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/bpedro/" title="View all posts by Bruno Pedro" rel="author">Bruno Pedro</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Bruno Pedro</h2>
+						<p>Bruno Pedro is a Web and Business developer with over fifteen years’ experience in both startups and large corporations.</p>
+						<div class="author-link">
+							<a href="/author/bpedro/" rel="author">
+								View all posts by Bruno Pedro <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/04/25/how-to-localize-your-api/" rel="prev"><span class="meta-nav">&larr;</span> How to localize your API</a></span>
+					<span class="nav-next"><a href="/2013/05/14/api-versioning/" rel="next">Do you really need API Versioning? <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			12 thoughts on &ldquo;<span>Implementing API Content Negotiation</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-90">
+		<article id="comment-90" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/4ea291b576a7e081c647c2ce08c683dd?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/4ea291b576a7e081c647c2ce08c683dd?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://asanka.abeysinghe.org/" rel="external nofollow ugc" class="url">asankama</a></b> </cite><a href="/2013/05/07/api-content-negotiation/#comment-90"><time datetime="2013-05-07T16:51:52+02:00">May 7, 2013 at 4:51 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Nice post, I wrote something in similar context under <a href="http://www.dzone.com/links/implementing_api_faccedilade_with_wso2_api_manage.html" rel="nofollow ugc">http://www.dzone.com/links/implementing_api_faccedilade_with_wso2_api_manage.html</a> .</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=90#respond" data-commentid="90" data-postid="348" data-belowelement="comment-90" data-respondelement="respond" data-replyto="Reply to asankama" aria-label="Reply to asankama">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-91">
+		<article id="comment-91" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/07/api-content-negotiation/#comment-91"><time datetime="2013-05-07T17:06:59+02:00">May 7, 2013 at 5:06 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Although it&#8217;s not exactly on the same topic, your article is very interesting, specially for someone not familiar with WSO2!</p>
+<p>I also wrote something on the topic of Facades, for a less knowledgeable audience here: <a href="http://blog.cloudwork.com/using-facades-decouple-api/" rel="nofollow ugc">http://blog.cloudwork.com/using-facades-decouple-api/</a></p>
+<p>Take a look and let me know what you think.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=91#respond" data-commentid="91" data-postid="348" data-belowelement="comment-91" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-92">
+		<article id="comment-92" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/9089edc85d22cb7212517ec1f5a815f3?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/9089edc85d22cb7212517ec1f5a815f3?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/darrel_miller" rel="external nofollow ugc" class="url">Darrel Miller (@darrel_miller)</a></b> </cite><a href="/2013/05/07/api-content-negotiation/#comment-92"><time datetime="2013-05-07T17:23:27+02:00">May 7, 2013 at 5:23 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>You should not ever need to provide an input parameter.  The Content-Type header is required when sending a payload and will provide the media type.  </p>
+<p>Having clients construct a URI with a format=x is not really content negotiation because there isn&#8217;t really any negotiation going on.  All that is happening is that you are providing multiple resources that expose different media types.  This is necessary when doing agent driven negotiation, but in itself, it is not negotiation.</p>
+<p>When discussing conneg it is important to consider caching issues and it is worth explaining how different options can be presented to a client to enable agent driven negotiation.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=92#respond" data-commentid="92" data-postid="348" data-belowelement="comment-92" data-respondelement="respond" data-replyto="Reply to Darrel Miller (@darrel_miller)" aria-label="Reply to Darrel Miller (@darrel_miller)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-93">
+		<article id="comment-93" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/07/api-content-negotiation/#comment-93"><time datetime="2013-05-07T17:36:08+02:00">May 7, 2013 at 5:36 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I disagree. In the context of Web APIs it&#8217;s important to show different options because some APIs are implementing them.</p>
+<p>For example, Highrise API uses resource extensions as a mechanism to negotiate different formats (<a href="https://github.com/37signals/highrise-api#alternative-formats" rel="nofollow ugc">https://github.com/37signals/highrise-api#alternative-formats</a>). They support XML as a standard but they can respond with VCF on some resources related with contacts.</p>
+<p>Strictly speaking, HTTP Content Negotiation doesn&#8217;t involve GET parameters or resource extensions. As I wrote on the article &#8220;the best approach is to follow the standards&#8221;.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=93#respond" data-commentid="93" data-postid="348" data-belowelement="comment-93" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment even depth-3" id="li-comment-102">
+		<article id="comment-102" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/31c049a9a58e5e34fbad8de78238cbc7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/31c049a9a58e5e34fbad8de78238cbc7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/andreineculau" rel="external nofollow ugc" class="url">Andrei Neculau (@andreineculau)</a></b> </cite><a href="/2013/05/07/api-content-negotiation/#comment-102"><time datetime="2013-05-13T22:32:01+02:00">May 13, 2013 at 10:32 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>&#8212; For future readers &#8212;</p>
+<p>For what it&#8217;s worth, you&#8217;re missing Darrel&#8217;s point. The first 2 ways to &#8220;provide Content Negotiation&#8221; &#8211; query and &#8220;extension&#8221; &#8211; are not about negotiation. If you have a static web server, you request a file with extension .json .png etc. No negotiation happens. Same with the query param. You request &#8220;http://example.com/x?format=json&#8221; &#8211; that&#8217;s the URI of the &#8220;document&#8221; &#8211; the atomic resource URI. The document you requested it&#8217;s not &#8220;http://example.com/x&#8221;</p>
+<p>Negotiation is a give&amp;take not all-or-nothing process. And that only happens for &#8220;the 3rd way&#8221;. The client can say &#8220;Accept: application/json, application/xml&#8221; and the server can reply with either of the two, or with text/html, and in all 3 situations the negotiation succeeded, or with 406 Not Acceptable &#8211; negotiation failed.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=102#respond" data-commentid="102" data-postid="348" data-belowelement="comment-102" data-respondelement="respond" data-replyto="Reply to Andrei Neculau (@andreineculau)" aria-label="Reply to Andrei Neculau (@andreineculau)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-4" id="li-comment-104">
+		<article id="comment-104" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/07/api-content-negotiation/#comment-104"><time datetime="2013-05-14T11:30:49+02:00">May 14, 2013 at 11:30 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I appreciate your comment and clarification, but I didn&#8217;t miss Darrel&#8217;s point &#8212; I even agreed with him that the first two techniques were presented because many APIs rely on them to provide content negotiation.</p>
+<p>Now, replying to you, if you read RFC 2616 §12.1 (Server-driven Negotiation) carefully, you&#8217;ll notice the following phrase:</p>
+<p>&#8220;However, an origin server is not limited to these dimensions (request-header fields) and MAY vary the response based on *any aspect of the request*, including information outside the request-header fields or within extension header fields not defined by this specification.&#8221; (bolds and contextual information added by me)</p>
+<p>Also, by reading RFC 2396 §1.1, you&#8217;d know that a &#8220;resource is the conceptual mapping to an entity or set of entities, not necessarily the entity which corresponds to that mapping&#8221; and by reading RFC 2295 (Transparent Content Negotiation in HTTP) §4.6 (Retrieving a variant by hand) you&#8217;d know that the &#8220;user agent can use this list (of variants) to make available a menu of all variants and their characteristics to the user.&#8221;</p>
+<p>So, negotiation can assume many different forms, including one where the consumer directly requests a variant of the resource obtained from a previously published list (the API documentation, in our case).</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=104#respond" data-commentid="104" data-postid="348" data-belowelement="comment-104" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment even depth-5" id="li-comment-108">
+		<article id="comment-108" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/31c049a9a58e5e34fbad8de78238cbc7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/31c049a9a58e5e34fbad8de78238cbc7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/andreineculau" rel="external nofollow ugc" class="url">Andrei Neculau (@andreineculau)</a></b> </cite><a href="/2013/05/07/api-content-negotiation/#comment-108"><time datetime="2013-05-15T10:57:19+02:00">May 15, 2013 at 10:57 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>I stick to what I wrote before, and please don&#8217;t assume that nobody reads the RFCs, albeit I reckon it is only a few.</p>
+<p>FWIW I still think you&#8217;re missing the point &#8211; content negotiation is when you request X twice, and one time you can get JSON, one time you can get XML. Not when you request X1 and get JSON, and then you request X2 and get XML. It&#8217;s irrelevant that the resources map to the same entity, it is still resource*S*</p>
+<p>But let&#8217;s leave it to each and every potential reader to make up their mind.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=108#respond" data-commentid="108" data-postid="348" data-belowelement="comment-108" data-respondelement="respond" data-replyto="Reply to Andrei Neculau (@andreineculau)" aria-label="Reply to Andrei Neculau (@andreineculau)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-6" id="li-comment-110">
+		<article id="comment-110" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/07/api-content-negotiation/#comment-110"><time datetime="2013-05-15T13:19:02+02:00">May 15, 2013 at 1:19 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>You say that content negotiation is &#8220;not when you request X1 and get JSON, and then you request X2 and get XML&#8221; &#8212; not according to RFC 2295 §4.6 (Retrieving a variant by hand), where the consumer requests different resources in order to receive different content types.</p>
+<p>It seems that we agree on something, though: only a few people really read RFCs these days.</p>
+<p>Anyway, thanks for the interesting discussion.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-95">
+		<article id="comment-95" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/44f419f3602af28c4e84f15bfe1d530f?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/44f419f3602af28c4e84f15bfe1d530f?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://www.jpalace.org/" rel="external nofollow ugc" class="url">Jorge Simão</a></b> </cite><a href="/2013/05/07/api-content-negotiation/#comment-95"><time datetime="2013-05-08T12:18:34+02:00">May 8, 2013 at 12:18 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Great Post, Bruno!</p>
+<p>On motivating the need/usefulness to support multiple data-formats (a.k.a. resource representations)&#8230;but should make a stronger point in defence of XML (not only &#8220;backward compatibility&#8221;).</p>
+<p>If the client is not JavaScript, in principle, odds should favour XML over JSON (since its a more complete and rich technology ecosystem &#8212; e.g. more expressive syntax, namespaces, XSLT transformation, XPATH selector, better and more libraries, etc.).</p>
+<p>However, because most apps and business models build these days are really around webapps, we actually see a tendency to support mostly JSON in HTTP based APIs (flanking the original spirit layed down in HTTP1.1 spec).</p>
+<p>Maybe because people think its easier, faster, and cheaper to support only one format. This is the case is app rely a lot on manual marshaling, but not so if automated marshaling is put in place.</p>
+<p>Cheers, Jorge.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=95#respond" data-commentid="95" data-postid="348" data-belowelement="comment-95" data-respondelement="respond" data-replyto="Reply to Jorge Simão" aria-label="Reply to Jorge Simão">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-bpedro bypostauthor odd alt depth-2" id="li-comment-96">
+		<article id="comment-96" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/8708373bc8cf05421c9242517e4fede2?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://cloudwork.com/" rel="external nofollow ugc" class="url">Bruno Pedro</a></b> <span>Post author</span></cite><a href="/2013/05/07/api-content-negotiation/#comment-96"><time datetime="2013-05-08T15:48:00+02:00">May 8, 2013 at 3:48 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Thanks, Jorge!</p>
+<p>Although XML promised a huge number of advantages, reality is that most Web APIs are not using it.</p>
+<p>The advantages of JSON over XML make it a popular choice nowadays. I recommend you read this interesting piece comparing both formats: <a href="http://www.json.org/xml.html" rel="nofollow ugc">http://www.json.org/xml.html</a></p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/05/07/api-content-negotiation/?replytocom=96#respond" data-commentid="96" data-postid="348" data-belowelement="comment-96" data-respondelement="respond" data-replyto="Reply to Bruno Pedro" aria-label="Reply to Bruno Pedro">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-odd thread-alt depth-1" id="comment-97">
+		<p>Pingback: <a href="http://www.scoop.it/t/codesource/p/4001251689/implementing-api-content-negotiation" rel="external nofollow ugc" class="url">Implementing API Content Negotiation | CodingSc...</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-189">
+		<p>Pingback: <a href="/2013/06/11/accept-header-quick-primer/" rel="external nofollow ugc" class="url">The Accept Header: A Quick Primer</a> </p>
+	</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/05/07/api-content-negotiation/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="348" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e188e883e5"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="44"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.901 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-23 20:47:25 -->
+
+<!-- Compression = gzip -->
+</html>

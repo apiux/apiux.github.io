@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>flow &#8211; API UX</title>
+	<atom:link href="/tag/flow/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 12 Jul 2013 08:02:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>How OAuth 2 trumps Basic authentication</title>
+		<link>/2013/07/10/oauth-2-trumps-basic-authentication/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=oauth-2-trumps-basic-authentication</link>
+					<comments>/2013/07/10/oauth-2-trumps-basic-authentication/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Wed, 10 Jul 2013 16:00:23 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[access]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[authorization]]></category>
+		<category><![CDATA[flow]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[OAuth]]></category>
+		<category><![CDATA[OAuth2]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[scope]]></category>
+		<category><![CDATA[secret]]></category>
+		<category><![CDATA[security]]></category>
+		<category><![CDATA[SSL]]></category>
+		<guid isPermaLink="false">/?p=390</guid>
+
+					<description><![CDATA[So many negatives have been brought forth in the past on OAuth 2. Where there might be continuing points of contention, there is one area which seems to be clear: the &#8220;Resource Owner Password Credentials Grant&#8221; (OAuth 2 Spec, section 4.3) pattern as defined in the OAuth 2 spec is fundamentally superior to HTTP Basic [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/07/10/oauth-2-trumps-basic-authentication/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

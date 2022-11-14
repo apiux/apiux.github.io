@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>outreach &#8211; API UX</title>
+	<atom:link href="/tag/outreach/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 18 Oct 2013 13:22:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Why no one wants to use your API</title>
+		<link>/2013/10/18/why-no-one-wants-to-use-your-api/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=why-no-one-wants-to-use-your-api</link>
+					<comments>/2013/10/18/why-no-one-wants-to-use-your-api/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 18 Oct 2013 13:00:27 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[feedback]]></category>
+		<category><![CDATA[outreach]]></category>
+		<category><![CDATA[strategy]]></category>
+		<category><![CDATA[support]]></category>
+		<guid isPermaLink="false">/?p=683</guid>
+
+					<description><![CDATA[A brilliant, undiscovered app developer just logged into the front page for your API program (please don&#8217;t tell me you just emailed a PDF), and made their first successful call. They&#8217;re frustrated, feeling like they don&#8217;t understand what just happened, and generally just exhausted. Hopes of impressing colleagues with a quick demo espousing the ease [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/10/18/why-no-one-wants-to-use-your-api/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

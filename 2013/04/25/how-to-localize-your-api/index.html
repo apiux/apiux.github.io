@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<![endif]--><!--[if !(IE 7) & !(IE 8)]><!--><html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>How to localize your API | API UX</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://apiux.com/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<link rel="canonical" href="/2013/04/25/how-to-localize-your-api/">
+	<link rel="author" href="https://plus.google.com/111160376507741662259">
+	<meta name="description" content="Operating a business in the global market is not as trivial as it might seem, if you&#039;ve never seen it through. Everyone not only speaks different languages and has different currencies (not to mention driving on the different sides of the road), but they also have different cultural norms.">
+	<meta name="keywords" content="API,culture,currency,i18n,internationalization,iso,l10n,language,localization,native,nls,standard,support,http,apis,ux,apiux,rest,developer,oauth">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="How to localize your API">
+	<meta property="og:description" content="Operating a business in the global market is not as trivial as it might seem, if you&#039;ve never seen it through. Everyone not only speaks different languages and has different currencies (not to mention driving on the different sides of the road), but they also have different cultural norms.">
+	<meta property="og:url" content="/2013/04/25/how-to-localize-your-api/">
+	<meta property="article:published_time" content="2013-04-25">
+	<meta property="article:modified_time" content="2013-07-16">
+	<meta property="article:author" content="/author/jasonharmon/">
+	<meta property="article:section" content="Opinion">
+	<meta property="article:tag" content="API">
+	<meta property="article:tag" content="culture">
+	<meta property="article:tag" content="currency">
+	<meta property="article:tag" content="i18n">
+	<meta property="article:tag" content="internationalization">
+	<meta property="article:tag" content="iso">
+	<meta property="article:tag" content="l10n">
+	<meta property="article:tag" content="language">
+	<meta property="article:tag" content="localization">
+	<meta property="article:tag" content="native">
+	<meta property="article:tag" content="nls">
+	<meta property="article:tag" content="standard">
+	<meta property="article:tag" content="support">
+	<meta property="og:site_name" content="API UX">
+	<meta name="twitter:card" content="summary">
+<!-- /SEO Ultimate -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; Comments Feed" href="/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="API UX &raquo; How to localize your API Comments Feed" href="/2013/04/25/how-to-localize-your-api/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.16.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+					<!-- No UA code set -->
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"httpsapiux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="myStyleSheets-css" href="/wp-content/plugins/author-hreview/style/style.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="tm_clicktotweet-css" href="/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="monsterinsights-popular-posts-style-css" href="/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.16.2" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="/wp-content/themes/twentytwelve/style.css?ver=5.8.2" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://apiux.com/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="wpoa-style-css" href="/wp-content/plugins/wp-oauth/wp-oauth.css?ver=5.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="authorsure-css" href="/wp-content/plugins/authorsure/styles/public.css?ver=2.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wpoa-cvars-js-extra">
+/* <![CDATA[ */
+var wpoa_cvars = {"ajaxurl":"httpsapiux.com\/wp-admin\/admin-ajax.php","template_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","stylesheet_directory":"httpsapiux.com\/wp-content\/themes\/twentytwelve","plugins_url":"httpsapiux.com\/wp-content\/plugins","plugin_dir_url":"httpsapiux.com\/wp-content\/plugins\/wp-oauth\/","url":"httpsapiux.com","logout_url":"httpsapiux.com\/wp-login.php?action=logout&_wpnonce=bc7389530a","show_login_messages":"","logout_inactive_users":"0","logged_in":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/cvars.js?ver=5.8.2" id="wpoa-cvars-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/wp-oauth/wp-oauth.js?ver=5.8.2" id="wpoa-script-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/325">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="/?p=325">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F04%2F25%2Fhow-to-localize-your-api%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2013%2F04%2F25%2Fhow-to-localize-your-api%2F&#038;format=xml">
+<script type="text/javascript">window._wp_rp_static_base_url = 'https://rp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "httpsapiux.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.2';
+	window._wp_rp_post_id = '325';
+	window._wp_rp_num_rel_posts = '3';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'How+to+localize+your+API';
+	window._wp_rp_post_tags = ['standard', 'l10n', 'i18n', 'localization', 'culture', 'nls', 'iso', 'internationalization', 'support', 'language', 'currency', 'native', 'api', 'opinion', 'market', 'custom', 'english', 'api', 'raw', 'american', 'busi', 'live', 'languag', 'cultur', 'date', 'usa', 'currenc', 'global', 'local'];</script>
+<link rel="stylesheet" href="/wp-content/plugins/related-posts/static/themes/vertical-m.css?version=3.5.2">
+	<style type="text/css" id="twentytwelve-header-css">.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-image: url("/wp-content/uploads/2013/05/45degreee_fabric.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }</style>
+	</head>
+
+<body class="post-template-default single single-post postid-325 single-format-standard custom-background custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="/" title="API UX" rel="home">API UX</a></h1>
+			<h2 class="site-description">Everything about API User Experience</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="menu-top-menu-container"><ul id="menu-top-menu" class="nav-menu">
+<li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-411"><a href="/">Home</a></li>
+<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="/about/">About</a></li>
+<li id="menu-item-410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-410"><a href="/conferences/">Conferences</a></li>
+<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="/contact/">Contact</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-325" class="post-325 post type-post status-publish format-standard hentry category-opinion tag-api tag-culture tag-currency tag-i18n tag-internationalization tag-iso tag-l10n tag-language tag-localization tag-native tag-nls tag-standard tag-support">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">How to localize your API</h1>
+										<div class="comments-link">
+					<a href="/2013/04/25/how-to-localize-your-api/#comments">9 Replies</a>				</div>
+<!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p><em>Full disclosure: I was born and live in the USA, American English is my native language, and I spend USD every day. However, I work with customers in 18 countries and regions on five continents, and the list is getting bigger all the time.</em><a href="/wp-content/uploads/2013/04/internalization_localization_cloud_m.png"><img loading="lazy" class="alignleft size-full wp-image-332" alt="Internationalization localization and currency" src="/wp-content/uploads/2013/04/internalization_localization_cloud_sm.png" width="800" height="440" srcset="/wp-content/uploads/2013/04/internalization_localization_cloud_sm.png 800w, /wp-content/uploads/2013/04/internalization_localization_cloud_sm-300x165.png 300w, /wp-content/uploads/2013/04/internalization_localization_cloud_sm-624x343.png 624w" sizes="(max-width: 800px) 100vw, 800px"></a></p>
+<p>Operating a business in the global market is not as trivial as it might seem, if you&#8217;ve never seen it through. Everyone not only speaks different languages and has different currencies (not to mention driving on the different sides of the road), but they also have different cultural norms. In many situations, we can merely provide raw values for dates and currency and avoid formatting. However, when content includes localizable information, especially dates and currencies, display formatting needs to be sensitive to the localized culture.</p>
+<p>If you&#8217;re considering making the jump off of your own soil to the rest of the globe, hopefully this will give you some insights.</p>
+<p><span id="more-325"></span></p>
+<h4>Terms</h4>
+<p>Let&#8217;s go over some terms you might have heard in regards to these topics:</p>
+<ul>
+<li>
+<b>Internationalization (I18n)</b> means structuring applications in a way that makes it possible for them to be localized.</li>
+<li>
+<b>Localization (L10n)</b> means making an application work for a particular market, such as French-speaking Canadians.</li>
+<li>
+<b>Native Language Support (NLS)</b> essentially describes the translation of content into the correct language and locale.</li>
+</ul>
+<h4>Example of the problem</h4>
+<p>Now a practical example of localization issues when we change the parameters on a simple piece of text:</p>
+<ul>
+<li>English, USA, US Dollars &#8211; &#8220;Price: $99.00, Delivery: 8/1/2013 8:15:00 PM&#8221;</li>
+<li>Spanish, Mexico, Mexican Pesos &#8211; &#8220;Precio: $1216.28, Entrega: 1/8/2013 20:15:00&#8221;</li>
+</ul>
+<p>Note the differences in language, currency, and date format.</p>
+<p>In addition, there are particular issues in ambiguity with currency symbols, especially when operating in foreign markets where symbols could potentially collide with local currency.</p>
+<ul>
+<li>English, Canada, Canadian Dollars &#8211; &#8220;Price: CA$1.00, Delivery: 2013-08-01 8:15:00 PM&#8221;</li>
+<li>English, Canada, Peruvian Pesos &#8211; &#8220;Price: 464.34 CLP, Delivery: 2013-08-01 8:15:00 PM&#8221;</li>
+</ul>
+<p>Note that currency symbols changed, as well as the position of the currency. However there are no changes to language or date formatting in this scenario.</p>
+<h4>ISO Standards</h4>
+<p>In order to formulate a strategy, it&#8217;s best to know what the international standards are for specifying globalization parameters. Language, country and currency are most often specified.</p>
+<ul>
+<li>
+<a title="ISO 639" href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank">ISO 639</a>: Language codes</li>
+<li>
+<a title="ISO 3166" href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">ISO 3166-1 alpha-2</a>: Country codes</li>
+<li>
+<a title="ISO 4217" href="http://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a>: Currency codes</li>
+<li>
+<a title="ISO 8601" href="http://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601</a>: Dates/times (lots more info on this area in my article <a title="5 laws of API dates and times" href="/2013/03/20/5-laws-api-dates-and-times/" target="_blank">&#8220;5 laws of API dates and times&#8221;</a>
+</li>
+</ul>
+<h4>Localization parameters</h4>
+<p>Specifying localization parameters can be done via HTTP headers, query string, or potentially in content. Query string approaches are inadvisable in HTTP-based APIs (dare I say REST), as this implies a &#8216;query&#8217;, and in some rare cases can affect GET caching. Headers typically work quite nicely as URIs are unaffected and HTTP actually gives us some of this built-in.</p>
+<h5>HTTP Headers</h5>
+<p><b>Accept-Language and Content-Language headers</b><br>
+Armed with our knowledge of language and country codes, we can utilize the built-in header in HTTP, &#8220;Accept-Language&#8221;. This works in the same content negotiation pattern as &#8220;Accept&#8221; and &#8220;Content-Type&#8221;, except it utilizes <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.10">Language Tags</a>, &#8220;where any two-letter primary-tag is an ISO-639 language abbreviation and any two-letter initial subtag is an ISO-3166 country code&#8221;, as administered by IANA.<br>
+The best description of this I&#8217;ve seen worked through is in one my favorite books, <a href="http://www.amazon.com/RESTful-Web-Services-Cookbook-Scalability/dp/0596801688">RESTful Web Services Cookbook</a>, Section 7.3:</p>
+<blockquote>
+<p>The protocol for language negotiation is similar to media type negotiation. The client<br>
+expresses its intent by supplying an Accept-Language header with acceptable languages<br>
+and their q header parameter values, and the server decides which one to use for the<br>
+response.<br>
+<code><br>
+# Request<br>
+GET /movie/gone_with_the_wind HTTP/1.1<br>
+Host: www.example.org<br>
+Accept-Language: en,en-US,fr;q=0.6<br>
+{noformat}<br>
+{noformat}<br>
+# Response<br>
+HTTP/1.1 200 OK<br>
+Content-Type: application/xml;charset=UTF-8<br>
+Content-Language: en<br>
+Vary: Accept-Language</code></p>
+<p>1936<br>
+&#8230;<br>
+This approach is best suited when representations in different languages differ only in<br>
+terms of the language used for any human-readable text in the representation, as in the<br>
+following representation:<br>
+<code><br>
+# Request<br>
+GET /movie/gone_with_the_wind HTTP/1.1<br>
+Host: www.example.org<br>
+Accept-Language: en,en-US,fr;q=0.6<br>
+</code></p>
+</blockquote>
+<h5>Non-standard HTTP headers</h5>
+<p>For currency, the HTTP spec does not provide us with any standards. As such, we are left to define custom headers. Prefixing the header name with &#8220;X-&#8221; signals to many servers that this should pass through, and often prevents collision with standard headers.<br>
+&#8220;X-Currency&#8221; is often a great choice for setting currency in &#8220;Accept&#8221; for the request, and consequently the same thing in the &#8220;Content-Type&#8221; in the Request (for POST/PUT) and Response.<br>
+The key to educating our API consumers is that the ISO 4217 standard provides us with various means to communicate currencies. As part of this spec, 2-3 character codes can indicate specific currencies (great for input/request), and within any formatted currency values, there are also currency symbols defined (useful in output/response).</p>
+<p>UPDATE: As was pointed out to me by John Sheehan, and readers on Hackernews, the &#8220;X-&#8221; has been deprecated in <a href="http://tools.ietf.org/html/rfc6648">RFC 6648</a>, also more detail <a href="http://tools.ietf.org/html/draft-ietf-appsawg-xdash-05">here</a>. A more appropriate value might be &#8220;-Currency&#8221;. It also might be better to use &#8220;Accept-Currency&#8221; on request, and &#8220;Content-Currency&#8221; on response.</p>
+<p>To continue with the example above, but for currencies:</p>
+<blockquote><p># Request<br>
+GET /movie/gone_with_the_wind HTTP/1.1<br>
+Host: www.example.org<br>
+X-Currency: USD</p></blockquote>
+<p>Note that the three-letter currency code should be utilized here. This helps dictate the formatting of any currency in content, such as:</p>
+<ul>
+<li>Currency symbol: e.g. &#8220;$&#8221; US Dollars, &#8220;€&#8221; Euro</li>
+<li>Decimals and commas: e.g. &#8220;1,000,000.00&#8221; in USA, &#8220;1 234,56&#8221; in Portugal</li>
+<li>Symbol alignment: e.g. &#8220;$1,000,000.00&#8221; in USA, &#8220;1 234,56$&#8221; in Portugal (same as above but with symbols, note right alignment for Portugal)</li>
+</ul>
+<h4>Summary</h4>
+<p>The only real support we get from HTTP is &#8220;Accept-Language&#8221; and &#8220;Content-Language&#8221;. For currency, we&#8217;re often forced to provide an artificial standard to our API users. The good news is, by following the established ISO 4217 standard, currencies are very crisply communicated, both in terms of API input and output.<br>
+Language, country, and currency typically describe all the globalization parameters. Depending on your web strategy, there could be other parameters to consider. Utilize &#8220;X-&#8220;, and consider including your company/project name in order to avoid conflict with existing HTTP standards or other companies&#8217; usages.<br>
+Learn the existing international standards for language, country, currency, and dates. Avoid formatted outputs as much as possible. Sticking to these fundamentals should keep you out of trouble.</p>
+<p><em>Please join in the discussion on this article over on <a title="How to localize your API" href="https://news.ycombinator.com/item?id=5608176" target="_blank">Hacker News</a> and <a title="How to localize your API" href="http://www.reddit.com/r/webdev/comments/1d3tzn/how_to_localize_your_api/" target="_blank">reddit</a>.</em></p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content">
+<h3 class="related_post_title">Related Posts</h3>
+<ul class="related_post wp_rp">
+<li data-position="0" data-poid="in-683" data-post-type="none">
+<a href="/2013/10/18/why-no-one-wants-to-use-your-api/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/10/Shot-To-The-Head-Blam-Reaction-Gif-In-Scott-Pilgrim-Vs.-The-World-150x150.gif" alt="Why no one wants to use your API" width="150" height="150"></a><a href="/2013/10/18/why-no-one-wants-to-use-your-api/" class="wp_rp_title">Why no one wants to use your API</a>
+</li>
+<li data-position="1" data-poid="in-659" data-post-type="none">
+<a href="/2013/09/19/tictail-api-launch-focuses-ux/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/09/TictailDeveloperPortal-150x150.png" alt="Tictail API launch focuses on UX" width="150" height="150"></a><a href="/2013/09/19/tictail-api-launch-focuses-ux/" class="wp_rp_title">Tictail API launch focuses on UX</a>
+</li>
+<li data-position="2" data-poid="in-495" data-post-type="none">
+<a href="/2013/09/12/webhooks/" class="wp_rp_thumbnail"><img src="/wp-content/uploads/2013/09/RESTHooks-150x150.png" alt="Webhooks, REST and the Open Web" width="150" height="150"></a><a href="/2013/09/12/webhooks/" class="wp_rp_title">Webhooks, REST and the Open Web</a>
+</li>
+</ul>
+</div></div>
+<p id="authorsure-last-updated" class="updated left" itemscope="itemscope" itemtype="http://schema.org/WebPage" itemid="https://apiux.com/2013/04/25/how-to-localize-your-api/">Last updated by <span style="float:none" class="author vcard"><span class="fn"><a rel="author" href="/author/jasonharmon/" class="authorsure-author-link">Jason Harmon</a></span></span> at <time itemprop="dateModified" datetime="2013-07-16T14:05:18+02:00">July 16, 2013</time>.</p>					</div>
+<!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="/opinion/" rel="category tag">Opinion</a> and tagged <a href="/tag/api/" rel="tag">API</a>, <a href="/tag/culture/" rel="tag">culture</a>, <a href="/tag/currency/" rel="tag">currency</a>, <a href="/tag/i18n/" rel="tag">i18n</a>, <a href="/tag/internationalization/" rel="tag">internationalization</a>, <a href="/tag/iso/" rel="tag">iso</a>, <a href="/tag/l10n/" rel="tag">l10n</a>, <a href="/tag/language/" rel="tag">language</a>, <a href="/tag/localization/" rel="tag">localization</a>, <a href="/tag/native/" rel="tag">native</a>, <a href="/tag/nls/" rel="tag">nls</a>, <a href="/tag/standard/" rel="tag">standard</a>, <a href="/tag/support/" rel="tag">support</a> on <a href="/2013/04/25/how-to-localize-your-api/" title="6:27 pm" rel="bookmark"><time class="entry-date" datetime="2013-04-25T18:27:36+02:00">April 25, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="/author/jasonharmon/" title="View all posts by Jason Harmon" rel="author">Jason Harmon</a></span></span>.										<div class="author-info">
+					<div class="author-avatar">
+						<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=68&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=136&#038;d=mm&#038;r=g 2x" class="avatar avatar-68 photo" height="68" width="68" loading="lazy">					</div>
+<!-- .author-avatar -->
+					<div class="author-description">
+						<h2>About Jason Harmon</h2>
+						<p>API Architect @Paypal. 
+Blogger/evangelist for #API. 
+Purveyor of #BDD process. 
+#Android tinkerer.
+#Quadcopter crasher.</p>
+						<div class="author-link">
+							<a href="/author/jasonharmon/" rel="author">
+								View all posts by Jason Harmon <span class="meta-nav">&rarr;</span>							</a>
+						</div>
+<!-- .author-link	-->
+					</div>
+<!-- .author-description -->
+				</div>
+<!-- .author-info -->
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="/2013/04/17/review-google-glass-api/" rel="prev"><span class="meta-nav">&larr;</span> Review: Google Glass API</a></span>
+					<span class="nav-next"><a href="/2013/05/07/api-content-negotiation/" rel="next">Implementing API Content Negotiation <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			9 thoughts on &ldquo;<span>How to localize your API</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-77">
+		<article id="comment-77" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/ac9368aa6a4f224129618173dbb46a32?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/ac9368aa6a4f224129618173dbb46a32?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="https://mathieu.fenniak.net/" rel="external nofollow ugc" class="url">Mathieu Fenniak</a></b> </cite><a href="/2013/04/25/how-to-localize-your-api/#comment-77"><time datetime="2013-04-25T19:20:42+02:00">April 25, 2013 at 7:20 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Great article, thanks for publishing it.</p>
+<p>Typically I think of prices and other money values as fixed in a specific currency, but they can also be displayed approximately in other currencies for localization.  This article doesn&#8217;t touch on a write-capable API.  Would you accept a client-side request for a specific currency (eg. X-Currency header) and actually affect something material, like the charge for an ecommerce purchase?</p>
+<p>@mfenniak</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/25/how-to-localize-your-api/?replytocom=77#respond" data-commentid="77" data-postid="325" data-belowelement="comment-77" data-respondelement="respond" data-replyto="Reply to Mathieu Fenniak" aria-label="Reply to Mathieu Fenniak">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-jasonharmon bypostauthor odd alt depth-2" id="li-comment-78">
+		<article id="comment-78" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://jhr.mn/" rel="external nofollow ugc" class="url">Jason Harmon</a></b> <span>Post author</span></cite><a href="/2013/04/25/how-to-localize-your-api/#comment-78"><time datetime="2013-04-25T19:35:16+02:00">April 25, 2013 at 7:35 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>In write-capable scenarios, I would recommend some additional internal systems design. Namely ensuring that users have a currency preference set in their account preferences, and only allow updates in that currency. In scenarios where they have no &#8216;account&#8217; (unlikely with money involved, but possible in financial industries), the X-Currency header can be utilized as a non-negotiated request header, specifying the currency in the POST/PUT data.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/25/how-to-localize-your-api/?replytocom=78#respond" data-commentid="78" data-postid="325" data-belowelement="comment-78" data-respondelement="respond" data-replyto="Reply to Jason Harmon" aria-label="Reply to Jason Harmon">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-84">
+		<article id="comment-84" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/31c049a9a58e5e34fbad8de78238cbc7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/31c049a9a58e5e34fbad8de78238cbc7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://twitter.com/andreineculau" rel="external nofollow ugc" class="url">Andrei Neculau (@andreineculau)</a></b> </cite><a href="/2013/04/25/how-to-localize-your-api/#comment-84"><time datetime="2013-05-04T18:29:12+02:00">May 4, 2013 at 6:29 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>For future readers, a clarification and a reminder to KISS:</p>
+<p>1) ISO 4217 only holds information about the currency code (alpha &amp; numeric) and number of decimals. For the rest, it&#8217;s really wrong to say the code &#8220;helps to dictate&#8221; but &#8220;helps to make fragile assumptions&#8221; &#8211; e.g. EUR isn&#8217;t to be appended to the amount, just because it&#8217;s EUR; in English, Latvian and other locales, it&#8217;s supposed to be prepended. Point is: use locale to determine things currency format settings. As an American (en-us), you want the code/symbol to be prepended USD 12, $12, even if we&#8217;re not talking USD &#8211; €12. Same goes for formatting an amount &#8211; thousand symbol (dot, comma, space, nothing), decimal symbol (comma, dot)</p>
+<p>2) I might be in the wrong here, but I see no reason why one would make the distinction between language and locale in terms of the Accept-Language header. If the API is localized (though IMO it&#8217;s the client that should care about localization), then Accept-Language: it-it should output localized content (not just take care of translation, while leaving out the format of 12$ as is).</p>
+<p>3) Before one dives into using X-Currency, one has to ask a few questions<br>
+&#8211; is my product/service/whatever offered in more than a handful of currencies? If not, then consider just dumping all prices and all available currencies. e.g. instead of {price:10, currency:&#8221;EUR&#8221;}, output {prices: [{amount:10, currency:&#8221;EUR&#8221;}, {amount:20, currency:&#8221;USD&#8221;}]<br>
+&#8211; I use more than a handful of currencies, but am I in the business of currency conversion? Most probably not, because your prices are biased towards marketing and other factors, and thus you fix your prices manually &#8211; you don&#8217;t just say I want to make 100 EUR on this product, and then people pay the equivalent in their currency. If you are certain of it, build up or recommend a 3rd party currency-conversion service endpoint. This way, your regular output is still in 1..5 major currencies; if another currency is desired, the client can use the service endpoint to convert prices.</p>
+<p>Thanks</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/25/how-to-localize-your-api/?replytocom=84#respond" data-commentid="84" data-postid="325" data-belowelement="comment-84" data-respondelement="respond" data-replyto="Reply to Andrei Neculau (@andreineculau)" aria-label="Reply to Andrei Neculau (@andreineculau)">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-88">
+		<p>Pingback: <a href="/2013/05/07/api-content-negotiation/" rel="external nofollow ugc" class="url">Implementing API Content Negotiation | API UX</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-89">
+		<article id="comment-89" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://jhr.mn/" rel="external nofollow ugc" class="url">Jason Harmon</a></b> </cite><a href="/2013/04/25/how-to-localize-your-api/#comment-89"><time datetime="2013-05-07T16:33:48+02:00">May 7, 2013 at 4:33 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Just to address some finer points you made Andrei:<br>
+#2: Locale is critical in translations. The easiest examples are fr-FR vs fr-CA and pt_BR vs pt-PT. French in Canada translates quite different from French in France, as well as Portuguese in Brazil and Portugal.<br>
+3. If there are multiple currencies at play in one body of content, specifying currency alongside amount is probably useful. In most situations, one currency is at play per call, so the headers are a more consistent manner across the platform to specify currency. As far as currency conversion goes, it&#8217;s definitely a risky business. There&#8217;s lots more work in providing business process on the backend that can mitigate those risks than there are in technology solutions from an API perspective.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/25/how-to-localize-your-api/?replytocom=89#respond" data-commentid="89" data-postid="325" data-belowelement="comment-89" data-respondelement="respond" data-replyto="Reply to Jason Harmon" aria-label="Reply to Jason Harmon">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+	<li class="pingback odd alt thread-even depth-1" id="comment-211">
+		<p>Pingback: <a href="http://www.thadthoughts.com/2013/07/interview-with-jason-harmon-api-architect-at-uship-com/" rel="external nofollow ugc" class="url">Interview with Jason Harmon, API Architect at uShip.com</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="pingback even thread-odd thread-alt depth-1" id="comment-244">
+		<p>Pingback: <a href="/2013/09/11/api-timezones/" rel="external nofollow ugc" class="url">When API time zones make the difference</a> </p>
+	</li>
+<!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-5097">
+		<article id="comment-5097" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/7671a183b1ba128d0b11e15b144d8ad5?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/7671a183b1ba128d0b11e15b144d8ad5?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://teknosains.com/" rel="external nofollow ugc" class="url">Budy</a></b> </cite><a href="/2013/04/25/how-to-localize-your-api/#comment-5097"><time datetime="2014-12-03T07:57:19+01:00">December 3, 2014 at 7:57 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>thanks.<br>
+What about different date for each countries ?</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/25/how-to-localize-your-api/?replytocom=5097#respond" data-commentid="5097" data-postid="325" data-belowelement="comment-5097" data-respondelement="respond" data-replyto="Reply to Budy" aria-label="Reply to Budy">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	<ol class="children">
+	<li class="comment byuser comment-author-jasonharmon bypostauthor even depth-2" id="li-comment-5107">
+		<article id="comment-5107" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=44&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/c3eb23674185dc75778a7cd2f674d9d7?s=88&#038;d=mm&#038;r=g 2x" class="avatar avatar-44 photo" height="44" width="44" loading="lazy"><cite><b class="fn"><a href="http://jhr.mn/" rel="external nofollow ugc" class="url">Jason Harmon</a></b> <span>Post author</span></cite><a href="/2013/04/25/how-to-localize-your-api/#comment-5107"><time datetime="2014-12-03T16:35:49+01:00">December 3, 2014 at 4:35 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>ISO8601 specifies Gregorian calendar only. Past that, determining the local timezone is the UX&#8217;s responsibility. This can be quite complicated in mobile scenarios, so the API should stick to UTC in the response. See my article 5 Laws of API Dates and Times for more info.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="/2013/04/25/how-to-localize-your-api/?replytocom=5107#respond" data-commentid="5107" data-postid="325" data-belowelement="comment-5107" data-respondelement="respond" data-replyto="Reply to Jason Harmon" aria-label="Reply to Jason Harmon">Reply</a> <span>&darr;</span>			</div>
+<!-- .reply -->
+		</article><!-- #comment-## -->
+	</li>
+<!-- #comment-## -->
+</ol>
+<!-- .children -->
+</li>
+<!-- #comment-## -->
+		</ol>
+<!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/04/25/how-to-localize-your-api/#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="https://apiux.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="325" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e722dec78e"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="173"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>	</div>
+<!-- #respond -->
+	
+</div>
+<!-- #comments .comments-area -->
+			
+		</div>
+<!-- #content -->
+	</div>
+<!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="https://apiux.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		</div>
+<!-- #secondary -->
+		</div>
+<!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div>
+<!-- .site-info -->
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+<div id="su-footer-links" style="text-align: center;"></div>
+<div id="wpoa-result"></div>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+<script async="async" type="text/javascript" src="/wp-content/plugins/akismet/_inc/form.js?ver=4.1.9" id="akismet-form-js"></script>
+</body>
+
+<!-- Dynamic page generated in 0.704 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-22 11:16:22 -->
+
+<!-- Compression = gzip -->
+</html>

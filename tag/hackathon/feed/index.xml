@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hackathon &#8211; API UX</title>
+	<atom:link href="/tag/hackathon/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 04 Sep 2014 20:19:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>API Strategy &#038; Practice Chicago</title>
+		<link>/2014/09/04/apistrat-chicago/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=apistrat-chicago</link>
+					<comments>/2014/09/04/apistrat-chicago/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Thu, 04 Sep 2014 20:19:34 +0000</pubDate>
+				<category><![CDATA[Announcement]]></category>
+		<category><![CDATA[Conference]]></category>
+		<category><![CDATA[3scale]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[api evangelist]]></category>
+		<category><![CDATA[APIStrat]]></category>
+		<category><![CDATA[Chicago]]></category>
+		<category><![CDATA[conference]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[hackathon]]></category>
+		<guid isPermaLink="false">/?p=1111</guid>
+
+					<description><![CDATA[The API Strategy &#038; Practice Conference (APIStrat) focuses on what works for API creators and consumers alike by bringing industry leaders together in one forum.]]></description>
+		
+					<wfw:commentRss>/2014/09/04/apistrat-chicago/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

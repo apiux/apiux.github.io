@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Webhooks, REST and the Open Web	</title>
+	<atom:link href="/2013/09/12/webhooks/feed/" rel="self" type="application/rss+xml" />
+	<link>/2013/09/12/webhooks/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=webhooks</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Sun, 20 Apr 2014 12:37:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>
+		By: W van Dam		</title>
+		<link>/2013/09/12/webhooks/#comment-362</link>
+
+		<dc:creator><![CDATA[W van Dam]]></dc:creator>
+		<pubDate>Sun, 20 Apr 2014 12:37:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-362</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/09/12/webhooks/#comment-249&quot;&gt;julien51&lt;/a&gt;.
+
+Resthook are actually exactly the same as Webhooks*. However, their docs are a good introduction on scenarios you got to keep in mind when setting up webhooks. They also got a few basic case studies on how others implemented webhooks.
+
+*) The only difference they state is that Resthooks can be subscribed to via REST as opposed to via a webform, which is a rather obvious step to take and something Jeff Lindsey already mentioned years ago.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/09/12/webhooks/#comment-249">julien51</a>.</p>
+<p>Resthook are actually exactly the same as Webhooks*. However, their docs are a good introduction on scenarios you got to keep in mind when setting up webhooks. They also got a few basic case studies on how others implemented webhooks.</p>
+<p>*) The only difference they state is that Resthooks can be subscribed to via REST as opposed to via a webform, which is a rather obvious step to take and something Jeff Lindsey already mentioned years ago.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Webhooks, REST and the Open Web &#124; Entropic Syne...		</title>
+		<link>/2013/09/12/webhooks/#comment-255</link>
+
+		<dc:creator><![CDATA[Webhooks, REST and the Open Web &#124; Entropic Syne...]]></dc:creator>
+		<pubDate>Thu, 19 Sep 2013 08:05:24 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-255</guid>
+
+					<description><![CDATA[[&#8230;] PuSH is an open protocol that treats webhooks like subscriptions.&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] PuSH is an open protocol that treats webhooks like subscriptions.&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Abhinav Saxena (@abhinav)		</title>
+		<link>/2013/09/12/webhooks/#comment-251</link>
+
+		<dc:creator><![CDATA[Abhinav Saxena (@abhinav)]]></dc:creator>
+		<pubDate>Sat, 14 Sep 2013 08:29:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-251</guid>
+
+					<description><![CDATA[Would love to get your feedback on https://github.com/abhinavs/webhooks]]></description>
+			<content:encoded><![CDATA[<p>Would love to get your feedback on <a href="https://github.com/abhinavs/webhooks" rel="nofollow ugc">https://github.com/abhinavs/webhooks</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: julien51		</title>
+		<link>/2013/09/12/webhooks/#comment-249</link>
+
+		<dc:creator><![CDATA[julien51]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 22:35:07 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-249</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/09/12/webhooks/#comment-247&quot;&gt;Johnny Jelinek IV&lt;/a&gt;.
+
+Not really. They&#039;re just a proprietary attempt to compete with an open protocol.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/09/12/webhooks/#comment-247">Johnny Jelinek IV</a>.</p>
+<p>Not really. They&#8217;re just a proprietary attempt to compete with an open protocol.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Webhooks, REST and the Open Web &#124; nodeJS and RE...		</title>
+		<link>/2013/09/12/webhooks/#comment-248</link>
+
+		<dc:creator><![CDATA[Webhooks, REST and the Open Web &#124; nodeJS and RE...]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 21:05:38 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-248</guid>
+
+					<description><![CDATA[[&#8230;] PuSH is an open protocol that treats webhooks like subscriptions.&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] PuSH is an open protocol that treats webhooks like subscriptions.&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Johnny Jelinek IV		</title>
+		<link>/2013/09/12/webhooks/#comment-247</link>
+
+		<dc:creator><![CDATA[Johnny Jelinek IV]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 18:37:43 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-247</guid>
+
+					<description><![CDATA[In reply to &lt;a href=&quot;/2013/09/12/webhooks/#comment-246&quot;&gt;Nightwolf&lt;/a&gt;.
+
+REST hooks are an evolution of webhooks.]]></description>
+			<content:encoded><![CDATA[<p>In reply to <a href="/2013/09/12/webhooks/#comment-246">Nightwolf</a>.</p>
+<p>REST hooks are an evolution of webhooks.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Nightwolf		</title>
+		<link>/2013/09/12/webhooks/#comment-246</link>
+
+		<dc:creator><![CDATA[Nightwolf]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 17:53:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-246</guid>
+
+					<description><![CDATA[Isn&#039;t this the same as http://resthooks.org/docs/?]]></description>
+			<content:encoded><![CDATA[<p>Isn&#8217;t this the same as <a href="http://resthooks.org/docs/" rel="nofollow ugc">http://resthooks.org/docs/</a>?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Webhooks, REST and the Open Web &#124; Rocketboom		</title>
+		<link>/2013/09/12/webhooks/#comment-245</link>
+
+		<dc:creator><![CDATA[Webhooks, REST and the Open Web &#124; Rocketboom]]></dc:creator>
+		<pubDate>Thu, 12 Sep 2013 16:58:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=495#comment-245</guid>
+
+					<description><![CDATA[[&#8230;] Webhooks, REST and the Open Web  Source: /2013/09/12/webhooks/ 0 &#160;&#160; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Webhooks, REST and the Open Web  Source: <a href="/2013/09/12/webhooks/" rel="nofollow ugc">/2013/09/12/webhooks/</a> 0 &nbsp;&nbsp; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

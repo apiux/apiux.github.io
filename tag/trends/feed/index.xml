@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Trends &#8211; API UX</title>
+	<atom:link href="/tag/trends/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Thu, 06 Feb 2014 17:29:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Dark Matter in the API Universe</title>
+		<link>/2014/02/06/dark-matter-api-universe/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dark-matter-api-universe</link>
+					<comments>/2014/02/06/dark-matter-api-universe/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Thu, 06 Feb 2014 17:29:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Private]]></category>
+		<category><![CDATA[Trends]]></category>
+		<guid isPermaLink="false">/?p=777</guid>
+
+					<description><![CDATA[In the late 20th century, scientists began to flirt with proof that there is dark matter in our universe. As we learned that as much as 96% of the mass of the universe is represented by something we cannot observe, we&#8217;re entering a new era of understanding about the nature of matter. However, the struggle [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2014/02/06/dark-matter-api-universe/feed/</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

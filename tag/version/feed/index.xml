@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>version &#8211; API UX</title>
+	<atom:link href="/tag/version/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 12 Sep 2014 16:56:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>How to design APIs that last</title>
+		<link>/2014/09/05/api-design-sustainability/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-design-sustainability</link>
+					<comments>/2014/09/05/api-design-sustainability/#comments</comments>
+		
+		<dc:creator><![CDATA[Jason Harmon]]></dc:creator>
+		<pubDate>Fri, 05 Sep 2014 16:30:36 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[CRUD]]></category>
+		<category><![CDATA[implementation]]></category>
+		<category><![CDATA[resource]]></category>
+		<category><![CDATA[sustainability]]></category>
+		<category><![CDATA[version]]></category>
+		<guid isPermaLink="false">/?p=1115</guid>
+
+					<description><![CDATA[In the software world, we often refer to building ‘extensible’ designs. In essence, this means that we can build a system that is light and nimble, capable of changing and growing over time.]]></description>
+		
+					<wfw:commentRss>/2014/09/05/api-design-sustainability/feed/</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Do you really need API Versioning?</title>
+		<link>/2013/05/14/api-versioning/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=api-versioning</link>
+					<comments>/2013/05/14/api-versioning/#comments</comments>
+		
+		<dc:creator><![CDATA[Andreas Krohn]]></dc:creator>
+		<pubDate>Tue, 14 May 2013 16:00:03 +0000</pubDate>
+				<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[change]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[life cycle]]></category>
+		<category><![CDATA[management]]></category>
+		<category><![CDATA[version]]></category>
+		<category><![CDATA[versioning]]></category>
+		<guid isPermaLink="false">/?p=379</guid>
+
+					<description><![CDATA[The only thing that we know for certain about the future is that things will change, and that is especially true in our industry. If your APIs are successful they will be used in ways you never had foreseen and the data you deliver will be combined with other data in very surprising ways.]]></description>
+		
+					<wfw:commentRss>/2013/05/14/api-versioning/feed/</wfw:commentRss>
+			<slash:comments>16</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

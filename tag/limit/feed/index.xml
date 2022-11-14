@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>limit &#8211; API UX</title>
+	<atom:link href="/tag/limit/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Everything about API User Experience</description>
+	<lastBuildDate>Fri, 16 Aug 2013 07:13:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.6</generator>
+	<item>
+		<title>Evernote introduces API Rate Limits</title>
+		<link>/2013/08/14/evernote-api-rate-limits/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=evernote-api-rate-limits</link>
+					<comments>/2013/08/14/evernote-api-rate-limits/#respond</comments>
+		
+		<dc:creator><![CDATA[Bruno Pedro]]></dc:creator>
+		<pubDate>Wed, 14 Aug 2013 14:15:17 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[API]]></category>
+		<category><![CDATA[Evernote]]></category>
+		<category><![CDATA[limit]]></category>
+		<category><![CDATA[rate]]></category>
+		<category><![CDATA[webhook]]></category>
+		<guid isPermaLink="false">/?p=589</guid>
+
+					<description><![CDATA[Evernote recently announced that they will enforce API rate limits starting today (August 14, 2013). They don&#8217;t specify what the limits are but they say that a &#8220;reasonable use of the API should not cause an integration to hit the limit&#8221;. Although this enforcement will only affect non-production applications for now, you should evaluate your code [&#8230;]]]></description>
+		
+					<wfw:commentRss>/2013/08/14/evernote-api-rate-limits/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
